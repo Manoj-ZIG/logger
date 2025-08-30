@@ -124,6 +124,7 @@ def custom_print(*args, **kwargs):
             # Prepare data for Parquet
             df = pd.DataFrame([{
                 "timestamp": timestamp,
+                "lambda":"Document_transfer_lambda",
                 "arl": ARL,
                 "file": file_name_part,
                 "category": category_,
