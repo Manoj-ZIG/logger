@@ -208,7 +208,6 @@ def lambda_handler(event, context):
 
 keys=[
     "devoted/audits/sftp/inboundFromClient/AJX2JEHKGW_MR.pdf",
-    # "helix/zai_medical_records_pipeline/textract-response/table-json/1023435_H00011468521IP51_07-24-2025_13-12_textract_table_merged.json",
 ]
 for key in keys:
     

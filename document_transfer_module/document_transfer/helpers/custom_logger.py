@@ -145,7 +145,6 @@ def custom_print(*args, **kwargs):
             # Prepare data for Parquet
             df = pd.DataFrame([{
                 "timestamp": timestamp,
-                "client":client,
                 "arl": ARL,
                 "file": file_name_part,
                 "category": category_,
@@ -160,7 +159,7 @@ def custom_print(*args, **kwargs):
             # Upload to S3
             date_folder = datetime.now().strftime("%Y%m%d")
             timestamp_for_file = datetime.now().strftime("%Y%m%d_%H%M%S")
-            s3_key = f"{S3_FOLDER}/{date_folder}/{file_name_part.replace('.pdf','')}_{category_}_{timestamp_for_file}.parquet"
+            s3_key = f"{client}/{S3_FOLDER}/{date_folder}/{file_name_part.replace('.pdf','')}_{category_}_{timestamp_for_file}.parquet"
             buffer.seek(0)
 
             try:
