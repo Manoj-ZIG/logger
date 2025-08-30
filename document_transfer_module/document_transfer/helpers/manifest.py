@@ -183,8 +183,10 @@ class UpdateManifest():
                     copy_object(self.s3c, self.bucket_name, pdf_path_input, output_bucket, output_pdf_name)
                     print(f"Moved pdf to manual review QA:- {self.document_name_cleaned}")
                     
-
-        pdf_chunks = [i[0].split('/')[-1] for i in list(list(updated_pdf_paths.values())[0])]
+        try:
+            pdf_chunks = [i[0].split('/')[-1] for i in list(list(updated_pdf_paths.values())[0])]
+        except:
+            pdf_chunks=[self.document_name_cleaned]
         print(f"Chunks Generated: {len(pdf_chunks)}:- {self.document_name_cleaned}") 
         return updated_pdf_paths
 

@@ -98,11 +98,11 @@ def custom_print(*args, **kwargs):
     builtins._original_print(message, **kwargs)
 
     if ":-" in message:
-        pattern = r'\b(AJX[\w\-]{7}|H00[\w\-]{9}|V00[\w\-]{9}|200[\w\-]{4})'
+        pattern = r'\b(AJX[\w\-]{7}|H00[\w\-]{9}|V00[\w\-]{9}|200[\w\-]{4}|IB[\w\-]{2,})'
         ARL = re.findall(pattern, message, flags=re.IGNORECASE)
         ARL = ARL[0] if ARL else ''
         ARL = ARL.upper()
-        if ARL.startswith("AJX"):
+        if ARL.startswith(("AJX","IB")):
             client = "Devoted"
         elif ARL.startswith(("H00", "V00", "22")):
             client = "Helix"
@@ -146,7 +146,7 @@ def custom_print(*args, **kwargs):
                 s3c.upload_fileobj(buffer, S3_BUCKET, s3_key)
             except Exception as e:
                 builtins._original_print(f"Failed to upload Parquet to S3: {e}")
-                
+
 def enable_custom_logging():
     builtins._original_print = builtins.print
     builtins.print = custom_print
