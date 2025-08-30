@@ -211,6 +211,19 @@ def lambda_handler(event, context):
 
 
 keys=[
+'AJX237E26F_IP1 (2).pdf',
+'AJX2JEHKGW_MR.pdf',
+'ajx2yg45ez_ip1.pdf',
+'AJX4CEUH5H_DRG.pdf',
+'AJX94UJJ3Y_MR.pdf',
+'Devoted_Monthly_Claims_20250302_v2.txt',
+'Devoted_Monthly_Members_20250302_v2.txt',
+'Devoted_Monthly_Providers_20250302_v2.txt',
+'Devoted_Monthly_RXClaims_20250302_v2.txt',
+'DevotedtoZIG_StatusResponse_20250303.txt',
+'DevotedtoZIG_SubmissionResponse_20250306.txt',
+'DevotedtoZigna_daily_extract_hba_20250428.txt',
+'IBCXHJERU6H7C.pdf',
 'AJX329767R_HBA.pdf',
 ]
 for key in keys:

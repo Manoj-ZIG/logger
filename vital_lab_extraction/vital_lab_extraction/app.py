@@ -63,6 +63,7 @@ def lambda_handler(event, context):
     sec_subsec_csv = urllib.parse.unquote_plus(event['Records'][0]['s3']['object']['key'], encoding='utf-8')
     client_name = sec_subsec_csv.split("/")[0]
     file_name = sec_subsec_csv.split('/')[-1].replace('_section_subsection', '')
+    document_name=file_name
     path_to_save_result = f"{client_name}/zai_medical_records_pipeline/medical-records-extract/excerpts" 
     path_to_save_logs = f"{client_name}/zai_medical_records_pipeline/medical-records-extract/logs/{file_name.replace('.csv','')}"
     textract_csv_path = f"{client_name}/zai_medical_records_pipeline/textract-response/json-csv/{file_name}"
@@ -176,24 +177,30 @@ def lambda_handler(event, context):
     ######### vital excerpt ##########
     print('vital excerpt...')
     logging.info('FUNCTION START: vital_excerpt.py')
+    print(f"vitals extraction by regex started:- {document_name}")
     vital_excp_object = VitalExcerpt(bucket_name,
                                      sec_subsec_csv, date_tags, suppress_date_tag, lab_constant.get('Vital').get('lab_regex_list'),
                                      min_max_date, textract_csv_path)
     vital_metadata = vital_excp_object.get_vitals()
     vital_excerpt_df = vital_excp_object.save_vital_result(
         vital_metadata, path_to_save_result)
+    print(f"vitals extraction by regex completed:- {document_name}")
     logging.info(
         f'FUNCTION END: vital excerpts detected, saved the result in {path_to_save_result}')
     
     page_list = []
     print('lab page detection...')
+    print(f"labpage detection started:- {document_name}")
+
     lab_extraction_data = get_lab_metadata(bucket_name,
                                            sec_subsec_csv, file_name, path_to_save_logs, lab_extraction_key, lab_constant, sections_constant)
+    
     for lab_test, mdata in lab_extraction_data.items():
         page_list += mdata.get('page_list')
-    
+    print(f"labpage detection completed:- {document_name}")
     ####### excerpt extraction #######
     print('excerpt extraction...')
+    print(f"excerpt extraction started:- {document_name}")
     logging.info('FUNCTION START: excerpt_extraction.py')
     excerpt_obj = ExcerptExtraction(
         sec_subsec_csv, textract_csv_path, bucket_name,
@@ -216,15 +223,18 @@ def lambda_handler(event, context):
         logging.info(
             f'FUNCTION END: excerpt extracted.. saved the result in {path_to_save_result}')
     print('excerpt present: ', excp_present)
+    print(f"excerpt extraction completed:- {document_name}")
 
     
 
     print('pdf merging...')
+    print(f"merging labs started:- {document_name}")
     logging.info('FUNCTION START: pdf_merger.py')
     PdfMerger.merged_pdf(s3_r, bucket_name, merged_pdf_save_path,
                          page_list, pdf_doc_path)
     logging.info(
         f'FUNCTION END: PDF merged! saved result in {merged_pdf_save_path}')
+    print(f"merging labs completed:- {document_name}")
     
     if detected_template_ and detected_template_ in mapped_template.keys():
         detected_template = mapped_template.get(detected_template_)
@@ -244,6 +254,7 @@ def lambda_handler(event, context):
     excerpt_result_df = excerpt_result_df.reset_index()
 
     ##### Highlighting PDF #####
+    print(f"highlighting started:- {document_name}")
     print('pdf highlight...')
     logging.info('FUNCTION START: pdf_highlight.py')
     if excp_present and excerpt_result_df.shape[0] > 0:
@@ -256,6 +267,8 @@ def lambda_handler(event, context):
                                             pdf_doc, pdf_doc_path.split(
                                                 "/")[-1],
                                             highlight_pdf_save_path, s3_r, bucket_name)
+        print(f"highlighting completed:- {document_name}")
+    
     # """
         # UI data
         if copy_source:

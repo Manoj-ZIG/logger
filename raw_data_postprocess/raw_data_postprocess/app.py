@@ -109,6 +109,7 @@ def lambda_handler(event, context):
     table_merged_json = urllib.parse.unquote_plus(
         event['Records'][0]['s3']['object']['key'], encoding='utf-8')
     file_name = table_merged_json.split('/')[-1].replace('_textract_table_merged.json', '')
+    document_name=file_name
     # adj_tag = file_name.split('_')[0]
     client_name = table_merged_json.split("/")[0]
     path_to_save_result = f"{client_name}/zai_medical_records_pipeline/medical-records-extract/tables"
@@ -251,6 +252,7 @@ def lambda_handler(event, context):
     
     page_list_ = []
     logging.info('FUNCTION START: textract_response_parsing.py')
+    print(f"json to csv conversion started:- {document_name}")
     reso = s3_c.get_object(Bucket=bucket_name,
                      Key= f'{path_to_save_logs}/table_page_list_log.txt')
     page_list_file = reso["Body"].read().decode('utf-8')
@@ -284,11 +286,12 @@ def lambda_handler(event, context):
                         Key=rf"{path_to_save_logs}/table_bb_log_info.txt")
         logging.info(
             f'FUNCTION END: saved extracted table csv files...')
+        print(f"json to csv conversion completed:- {document_name}")
         
         # merging module
         # 1. reading all the table csv from s3 bucket and order them by pageNo
         print('raw result>> (merging table+parsing)..')
-        
+        print(f"merging tables and parsing started:- {document_name}")
         paginator = s3_c.get_paginator('list_objects_v2')
         pages = paginator.paginate(Bucket=bucket_name, Prefix=f'{path_to_save_result}/lab-raw-data/{file_name}/table-csv/')
 
@@ -321,6 +324,7 @@ def lambda_handler(event, context):
                                                         lab_constant.get(lab).get('lab_master_list'),
                                                         table_meta_data,
                                                         zai_provider_emr_mapping_threshold_table_dict).get_merger_meta_data()
+                
                 logging.info(
                     f'FUNCTION START: extract values for lab tables, table_parser.py')
                 TableParserObj = TableParser(
@@ -349,6 +353,8 @@ def lambda_handler(event, context):
             print('no table csv file found!')
     else:
         print('no pages detected...')
+    print(f"merging tables and parsing completed:- {document_name}")
+    
     
     # load vital excerpt dataframe
     # result_file_resp = s3_c.list_objects(
@@ -428,6 +434,7 @@ def lambda_handler(event, context):
     
     # postprocessing
     print('postprocessing..')
+    print(f"post processing started:- {document_name}")
     logging.info(
         f'PROCESS START: postprocess start')
     textract_df = read_csv_from_s3(s3_c,bucket_name,section_subsection_path, usecols=['Text'])
@@ -460,7 +467,9 @@ def lambda_handler(event, context):
         detected_template = mapped_template.get(detected_template_)
     else:
         detected_template = 'generic'
-    
+    print(f"post processing completed:- {document_name}")
+
+    print(f"analytics started:- {document_name}")
     template_analytics_dict = template_constant.get(detected_template).get('template_analytics_dict')
     suppress_attribute_ls = template_constant.get(detected_template).get('suppress_attribute_list_for_flag')
     attribute_name_list = template_constant.get(detected_template).get('attribute_dict').keys()
@@ -564,6 +573,7 @@ def lambda_handler(event, context):
             
     else:
         print('not any detected template found')
+    print(f"analytics completed:- {document_name}")
 
     print('final json data storing...')
     logging.info(
@@ -627,6 +637,7 @@ def lambda_handler(event, context):
                        f"raw data table postprocess| {postprocess_table_data.shape}", False
                        )
     print(f'final json data stored for {file_name}')
+    print(f"Data files sent:- {document_name}")
 
         
     return {
