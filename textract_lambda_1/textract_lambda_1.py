@@ -15,7 +15,9 @@ def lambda_handler(event, context):
     entity = 'Other'
     if 'digitized-pdf' in key :
         try:
-            textract = boto3.client('textract')
+            textract = boto3.client('textract', region_name='us-east-1',
+                                       aws_access_key_id=aws_access_key_id,
+                                       aws_secret_access_key=aws_secret_access_key)
             
             print(f"text extraction starting:- {document_name}")
             response = textract.start_document_text_detection(
@@ -27,8 +29,10 @@ def lambda_handler(event, context):
                 },
                 JobTag='pdf_text',
                 NotificationChannel={
-                    
+                    'RoleArn':  'arn:aws:iam::833984991867:role/lambda-textract-s3-assume-role',
+                    'SNSTopicArn': 'arn:aws:sns:us-east-1:833984991867:AmazonTextract-lambda'
 
+                    #'SNSTopicArn': 'arn:aws:sns:us-east-1:833984991867:text_extracted_notification'
                 })
             print(f"SNS notfication sent:- {document_name}")
             
@@ -41,7 +45,9 @@ def lambda_handler(event, context):
             raise e
     elif 'textract_table_merged' in key:
         try:
-            textract = boto3.client('textract')
+            textract = boto3.client('textract', region_name='us-east-1',
+                                       aws_access_key_id=aws_access_key_id,
+                                       aws_secret_access_key=aws_secret_access_key)
             print(f"table extraction starting:- {document_name}")
 
 
@@ -55,7 +61,9 @@ def lambda_handler(event, context):
                 FeatureTypes=['TABLES'],
                 JobTag='pdf_table',
                 NotificationChannel={
-
+                    'RoleArn':  'arn:aws:iam::833984991867:role/lambda-textract-s3-assume-role',
+                    # 'RoleArn':  'arn:aws:iam::833984991867:role/Delete_Role',
+                    'SNSTopicArn': 'arn:aws:sns:us-east-1:833984991867:AmazonTextract-lambda'
                 }
             )
             
