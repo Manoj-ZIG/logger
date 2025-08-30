@@ -1,0 +1,26 @@
+0,1,2,3,4,5
+Airway/Ventilation Management ,,position adjusted; HOB elevated 30-45 degrees -MB at 07/09/20 1658 ,,,
+Row Name ,07/09/20 0945 ,07/09/20 0900 ,07/09/20 0800 ,07/09/20 0700 ,07/09/20 0600 
+Vitals ,,,,,
+Temp ,98.1 °F (36.7 °C) -MB at 07/09/20 0945 ,,98.1 °F (36.7 °C) -MB at 07/09/20 0817 ,- ,- 
+Temp src ,,,Core -MB at 07/09/20 0817 ,,- 
+Pulse ,90 ,90 ,89 ,90 ,92 
+,-MB at 07/09/20 0945 ,-MB at 07/09/20 1034 ,-MB at 07/09/20 0817 ,-MB at 07/09/20 0817 ,-ES at 07/09/20 0627 
+Heart Rate (Monitor) ,,90 ,88 ,90 ,90 
+,,-MB at 07/09/20 1034 ,-MB at 07/09/20 0817 ,-MB at 07/09/20 0817 ,-ES at 07/09/20 0627 
+Resp ,17 ,17 ,21 ,18 ,19 
+BP ,-MB at 07/09/20 0945 109/45 -MB at 07/09/20 0945 ,-MB at 07/09/20 1034 ,-MB at 07/09/20 0817 ,-MB at 07/09/20 0817 ,-ES at 07/09/20 0627 - 
+Oxygen Therapy ,,,,,
+SpO2 ,90% ,(!) 86% ,99 % ,100 % ,99 % 
+,-MB at 07/09/20 0945 ,-MB at 07/09/20 1034 ,-MB at 07/09/20 0817 ,-MB at 07/09/20 0817 ,-ES at 07/09/20 0627 
+O2 Device ,,Bi-PAP ,Bi-PAP ,Bi-PAP ,- 
+,,-MB at 07/09/20 1040 ,-MB at 07/09/20 0833 ,-MB at 07/09/20 0833 ,
+O2 Flow Rate (l/min) Respiratory ,,15 l/min -MB at 07/09/20 1040 ,15 l/min -MB at 07/09/20 0833 ,15 l/min -MB at 07/09/20 0833 ,
+Respiratory WDL ,,,ex -MB at 07/09/20 1608 ,,
+"Rhythm/Pattern, Respiratory ",,,shortness of breath;shallow -MB at 07/09/20 1608 ,,
+Expansion/Accessory Muscles/Retractions ,- ,- ,abdominal muscle use -MB at 07/09/20 1608 ,- ,- 
+Breath Sounds ,,,,,
+Breath Sounds ,,- ,All Fields -MB at 07/09/20 1608 ,,
+All Lung Fields Breath Sounds ,- ,,Anterior::Lateral::diminish ed -MB at 07/09/20 1608 ,,- 
+RUL Breath Sounds ,,,diminished very diminished -MB at 07/09/20 1608 ,,
+RLL Breath Sounds ,- ,,diminished very diminished -MB at 07/09/20 1608 ,,- 

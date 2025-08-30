@@ -1,0 +1,14 @@
+amazon-textract-response-parser==1.0.3
+boto3==1.37.11
+botocore==1.37.11
+jmespath==1.0.1
+marshmallow==3.26.1
+packaging==24.2
+PyMuPDF==1.23.4
+PyMuPDFb==1.23.3
+python-dateutil==2.9.0.post0
+pytz==2025.1
+s3transfer==0.11.4
+six==1.17.0
+tzdata==2025.1
+urllib3==2.3.0

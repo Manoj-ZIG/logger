@@ -1,0 +1,11 @@
+boto3
+requests
+numpy==1.26.3
+pandas==2.2.0
+Pint==0.23
+python-dateutil==2.8.2
+pytz==2023.4
+rapidfuzz==3.6.1
+six==1.16.0
+typing_extensions==4.9.0
+tzdata==2023.4

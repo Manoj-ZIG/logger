@@ -1,0 +1,38 @@
+DocumentName,Page,TestName,TestResult
+241918270.336936162.H62204602.csv,79,pH ,7.44
+241918270.336936162.H62204602.csv,79,Bicarbonate ,30.90 (H) 
+241918270.336936162.H62204602.csv,79,Base Excess ,5.80 (H) 
+241918270.336936162.H62204602.csv,79,O2 Sat Calc ,94.5
+241918270.336936162.H62204602.csv,79,Fi02 ,50.00 (H) 
+241918270.336936162.H62204602.csv,79,Sodium Lvl ,151 (H) 
+241918270.336936162.H62204602.csv,79,Potassium Lvl ,3.9
+241918270.336936162.H62204602.csv,79,Chloride Lvl ,106
+241918270.336936162.H62204602.csv,79,CO2 ,33 (H) 
+241918270.336936162.H62204602.csv,79,AGAP ,12
+241918270.336936162.H62204602.csv,79,Glucose Level ,155 (H) 
+241918270.336936162.H62204602.csv,79,Calcium Lvl ,10
+241918270.336936162.H62204602.csv,79,BUN ,70 (H) 
+241918270.336936162.H62204602.csv,79,Creatinine Lvl ,0.93
+241918270.336936162.H62204602.csv,92,H ,CBC 
+241918270.336936162.H62204602.csv,92,0.3,WBC: 
+custom.case,10,T BILIRUBIN,0.7 TB1 TB2 TB3 TB4 (WS)
+custom.case,10,bun lvl,34 (H)
+custom.case,10,creatinine lvl,1.05Comment: The GFR result is not clinically significant on patients <18 or >70 years of age.
+custom.case,10,HeartRate,108
+custom.case,10,SPO2:,1
+custom.case,10,Pulse:,114
+custom.case,10,BP:,(!) 86/58
+custom.case,10,O2 Flow Rate (L/min),2  L/min
+custom.case,10,O2 Flow Rate L/min),8L/min
+custom.case,10,"Bilirubin, Total ",0.4Comment: Use of this assay is not recommended for patients undergoing treatment with eltrombopag due to potential for falsely elevated results. 
+custom.case,10,Temperature,97.8
+custom.case,10,Temperature,36.94
+custom.case,10,BloodPressure,99/56
+custom.case,10,BloodPressure,132/67
+custom.case,10,SystolicBloodPressure,151
+custom.case,10,Systolic BloodPressure,90
+custom.case,10,DiastolicPressure,65
+custom.case,10,Diastolic Pressure,45
+custom.case,10,NA ,-- 
+custom.case,10,CREATININE ,1.33* 
+custom.case,10,CALCIUM ,7.9* 

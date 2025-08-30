@@ -1,0 +1,11 @@
+0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18
+Rec Type ,Time ,BP ,Pulse ,RR ,BFR ,DFR ,AP ,VP ,TMP ,UFR ,RMVD ,HCT BV ,Bolus ,NSS Flush ,Chills ,Safety Check ,Clinician ,Comments 
+E ,01/01/2021 14:45 ,122/59 ,64 ,16 ,400 ,600 ,-130 ,170 ,50 ,630 ,25 ,,,300 ,,Yes ,Christy J Richmond ,Tx started without difficulty. PI tolerating well. 
+E ,15:00 ,124/61 ,64 ,16 ,400 ,600 ,-140 ,190 ,40 ,630 ,274 ,,,,,Yes ,Christy J Richmond ,
+E ,15:30 ,122/68 ,63 ,16 ,400 ,600 ,-130 ,170 ,50 ,630 ,481 ,26.4 -3.0 ,,,,Yes ,Christy J Richmond ,
+E ,16:00 ,118/62 ,69 ,16 ,400 ,600 ,-130 ,170 ,50 ,630 ,651 ,27.0 -5.0 ,,,,Yes ,Christy J Richmond ,
+E ,16:30 ,119/62 ,67 ,16 ,400 ,600 ,-130 ,170 ,50 ,630 ,921 ,27.4 -6.8 ,,,,Yes ,Christy J Richmond ,
+E ,17:00 ,110/60 ,64 ,16 ,400 ,600 ,-130 ,170 ,50 ,630 ,1451 ,27.4 -7.0 ,,,,Yes ,Christy J Richmond ,
+E ,17:30 ,127/60 ,65 ,16 ,400 ,600 ,-130 ,170 ,50 ,630 ,1684 ,27.7 -7.5 ,,,,Yes ,Christy J Richmond ,
+,,,,,,,,,,,,,,,,,,TX completed all blood returned to pt. 
+E ,17:45 ,111/60 ,66 ,16 ,400 ,600 ,-130 ,170 ,30 ,300 ,1900 ,,,,,Yes ,Christy J Richmond ,Needles pulled x2 manual pressure held x10 min hemostasis achieved. 

@@ -1,0 +1,12 @@
+adm_dis_tag = ['discharge date',
+               'dischg date',
+               'admit date',
+               'admit dt',
+               'adm date',
+               'dis date',
+               'dis dt',
+               'adm:',
+               'discharge/service',
+               'admission date',
+               'admitted',
+               'Date of admission:']

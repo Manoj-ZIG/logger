@@ -1,0 +1,6 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - sam build
+      - sam deploy --resolve-s3 --no-confirm-changeset --no-fail-on-empty-changeset --on-failure DELETE --stack-name policiespayment-qa --parameter-overrides buildEnv=dev

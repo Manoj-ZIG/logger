@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+       python : 3.11
+    commands:
+       - cp template_prod.yaml template.yaml
+  build:
+    commands:
+      - sam build
+      - sam deploy --resolve-s3 --no-confirm-changeset --no-fail-on-empty-changeset --on-failure DELETE --stack-name policiespayment-prod --parameter-overrides buildEnv=prod

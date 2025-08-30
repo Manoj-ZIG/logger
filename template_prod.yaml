@@ -1,0 +1,204 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  PoliciesPayment
+ 
+  Sample SAM Template for PoliciesPayment
+ 
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 900
+    MemorySize: 10240
+Parameters:
+  buildEnv:
+    Type: String
+    Description: Build environment parameter
+ 
+Resources:
+  PaymentPoliciesAbstractionDevelopmentFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: PaymentPoliciesAbstractionDevelopment/PaymentPoliciesAbstract/PaymentPoliciesAbstraction/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          BUCKET_NAME : 'zai-revmaxai-prod'
+          API : 'https://api.revmaxai.com/policy/'
+          SECRET_PATH : "zai/system/prod/policy"
+          CLIENT_NAME : "devoted"
+      FunctionName : PaymentPoliciesAbstractionDevelopment-prod
+      Role: arn:aws:iam::833984991867:role/revmax_data_prod
+ 
+   
+  paymentPoliciesDownloadFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: paymentPoliciesDownload/paymentPolicesDownloader/paymentPoliciesDownload/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          BUCKET_NAME : 'zai-revmaxai-prod'
+          API : 'https://api.revmaxai.com/policy/'
+          SECRET_PATH : "zai/system/prod/policy"
+      FunctionName : paymentPoliciesDownload-prod
+      Role: arn:aws:iam::833984991867:role/revmax_data_prod
+ 
+  paymentPoliciesExtractionDevelopmentFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: paymentPoliciesExtractionDevelopment/paymentPoliciesExtractDevelop/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          BUCKET_NAME : 'zai-revmaxai-prod'
+          API : 'https://api.revmaxai.com/policy/'
+          SECRET_PATH : "zai/system/prod/policy"
+      FunctionName : paymentPoliciesExtractionDevelopment-prod
+      Role: arn:aws:iam::833984991867:role/revmax_data_prod
+ 
+  policyMovesRenameFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: policyrenamemoves/policymoves/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          BUCKET_NAME : 'zai-revmaxai-prod'
+          API : 'https://api.revmaxai.com/policy/'
+          SECRET_PATH : "zai/system/prod/policy"
+          CLIENT_NAME : "devoted"
+      FunctionName : policyMovesRename-prod
+      Role: arn:aws:iam::833984991867:role/revmax_data_prod
+      
+  sectionSubsectionFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: section_subsection/section_subsection/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          PROCESSING_ENVIRONMENT : 'prod'
+          BUCKET_NAME : 'zai-revmaxai-prod'
+          SAVE_PATH : 'audits/medical_records'
+          API_URL : 'https://api.revmaxai.com/policy/insert_task_into_queue'
+          PARAMETERS_BUCKET_NAME : "zai-revmaxai-prod"
+          GROUND_TRUTH_CONST_PATH : "audits/zai_claim_info_params/"
+          CLAIM_TEMPLATE_MAP_CONSTANT_PATH : "audits/zai_audit_process_params/"
+          ZAI_SEC_SUBSEC_PHY_CRED_INCL_EXCL_PARAMS_PATH : "zigna/parameters/zai_sec_subsec_phy_cred_incl_excl_params/zai_sec_subsec_phy_cred_incl_excl_params.json"
+          ZAI_DISTINCT_SECTION_PARAMS_PATH : "zigna/parameters/zai_distinct_section_params/zai_distinct_section_params.csv"
+          ZAI_PROVIDER_EMR_INFO_PARAMS_PATH : "zigna/parameters/zai_provider_emr_info_params/zai_provider_emr_info_params.csv"
+          ZAI_PROVIDER_EMR_MAPPING_THRESHOLD_TABLE_PATH : "zigna/parameters/zai_provider_emr_threshold_params/zai_provider_emr_threshold_params.csv"
+          ZAI_STOP_WORD_PARAMS_PATH : "zigna/parameters/zai_stop_word_params/zai_stop_word_params.csv"
+          ZAI_DISTINCT_SUB_SECTION_PARAMS : "zigna/parameters/zai_distinct_sub_section_params/zai_distinct_sub_section_params.csv"
+          ZAI_MAIN_SECTION_MAP_PARAMS : "zigna/parameters/zai_main_section_map_params/zai_main_section_map_params.csv"
+          ZAI_DATE_TAG_PARAMS_PATH : "zigna/parameters/zai_date_tag_params/zai_date_tag_params.json"
+          SECRET_PATH : "zai/system/prod/audit"
+      FunctionName : sectionSubsection-prod
+      Role: arn:aws:iam::833984991867:role/revmax_data_prod
+ 
+  vitalLabExtractionFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: vital_lab_extraction/vital_lab_extraction/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          PROCESSING_ENVIRONMENT : 'prod'
+          BUCKET_NAME : 'zai-revmaxai-prod'
+          SAVE_PATH : 'audits/medical_records'
+          API_URL : 'https://api.revmaxai.com/policy/insert_task_into_queue'
+          PARAMETERS_BUCKET_NAME : "zai-revmaxai-prod"
+          GROUND_TRUTH_CONST_PATH : "audits/zai_claim_info_params/"
+          CLAIM_TEMPLATE_MAP_CONSTANT_PATH : "audits/zai_audit_process_params/"
+          EXCERPTS_REGEX_LAB_LIST_DISEASE_DETECTION_PARAMS_PATH : "zigna/parameters/zai_excerpts_regex_lab_list_disease_detection_params/excerpts_regex_lab_list_disease_detection_params.json"
+          ZAI_LAB_HEADER_RANGE_PATH : "zigna/parameters/zai_laboratory_params/zai_lab_header_range.json"
+          ZAI_DISTINCT_SECTION_PARAMS_PATH : "zigna/parameters/zai_distinct_section_params/zai_distinct_section_params.csv"
+          SECRET_PATH : "zai/system/prod/audit"
+      FunctionName : vitalLabExtraction-prod
+      Role: arn:aws:iam::833984991867:role/revmax_data_prod
+ 
+  rawDataPostprocessFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: raw_data_postprocess/raw_data_postprocess/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          PROCESSING_ENVIRONMENT : 'prod'
+          BUCKET_NAME : 'zai-revmaxai-prod'
+          SAVE_PATH : 'audits/medical_records'
+          API_URL : 'https://api.revmaxai.com/policy/insert_task_into_queue'
+          PARAMETERS_BUCKET_NAME : "zai-revmaxai-prod"
+          GROUND_TRUTH_CONST_PATH : "audits/zai_claim_info_params/"
+          CLAIM_TEMPLATE_MAP_CONSTANT_PATH : "audits/zai_audit_process_params/"
+          EXCERPTS_REGEX_LAB_LIST_DISEASE_DETECTION_PARAMS_PATH : "zigna/parameters/zai_excerpts_regex_lab_list_disease_detection_params/excerpts_regex_lab_list_disease_detection_params.json"
+          ZAI_LAB_HEADER_RANGE_PATH : "zigna/parameters/zai_laboratory_params/zai_lab_header_range.json"
+          ZAI_PROVIDER_EMR_INFO_PARAMS_PATH : "zigna/parameters/zai_provider_emr_info_params/zai_provider_emr_info_params.csv"
+          ZAI_PROVIDER_EMR_MAPPING_THRESHOLD_TABLE_PATH : "zigna/parameters/zai_provider_emr_threshold_params/zai_provider_emr_threshold_params.csv"
+          ZAI_LAB_INCL_EXCL_THRESHOLD_PARAMS_PATH : "zigna/parameters/zai_lab_incl_excL_threshold_params/zai_lab_incl_excl_threshold_params.json"
+          SECRET_PATH : "zai/system/prod/audit"
+      FunctionName : rawDataPostprocess-prod
+      Role: arn:aws:iam::833984991867:role/revmax_data_prod
+  
+  documentTransferFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: document_transfer_module/document_transfer/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          SECRET_PATH : "zai/system/prod/audit"
+          PARAMETERS_BUCKET_NAME : "zai-revmaxai-prod"
+          ZAI_DATE_TAG_PARAMS_PATH : "zigna/parameters/zai_date_tag_params/zai_date_tag_params.json"
+          DOCUMENT_TRANSFER_PARAMS_PATH : "zigna/parameters/zai_document_transfer_params/zai_document_transfer_params.json"
+      FunctionName : documentTransferModule-prod
+      Role: arn:aws:iam::833984991867:role/documentTransferModule-prod
+  
+  ProcessTimeoutMRsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ProcessTimeoutMRs/ProcessTimeoutMRs/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          SECRET_PATH : "zai/system/prod/audit"
+          PROCESSING_ENVIRONMENT : 'prod'
+          BUCKET_NAME : 'zai-revmax-develop'
+          INSTANCE_ID : "i-05921b3cb915b6bc9"
+          PUBLISH_LOGS_TO : '/aws/lambda/ProcessTimeoutMRs-prod'
+      FunctionName : ProcessTimeoutMRs-prod
+      Role: arn:aws:iam::833984991867:role/ProcessTimeoutMRs-prod
+
+  PreprocessPDFFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: PreprocessPDF/PreprocessPDF/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          SECRET_PATH : "zai/system/prod/audit"
+          PROCESSING_ENVIRONMENT : 'prod'
+          BUCKET_NAME : 'zai-revmaxai-prod'
+      FunctionName : PreprocessPDF-prod
+      Role: arn:aws:iam::833984991867:role/PreprocessPDF-prod

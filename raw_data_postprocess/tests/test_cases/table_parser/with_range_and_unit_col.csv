@@ -1,0 +1,13 @@
+0,1,2,3,4,5
+,,Vital,Temp,,
+Procedure ,Result ,Units ,Reference Range ,Collected Date/Time ,Result Date/Time 
+Temp,98,DegC,[97-105] ,5/25/2021 02:30 EDT ,5/25/2021 03:58 EDT 
+BP,127/67,bpm,,5/25/2021 02:30 EDT ,5/25/2021 03:58 EDT 
+Resp,18.8,,,5/25/2021 02:30 EDT ,5/25/2021 03:58 EDT 
+Aniso ,1+083 ,,,5/25/2021 02:30 EDT ,5/25/2021 03:58 EDT 
+Hypo ,Present 083 ,,,5/25/2021 02:30 EDT ,5/25/2021 03:58 EDT 
+Oval ,Present O83 ,,,5/25/2021 02:30 EDT ,5/25/2021 03:58 EDT 
+Poik ,1+ O83 ,,,5/25/2021 02:30 EDT ,5/25/2021 03:58 EDT 
+Poly ,Present 083 ,,,5/25/2021 02:30 EDT ,5/25/2021 03:58 EDT 
+Dohle Bodies ,Present 083 ,,,5/25/2021 02:30 EDT ,5/25/2021 03:58 EDT 
+SPO2,98,,[95-98],5/25/2021 02:30 EDT ,5/25/2021 03:58 EDT 

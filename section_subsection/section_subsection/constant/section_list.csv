@@ -1,0 +1,273 @@
+,section_name,is_relevant,is_include
+0,Emergency department reports,Yes,Yes
+1,Emergency Department Chart,Yes,Yes
+2,Emergency Documentation,Yes,Yes
+3,Emergency Documentations,Yes,Yes
+4,Emergency Medicine,Yes,Yes
+5,EMERGENCY PROVIDER REPORT,Yes,Yes
+6,Emergency Report,Yes,Yes
+7,Emergency/Trauma Documentation,No,No
+8,ED Provider Note,Yes,Yes
+9,ED Records,Yes,Yes
+10,ED Notes,Yes,Yes
+11,ED Provider Notes - ED Notes,Yes,Yes
+12,ED PATIENT DISCHARGE INFORMATION,Yes,Yes
+13,ED to Hosp-Admission,Yes,Yes
+14,ED Record,Yes,Yes
+15,ED Provider Note (,Yes,Yes
+16,Emergency/Urgent Care,Yes,Yes
+17,ED Note-Physician,Yes,Yes
+18,ED Provider Notes,Yes,Yes
+19,Emergency/Urgent Care,No,No
+20,History and Physical Reports,Yes,Yes
+21,H&P Notes,No,No
+22,H&P,Yes,Yes
+23,H&P (continued),Yes,Yes
+24,History & Physicals,Yes,Yes
+25,History & Physicals (continued),Yes,Yes
+26,H&P Notes (continued),Yes,Yes
+27,HISTORY & PHYSICAL,Yes,Yes
+28,History and Physical,Yes,Yes
+29,History and Physical/Admission Notes,Yes,Yes
+30,History & Physical:,Yes,Yes
+31,History and physicals,Yes,Yes
+32,Blue Surgery History and Physical,Yes,Yes
+33,H&P - Encounter Notes,Yes,Yes
+34,History and Physical Notes,Yes,Yes
+35,HISTORY AND PHYSICA,Yes,Yes
+36,FMC H&P,Yes,Yes
+37,Provider - Admitting Notes_History and Physical,Yes,Yes
+38,H&P - Inpatient Notes (,Yes,Yes
+39,TRAUMA HISTORY AND PHYSICAL,Yes,Yes
+40,: HISTORY AND PHYSICAL,Yes,Yes
+41,Hospitalist History& Physical,Yes,Yes
+42,History & Physical - Adul,Yes,Yes
+43,NEUROSURGERY HISTORY AND PHYSICAL,Yes,Yes
+44,Hospitalist History &physical,Yes,Yes
+45,Hospitalist History &physical,No,No
+46,Progress Notes,Yes,Yes
+47,Progress Note,Yes,Yes
+48,Physician Progress Notes,Yes,Yes
+49,PROGRESS NOTES (Continued),Yes,Yes
+50,PLASTIC SURGERY PROGRESS NOTE,Yes,Yes
+51,Progress Note-Medical Provider,Yes,Yes
+52,Progress/Discharge Note PT,Yes,Yes
+53,Cranlofaclal Plastic Surgery Progress Note,Yes,Yes
+54,HIT - IM Progress Note,Yes,Yes
+55,Progress/Discharge Note OT,Yes,Yes
+56,Provider - Progress Notes,Yes,Yes
+57,CRITICALCARE PROGRESS NOTE,Yes,Yes
+58,Neuro ICU Progress Note,Yes,Yes
+59,Neuro ICU Progress Not,Yes,Yes
+60,Neuro ICU Progress Notes,Yes,Yes
+61,Neuro Medical Progress Note,Yes,Yes
+62,Cardiology progress Note,Yes,Yes
+63,Hospitalist progress note,Yes,Yes
+64,Progress Notes:,No,No
+65,Critical Care/ICU Progress Note,Yes,Yes
+66,Critical Care Progress Note,Yes,Yes
+67,Orthopaedic Progress Note,Yes,Yes
+68,Multidisciplinary Progress Notes,Yes,Yes
+69,Intensivist Progress Note,Yes,Yes
+70,Cardiology Critical Care Progress Note,Yes,Yes
+71,Pulmonary Progress Note,Yes,Yes
+72,DAILY MEDICINE PROGRESS NOTE,Yes,Yes
+73,STERN CARDIOVASCULAR ICU PROGRESS NOTE,Yes,Yes
+74,POST-OPERATIVE PROGRESS NOTES,Yes,Yes
+75,Case Management Progress Note,Yes,Yes
+76,Neurosurgery ICU Progress Note,Yes,Yes
+77,CARDIOLOGY CONSULT PROGRESS NOTE,No,No
+78,Spiritual Care Assessment/Progress Note,Yes,Yes
+79,Medical Progress Note,Yes,Yes
+80,Progress Note - Medical .- Internal Medicine,Yes,Yes
+81,Progress Note - Surgical-Neurosurgery,Yes,Yes
+82,Progress Notes - Nursing,Yes,Yes
+83,NEUROSURGICAL PROGRESS NOTE,Yes,Yes
+84,Wound Care Progress Note,Yes,Yes
+85,General Medicine Medicine Progress Note,Yes,Yes
+86,Cardiothoracic & Transplant Surgery Progress Note,Yes,Yes
+87,USF Internal Medicine Progress Note,Yes,Yes
+88,CASE MANAGEMENT PROGRESS NOTE,No,No
+89,General Progress/ Information Relay Note,Yes,Yes
+90,CV DIABETES CONSULT DAILY PROGRESS NOTE,Yes,Yes
+91,Otolaryngology Daily Progress Not,Yes,Yes
+92,Social Work Progress Notes,Yes,Yes
+93,Progress Note - Generic,Yes,Yes
+94,POST-PROCEDURAL PROGRESS NOTES,Yes,Yes
+95,RENAL PROGRESS NOTE,Yes,Yes
+96,CRITICAL CARE DAILY NOTE,Yes,Yes
+97,Critical Care,Yes,Yes
+98,PULMONARY CRITICAL CARE,No,No
+99,NEUROCRITICAL CARE,No,No
+100,Critical Care Note,No,No
+101,Clinical Notes,Yes,Yes
+102,Table of Contents,Yes,Yes
+103,Clinical Summary,Yes,Yes
+104,Interim Summary Note / Event Note,Yes,Yes
+105,CARDIOVASCULAR AND THORACIC SURGERY,Yes,Yes
+106,Encounter Details,Yes,Yes
+107,Progress Quick Note,Yes,Yes
+108,Progress Quick Note,No,No
+109,Consultation Notes,Yes,Yes
+110,Consultation,Yes,Yes
+111,Consultations,Yes,Yes
+112,CONSULTATION REPORT,Yes,Yes
+113,CARDIOLOGY CONSULTATION,Yes,Yes
+114,FMCH FOLLOW UP CONSULTATION NOTE,Yes,Yes
+115,Initial Consultation/History and Physical,Yes,Yes
+116,INITIAL CONSULTATION NOTE,Yes,Yes
+117,Acute Rehab Consult,Yes,Yes
+118,Consult,Yes,Yes
+119,Consult Notes,Yes,Yes
+120,Consult Note*-NS - Neurosciences,Yes,Yes
+121,consults,Yes,Yes
+122,Critical Care Consult Note,Yes,Yes
+123,CARDIOTHORACIC-VASCULAR SURGERY CONSULT NOTE,Yes,Yes
+124,INPATIENT CARDIOLOGY CONSULT,Yes,Yes
+125,Consult Note,Yes,Yes
+126,Inpatient Cardiac Rehab Consult,Yes,Yes
+127,Provider - Consult Notes,Yes,Yes
+128,Cardiology Initial Consult Note,Yes,Yes
+129,REHAB CONSULT NOTE,Yes,Yes
+130,Palliative Medicine Consult,Yes,Yes
+131,Consult Note - Medical-Internal Medicine,Yes,Yes
+132,Interventional Cardiology Consult,Yes,Yes
+133,Pulmonology Consult,Yes,Yes
+134,CARDIOVASCULAR DIABETES CONSULT H&P,Yes,Yes
+135,Consulting physician,Yes,Yes
+136,pulmonary and critical care consult note,Yes,Yes
+137,Cardio-Thoracic Surgery,Yes,Yes
+138,DEPARTMENT OF MEDICINE,No,No
+139,EP Consultation Note,Yes,Yes
+140,EP Consultation Note,No,No
+141,Discharge Documentation,No,No
+142,Discharge Summary,Yes,Yes
+143,Discharge Summaries,Yes,Yes
+144,Discharge Summary (continued),Yes,Yes
+145,DISCHARGE NOTE,Yes,Yes
+146,Discharge Summaries (continued),Yes,Yes
+147,Discharge Summary:,Yes,Yes
+148,Discharge Summary Note,Yes,Yes
+149,Discharge Summary Note (continued),Yes,Yes
+150,Discharge Information (continued),Yes,Yes
+151,Patient Discharge Instructions,Yes,Yes
+152,Discharge Planner Note,Yes,Yes
+153,Summary Discharge Report*,Yes,Yes
+154,Discharge Medication List,Yes,Yes
+155,Provider - Discharge Notes,Yes,Yes
+156,Inpatient Discharge Instructions,No,No
+157,HOSPITAL DISCHARGE SUMMARY,Yes,Yes
+158,ADMISSION/DISCHARGE INFORMATION,Yes,Yes
+159,DISCHARGE INFORMATION,Yes,Yes
+160,Discharge Recommendations,Yes,Yes
+161,Physician Discharge Summary,Yes,Yes
+162,Discharge Instructions,Yes,Yes
+163,FMC Discharge Summary,Yes,Yes
+164,"Admit, Discharge, Transfer Forms",Yes,Yes
+165,Discharge summary (inpatient) advanced practice provider-Dis,Yes,Yes
+166,Hospitalist Discharge Summary,Yes,Yes
+167,*Discharge Quick Note,Yes,Yes
+168,MEDICATION DISCHARGE SUMMARY,No,No
+169,Death summary,No,No
+170,Admit/Transfer/Discharge Orders,Yes,Yes
+171,Admit/Transfer/Discharge Orders,No,No
+172,OPERATIVE REPORT,Yes,Yes
+173,Operative Notes,Yes,Yes
+174,POST-OPERATIVE NOTES,Yes,Yes
+175,Operative Note,Yes,Yes
+176,Intra operative Neurophysiological MonitoringReport,Yes,Yes
+177,Perioperative Nursing Note - Encounter Notes,Yes,Yes
+178,Operative/procedure note,Yes,Yes
+179,Preoperative Orders — Cardio- Vascular/ Thoracic Procedures,Yes,Yes
+180,Perioperative Record,Yes,Yes
+181,Operative Notes nd Reports,Yes,Yes
+182,Operative Report Note,Yes,Yes
+183,PREOPERATIVE EVAluation -Anesthesia,Yes,Yes
+184,Surgery - Operative Records,Yes,Yes
+185,Surgery - Peri-Operative Records,Yes,Yes
+186,Neuroendovascular Brief Operative Note,Yes,Yes
+187,FMC Operative Report,Yes,Yes
+188,Operative/Procedure Reports,Yes,Yes
+189,Intraoperative Notes,Yes,Yes
+190,Orthopedics Operative Note,Yes,Yes
+191,Perioperative Documentation,Yes,Yes
+192,EP Lab Intraoperative Record,Yes,Yes
+193,Operative Report Proc. Note,Yes,Yes
+194,POST OP NOTE,Yes,Yes
+195,Op Note - Encounter Notes,Yes,Yes
+196,Op/proc Report and OR notes,Yes,Yes
+197,PRE-OP ASSESSMENTS,Yes,Yes
+198,PERMANENT MEDICAL RECORD COPY,Yes,Yes
+199,Transesophageal Echocardiogram,Yes,Yes
+200,Op/Proc Report and OR Notes Only,Yes,Yes
+201,OPERATING ROOM/SURGICAL REPORT,Yes,Yes
+202,PRE-OP/OSU ASSESSMENTS,Yes,Yes
+203,Op Note,Yes,Yes
+204,RE-OP/OSU ASSESSMENTS,Yes,Yes
+205,Patient Fluoroscopy Radiation Dose Information,Yes,Yes
+206,Report of operation,Yes,Yes
+207,Procedure Notes,Yes,Yes
+208,PROCEDURE - Encounter Notes,Yes,Yes
+209,ICD Implant Report,Yes,Yes
+210,Main EP Report,Yes,Yes
+211,CLINICAL NOTE,Yes,Yes
+212,Cardiology Procedures,Yes,Yes
+213,Other Procedures,Yes,Yes
+214,Cardiac cath,Yes,Yes
+215,General Procedures,Yes,Yes
+216,Interventional Neuroradiology,Yes,Yes
+217,Operative Procedure,Yes,Yes
+218,Operative Procedure,Yes,Yes
+219,Neurosurgery Bedside Procedure Note,Yes,Yes
+220,Preprocedure Note,Yes,Yes
+221,Clinical Documents,Yes,Yes
+222,Cardiac Catheterization Report,Yes,Yes
+223,FGTBA Left ARTERIAL CATHETERIZATION,Yes,Yes
+224,Invasive Cardiology Procedures,Yes,Yes
+225,Procedures - Surgical/Procedural Notes,Yes,Yes
+226,procedure note,Yes,Yes
+227,Procedure report,Yes,Yes
+228,CT surgery preop evaluation note,Yes,Yes
+229,Cardiology procedure,Yes,Yes
+230,Central Venous Catheter Insertion,Yes,Yes
+231,Operative Procedure,Yes,Yes
+232,Anesthesia record Report,Yes,Yes
+233,Anesthesia Encountes,Yes,Yes
+234,Anesthesia,No,No
+235,Anesthesia Encounter,Yes,Yes
+236,Anesthesia Record,Yes,Yes
+237,ANESTHESIA GRAPH,Yes,Yes
+238,Anesthesia Records,Yes,Yes
+239,Anesthesia,Yes,Yes
+240,FMC Anesthesia Record,Yes,Yes
+241,"Consentfor,Anesthesia / Moderate Sedation",Yes,Yes
+242,Surgery - Anesthesia_Sedation Records,Yes,Yes
+243,ANESTHESIA PRE-PROCEDURE CONSULT / H & P,Yes,Yes
+244,Anesthesia Pre-Evaluation,Yes,Yes
+245,ANESTHESIA ORDERS,Yes,Yes
+246,ANESTHESIA ORDERS,No,No
+247,Procedure Note - Anesthesia,Yes,Yes
+248,Pre and Post Anesthesia Evaluation,Yes,Yes
+249,Food and Nutrition Initial Assessment,Yes,Yes
+250,Food and Nutrition Reassessment,Yes,Yes
+251,General Laboratory,Yes,Yes
+252,Chemistry,Yes,Yes
+253,Hematology,Yes,Yes
+254,Lab - All Results,Yes,Yes
+255,Lab - All Results (continued),Yes,Yes
+256,Lab Results,Yes,Yes
+257,Laboratory,Yes,Yes
+258,Cumulative Summary Report,Yes,Yes
+259,Labs:,Yes,toc
+260,Results ,Yes,toc
+261,Pulmonary Progress Note,Yes,Yes
+262,Moderate Sedation Pre-Procedure Evaluation,Yes,Yes
+263,Summary of Medical History,Yes,Yes
+264,Cardiology Consult Report,Yes,Yes
+265,Physician Progress Note,Yes,Yes
+266,Laboratory Data:,Yes,Yes
+267,Progress Notes - All Other Notes,Yes,Yes
+268,Results and Medications,Yes,Yes
+269,ICU RESIDENT PROGRESS AND TRANSFER NOTE,Yes,Yes
+270,Consults - All Other Notes (continued),Yes,Yes
+271,History & Physicals,Yes,Yes

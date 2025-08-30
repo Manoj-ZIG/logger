@@ -1,0 +1,50 @@
+0,1,2
+PHASE,I VITAL SIGNS,
+,10/07/20 1145,10/07/20 1200
+,3CIJ6621,3CIJ6621
+Blood pressure:,92/46,102/60
+Blood pressure source:,Non-invasive monitor,Non-invasive monitor
+Pulse:,62,94
+Respiratory rate:,20,12
+SPO2 %:,100,100
+Oxygen delivery devices:,Simple mask,Simple mask
+02 Liters por minute:,6,6
+Temperature F :,98.2,
+Temperature source:,Temporal,
+Monitored heart rhythm,Normal sinus rhythm,Normal sinus rhythm
+Capillary refill less than or equal t,Yes,Yes
+Document pain assessment/reassessment:,Non-pharmacological,Non-pharmacological
+RASS/LOC score:,-2 Light sedation,-2 Light sedation
+Post-anesthesia recovery score assess,Yes,Yes
+Post-procedure activity:,Moves only 2 extremities,Moves only 2 extremities
+Post-procedure respirations:,"Dyspneic, shallow breaths","Dyspneic, shallow breaths"
+Post-procedure circulation:,BP +/- 20-49% Pre-anesthe,BP +/- 20% Pre-anesthesia
+Post-procedure consciousness:,Not responding,Not responding
+Post.-procedure 02 saturation:,Needs 02 to maintain 92%,Needs 02 to maintain 92%
+Post anesthesia recovery score:,4,5
+Document objectives for pain management,Yes,Yes
+Deep breath at/below pain mgmt goal:,Yes,Yes
+Goal for pain management:,Moderate pain-4,Moderate pain-4
+Relieving factors for pain:,Repositioning,Repositioning
+,10/07/20 1215,10/07/20 1230
+,3CIJ6621,3CIJ6621
+Blood pressure:,103/56,110/62
+Blood pressure source:,Non-invasive monitor,Non-invasive monitor
+Pulse:,92,89
+Respiratory rate:,13,14
+SPO2 %:,100,100
+Oxygen delivery devices:,Nasal cannula,Nasal cannula
+02 Liters per minute:,2,2
+Monitored heart rhythm:,Normal sinus rhythm,Normal sinus rhythm
+Capillary refill less than or equal t,Yes,Yes
+Document pain assessment/reassessment:,Non-pharmacological,Non-pharmacological
+RASS/LOC score:,-1 Drowsy,-1 Drowsy
+Post-anesthesia recovery score assess,Yes,Yes
+Post-procedure activity:,Moves all 4 extremities,Moves all 4 extremities
+Post-procedure respirations:,Breathes deeply/coughs,Breathes deeply/coughs
+Post-procedure circulation:,BP +/- 20% Pre-anesthesia,BP +/- 20% Pre-anesthesia
+Post-procedure consciousness:,Arousable to voice/verbal,Arousable to voice/verbal
+Post-procedure 02 saturation:,Needs 02 to maintain 92%,Needs 02 to maintain 92%
+Post anesthesia recovery score:,8,8
+Document objectives for pain management,Yes,Yes
+Deep breath at/below pain mgmt goal:,Yes,Yes

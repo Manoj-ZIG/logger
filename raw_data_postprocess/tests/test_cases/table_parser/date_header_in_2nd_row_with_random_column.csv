@@ -1,0 +1,42 @@
+0,1,2,3,4,5
+Row Name ,07/09/20 0300 ,07/09/20 0200 ,07/09/20 0100 ,07/09/20 0046 ,07/09/20 0041 
+Vital Signs ,,,,,
+Heart Rate (Monitor) ,90 ,90 ,90 ,,
+,-ES at 07/09/20 0321 ,-ES at 07/09/20 0227 ,-ES at 07/09/20 0227 ,,
+Pulse ,90 ,90 ,89 ,,- 
+,-ES at 07/09/20 0321 ,-ES at 07/09/20 0227 ,-ES at 07/09/20 0227 ,,
+Resp ,18 ,20 ,21 ,,- 
+,-ES at 07/09/20 0321 ,-ES at 07/09/20 0227 ,-ES at 07/09/20 ,,
+Oxygen Therapy ,,,,,
+SpO2 ,100 ,100 % ,100% ,,- 
+,-ES at 07/09/20 0321 ,-ES at 07/09/20 0227 ,-ES at 07/09/20 0227 ,,
+O2 Device ,Bi-PAP ,Bi-PAP ,Bi-PAP ,- ,
+,-ES at 07/09/20 0322 ,-ES at 07/09/20 0322 ,-ES at 07/09/20 0322 ,,
+Row Name ,07/09/20 0000 ,07/08/20 2300 ,07/08/20 2200 ,07/08/20 2100 ,07/08/20 2000 
+Pain/Comfort/Sleep ,Assessments ,,,,
+R: Presence Of Pain* ,denies pain/discomfort non-verbal indicators not present -ES at 07/09/20 0409 ,,denies pain/discomfort non-verbal indicators not present -ES at 07/08/20 ,- ,complains of pain/discomfort non- verbal indicators present -ES at 07/08/2022 
+Preferred Pain Scale* ,number (Numeric Rating Pain Scale) -ES at 07/09/20 0409 ,,number (Numeric Rating Pain Scale) -ES at 07/08/20 ,,number (Numeric Rating Pain Scale) -ES at 07/08/20 2225 
+R: POSS (Pasero Opioid-Induced Sed Scale) ,"2 Slightly drowsy, easily aroused -ES at 07/09/20 0409 ",- ,"2 Slightly drowsy, easily aroused -ES at 07/08/20 ",- ,"2 Slightly drowsy, easily aroused -ES at 07/08/20 2225 "
+R: Response to Pain Interventions ,nonverbal indicators present -ES at 07/09/20 0409 ,- ,nonverbal indicators present -ES at 07/08/20 ,- ,nonverbal indicators present -ES at 07/08/20 2225 
+Non-verbal/functional ,body stiff ,- ,body stiff ,- ,body stiff 
+indicators of pain ,-ES at 07/09/20 0409 ,,-ES at 07/08/20 2225 ,,-ES at 07/08/20 2225 
+R: Location* ,incisional -ES at 07/09/20 0409 ,- ,incisional -ES at 07/08/20 2225 ,- ,incisional -ES at 07/08/20 
+Pain Frequency* ,frequent -ES at 07/09/20 040 ,- ,frequent -ES at 07/08/20 2225 ,- ,frequent -ES at 07/08/20 
+Pain Quality* ,aching ,,aching ,- ,aching 
+,-ES at 07/09/20 0409 ,,-ES at 07/08/20 ,,-ES at 07/08/20 2225 
+R: Number Pain ,0 ,- ,0 ,- ,4 
+Rating: Rest* ,-ES at 07/09/20 0 ,,-ES at 07/08/20 ,,-ES at 07/08/20 2225 
+R: Number Pain ,0 ,,0 ,- ,4 
+Rating: Activity* ,-ES at 07/09/20 0409 ,,-ES at 07/08/20 2225 ,,-ES at 07/08/20 2225 
+Comfort/Acceptable ,3 ,,3 ,,3 
+Pain Level* ,-ES at 07/09/20 0409 ,,-ES at 07/08/20 2225 ,,-ES at 07/08/20 2225 
+Pain Management Interventions ,care clustered;multiple medication modalities;pain management plan reviewed with patient/caregiver;position adjusted;quiet environment facilitated -ES at 07/09/20 0409 ,- ,"care clustered;multiple medication modalities;pain management plan reviewed with patient/caregiver,position adjusted;quiet environment facilitated -ES at 07/08/20 2225 ",- ,care clustered;multiple medication modalities;pain management plan reviewed with patient/caregiver:position adjusted;quiet environment facilitated -ES at 07/08/20 2225 
+Sleep/Rest/Relaxation ,sleeping between care -ES at 07/09/20 0409 ,,sleeping between care -ES at 07/08/20 2225 ,,sleeping between care -ES at 07/08/20 2225 
+Fever ,cool cloth ,,cool cloth ,,cool cloth 
+Reduction/Comfort Measures ,applied;lightweight bedding;lightweight clothing -ES at 07/09/20 0409 ,,applied;lightweight bedding;lightweight clothing -ES at 07/08/20 2225 ,,applied;lightweight bedding;lightweight clothing -ES at 07/08/20 2225 
+Sleep/Rest Enhancement ,regular sleep/rest pattern promoted -ES at 07/09/20 040 ,- ,regular sleep/rest pattern promoted -ES at 07/08/20 ,- ,regular sleep/rest pattern promoted -ES at 07/08/20 2225 
+RASS (Richmond Agitation-Sedation Scale) Vital Signs ,-1-->drowsy -ES at 07/09/20 0409 ,- ,-1-->drowsy -ES at 07/08/20 ,- ,-1-->drowsy -ES at 07/08/20 2225 
+Temp ,98.4 °F (36.9 °C) -ES at 07/09/20 0228 ,,- ,,98.1 °F (36.7 °C) -ES at 07/08/20 2222 
+Temp src ,Core ,,- ,- ,Core 
+,-ES at 07/09/20 0228 ,,,,-ES at 07/08/20 2222 
+Heart Rate (Monitor) ,89 ,90 ,90 ,89 ,90 

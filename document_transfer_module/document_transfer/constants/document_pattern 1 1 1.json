@@ -1,0 +1,100 @@
+{
+    "clients": {
+        "get_root_folder": {
+            "root_folder": "root_folder"
+        },
+        "sample_client": {
+            "metadata": {
+                "version": "1.0",
+                "last_updated": "2024-12-14",
+                "contact": "zignaai@dataops.com"
+            },
+            "get_document_info": [
+                {
+                    "document_name": "medical_record",
+                    "output_folder_path": "{document_type}/{received_date}/",
+                    "pattern": "AJX|IBCX",
+                    "pattern_description": "Identifies all documents that endswith .pdf, .zip, .gz and replace ascii characters with _ by default",
+                    "additional_notes": "Any special handling instructions"
+                }
+            ]
+        },
+        "devoted": {
+            "metadata": {
+                "version": "1.0",
+                "last_updated": "2024-12-13",
+                "contact": "zignaai@dataops.com"
+            },
+            "client_name":"devoted_health",
+            "vendor_code":"DEV",
+            "is_payor":1,
+            "get_document_info": [
+                {
+                    "document_name": "medical_record",
+                    "output_folder_path": "raw/",
+                    "pattern": "AJX\\w{7}|IBCX|TODEVOTEDDOCUMENTTRANSFER",
+                    "date_flag":0,
+                    "pattern_description": "Identifies documents containing the keywords 'AJX', 'IBCX', or 'TODEVOTEDDOCUMENTTRANSFER'. Additionally, handles files that end with .pdf, .zip, .gz and replaces ASCII characters with '_' by default",
+                    "additional_notes": "Handle files in flat directory"
+                },
+                {
+                    "document_name": "correspondence_letters",
+                    "output_folder_path": "correspondence/",
+                    "pattern": "REQUEST|LETTER|GDF",
+                    "date_flag":0,
+                    "pattern_description": "Identifies all documents that contain the keywords 'REQUEST', 'LETTER', 'GDF' and at end date in the format YYYY-MM-DD",
+                    "additional_notes": ""
+                },
+                {
+                    "document_name": "daily_Hba",
+                    "output_folder_path": "daily_claims/",
+                    "pattern": "^DEVOHTBA(professional|institutional)incoming\\d{8}\\d|DEVOTEDTOZIGNADAILYEXTRACTHBA",
+                    "date_flag":1,
+                    "pattern_description": "Identifies documents with filenames starting with 'DEVOHTBA' followed by 'professional' or 'institutional', an 8-digit date, and a digit, or filenames containing 'DEVOTEDTOZIGNADAILYEXTRACTHBA' and at end date in the format YYYY-MM-DD",
+                    "additional_notes": ""
+                },
+                {
+                    "document_name": "status_response_keys",
+                    "output_folder_path": "status_response/",
+                    "pattern": "STATUSRESPONSE",
+                    "date_flag":1,
+                    "pattern_description": "Identifies documents that contain the keyword 'STATUSRESPONSE' and at end date in the format YYYY-MM-DD",
+                    "additional_notes": ""
+                },
+                {
+                    "document_name": "submission_response_keys",
+                    "output_folder_path": "submission_response/",
+                    "pattern": "SUBMISSIONRESPONSE",
+                    "date_flag":1,
+                    "pattern_description": "Identifies documents that contain the keyword 'SUBMISSIONRESPONSE' and at end date in the format YYYY-MM-DD",
+                    "additional_notes": ""
+                },
+                {
+                    "document_name": "raw_claims",
+                    "output_folder_path": "raw_claims_feed/",
+                    "pattern": "DEVOTEDMONTHLY",
+                    "date_flag":0,
+                    "pattern_description": "Identifies documents that contain the keyword 'DEVOTEDMONTHLY' and at end date in the format YYYY-MM-DD",
+                    "additional_notes": ""
+                },
+                {
+                    "document_name": "reject_patterns",
+                    "output_folder_path": "unknown_folder/",
+                    "pattern": "\\.PDF(\\|.*)?$|filepart",
+                    "date_flag":1,
+                    "pattern_description": "Identifies documents with filenames ending in '.PDF' or containing 'filepart' and at end date in the format YYYY-MM-DD",
+                    "additional_notes": ""
+                },
+                {
+                    "document_name": "manual_review",
+                    "output_folder_path": "manual_review/",
+                    "pattern": "",
+                    "pattern_description": "If any file has the same size or page count, it indicates a problem in processing the file at end date in the format YYYY-MM-DD",
+                    "additional_notes": ""
+                }
+
+            ]
+            
+        }
+    }
+}

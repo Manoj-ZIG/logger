@@ -1,0 +1,1377 @@
+,main_section,section_name,sub_section_name,is_relevant,is_include
+0,Progress Note,Wound Care Progress Note,HPI:,Yes,Yes
+1,Progress Note,USF Internal Medicine Progress Note,Objective:,Yes,Yes
+2,History & Physical,TRAUMA HISTORY AND PHYSICAL,Social History and Habits,Yes,Yes
+3,OPERATIVE REPORT,Transesophageal Echocardiogram,CLOSURE OF THE WOUND,Yes,Yes
+4,Progress Note,Table of Contents,DESCRIPTION OF PROCEDURE,Yes,Yes
+5,OPERATIVE REPORT,Surgery - Peri-Operative Records,Surgeon,Yes,Yes
+6,OPERATIVE REPORT,Surgery - Operative Records,Procedure Performed,Yes,Yes
+7,Anesthesia Reports,Surgery - Anesthesia_Sedation Records,Arterial Line,Yes,Yes
+8,Discharge Summary,Summary Discharge Report*,Home Medications,Yes,Yes
+9,Progress Note,STERN CARDIOVASCULAR ICU PROGRESS NOTE,Review of Systems,Yes,Yes
+10,Progress Note,Spiritual Care Assessment/Progress Note,Assessment,Yes,Yes
+11,Progress Note,Social Work Progress Notes,RADIOLOGY AND DIAGNOSTIC,Yes,Yes
+12,OPERATIVE REPORT,Report of operation,TRANSFER - OUT REPORT,Yes,Yes
+13,OPERATIVE REPORT,RE-OP/OSU ASSESSMENTS,Specimens,Yes,Yes
+14,Progress Note,RENAL PROGRESS NOTE,PATIENT IDENTIFICATION,Yes,Yes
+15,CONSULTATION REPORT,REHAB CONSULT NOTE,Assessment/plan,Yes,Yes
+16,Progress Note,Pulmonology Progress Note,SUBJECTIVE - MEDICINE,Yes,Yes
+17,Progress Note,Pulmonology Progress Note,Interval History,Yes,Yes
+18,CONSULTATION REPORT,Pulmonology Consult, History of Present Illness,Yes,Yes
+19,Progress Note,PULMONARY CRITICAL CARE,DIET,No,Yes
+20,CONSULTATION REPORT,pulmonary and critical care consult note,History,Yes,Yes
+21,Progress Note,Provider - Progress Notes,PROCEDURE,Yes,Yes
+22,Discharge Summary,Provider - Discharge Notes,Medications,Yes,Yes
+23,CONSULTATION REPORT,Provider - Consult Notes,Ros,Yes,Yes
+24,History & Physical,Provider - Admitting Notes_History and Physical,Subjective,Yes,Yes
+25,Progress Note,Progress/Discharge Note PT,Subjective,Yes,Yes
+26,Progress Note,Progress/Discharge Note PT,Discharge Diagnosis,Yes,Yes
+27,Discharge Summary,Progress/Discharge Note PT,Physical Examination,Yes,Yes
+28,Discharge Summary,Progress/Discharge Note PT,Health Status,Yes,Yes
+29,Progress Note,Progress/Discharge Note OT,Hospital Course,Yes,Yes
+30,Discharge Summary,Progress/Discharge Note OT,Allergies,Yes,Yes
+31,Progress Note,Progress Quick Note,Wound Assessment,Yes,Yes
+32,Progress Note,Progress Quick Note,Type of Anesthesia,Yes,Yes
+33,Progress Note,Progress Quick Note,TREATMENT PLAN,Yes,Yes
+34,Progress Note,Progress Quick Note,Treatment Log,Yes,Yes
+35,Progress Note,Progress Quick Note,Transfers OT,Yes,Yes
+36,Progress Note,Progress Quick Note,Transfer Rehab Grid,Yes,Yes
+37,Progress Note,Progress Quick Note,Technical/Surgical Procedures Used,Yes,Yes
+38,Progress Note,Progress Quick Note,Surgical Plan of Care Note,Yes,Yes
+39,Progress Note,Progress Quick Note,Surgical history,Yes,Yes
+40,Progress Note,Progress Quick Note,Summary Note,Yes,Yes
+41,Progress Note,Progress Quick Note,SUBJECTIVE | INTERVAL EVENTS,Yes,Yes
+42,Progress Note,Progress Quick Note,SUBJECTIVE & PLAN,Yes,Yes
+43,Progress Note,Progress Quick Note,Specimens/Tissue Removed:,Yes,Yes
+44,Progress Note,Progress Quick Note,SOCIAL HISTORY,Yes,Yes
+45,Progress Note,Progress Quick Note,Social,Yes,Yes
+46,Progress Note,Progress Quick Note,SICU History and Physical,Yes,Yes
+47,Progress Note,Progress Quick Note,Short Term PT Goals Grid,Yes,Yes
+48,Progress Note,Progress Quick Note,ROS,Yes,Yes
+49,Progress Note,Progress Quick Note,Review ofsymptom,Yes,Yes
+50,Progress Note,Progress Quick Note,Review of Systems/Medical History,Yes,Yes
+51,Progress Note,Progress Quick Note,Review of Systems,Yes,Yes
+52,Progress Note,Progress Quick Note,Results Review,Yes,Yes
+53,Progress Note,Progress Quick Note,Results,No,Yes
+54,Progress Note,Progress Quick Note,Respiratory Plan/Comments,Yes,Yes
+55,Progress Note,Progress Quick Note,RELEVANT MEDS / DIET ORDERS,Yes,Yes
+56,Progress Note,Progress Quick Note,Recommendation:,Yes,Yes
+57,Progress Note,Progress Quick Note,Recent Labs,No,Yes
+58,Progress Note,Progress Quick Note,Reason for Visit:,Yes,Yes
+59,Progress Note,Progress Quick Note,Reason for ICU Admission/ Perioperative Course,Yes,Yes
+60,Progress Note,Progress Quick Note,Reason for Hospitalization,Yes,Yes
+61,Progress Note,Progress Quick Note,Reason for Continued Hospitalization,Yes,Yes
+62,Progress Note,Progress Quick Note,Reason for Admission,Yes,Yes
+63,Progress Note,Progress Quick Note,RADIOLOGY REPORTS,Yes,Yes
+64,Progress Note,Progress Quick Note,Radiology data,No,Yes
+65,Progress Note,Progress Quick Note,Radiology,Yes,Yes
+66,Progress Note,Progress Quick Note,Quality Improvement,Yes,Yes
+67,Progress Note,Progress Quick Note,Pulmonology Progress Note,Yes,Yes
+68,Progress Note,Progress Quick Note,Professional Services,Yes,Yes
+69,Progress Note,Progress Quick Note,PROCEDURES PERFORMED,Yes,Yes
+70,Progress Note,Progress Quick Note,Procedures & Date,Yes,Yes
+71,Progress Note,Progress Quick Note,Procedure/Surgical History,Yes,Yes
+72,Progress Note,Progress Quick Note,Procedure/operative data,Yes,Yes
+73,Progress Note,Progress Quick Note,Problems/Assessments/Plan,Yes,Yes
+74,Progress Note,Progress Quick Note,Problems,Yes,Yes
+75,Progress Note,Progress Quick Note,Problem list:,Yes,Yes
+76,Progress Note,Progress Quick Note,PROBLEM LIST PLAN:,Yes,Yes
+77,Progress Note,Progress Quick Note,PROBLEM LIST PLAN,Yes,Yes
+78,Progress Note,Progress Quick Note,Problem list,Yes,Yes
+79,Progress Note,Progress Quick Note,Prior Functional Level Grid,Yes,Yes
+80,Progress Note,Progress Quick Note,Primary Surgeon,Yes,Yes
+81,Progress Note,Progress Quick Note,Primary Pain,Yes,Yes
+82,Progress Note,Progress Quick Note,Prgblem List/Past Medical History,Yes,Yes
+83,Progress Note,Progress Quick Note,Prgbiem List/Past Medical History,Yes,Yes
+84,Progress Note,Progress Quick Note,Pre-operative Diagnosis,Yes,Yes
+85,Progress Note,Progress Quick Note,Post-operative Diagnosis,Yes,Yes
+86,Progress Note,Progress Quick Note,PN - Pharmacy,Yes,Yes
+87,Progress Note,Progress Quick Note,PMH/PSH,Yes,Yes
+88,Progress Note,Progress Quick Note,PMH,Yes,Yes
+89,Progress Note,Progress Quick Note,Plan/summary,Yes,Yes
+90,Progress Note,Progress Quick Note,Plan/Recommendations,Yes,Yes
+91,Progress Note,Progress Quick Note,Plan Review,Yes,Yes
+92,Progress Note,Progress Quick Note,Plan of Care,Yes,Yes
+93,Progress Note,Progress Quick Note,PLAN AND DISCUSSION,Yes,Yes
+94,Progress Note,Progress Quick Note,Physician Information,Yes,Yes
+95,Progress Note,Progress Quick Note,PHYSICIAN COVID ASSESSMENT,Yes,Yes
+96,Progress Note,Progress Quick Note,Physical Exam/Objective,Yes,Yes
+97,Progress Note,Progress Quick Note,PHISICAL EXAM,Yes,Yes
+98,Progress Note,Progress Quick Note,perfusion record,Yes,Yes
+99,Progress Note,Progress Quick Note,Patient Narrative,Yes,Yes
+100,Progress Note,Progress Quick Note,Patient Information,Yes,Yes
+101,Progress Note,Progress Quick Note,Patient Active Problem List,Yes,Yes
+102,Progress Note,Progress Quick Note,PAST SURGICAL HISTORY,Yes,Yes
+103,Progress Note,Progress Quick Note,Past Medical/Surgical/Family History,Yes,Yes
+104,Progress Note,Progress Quick Note,PAST MEDICAL HISTORY,Yes,Yes
+105,Progress Note,Progress Quick Note,Outpatient Medications,Yes,Yes
+106,Progress Note,Progress Quick Note,Other Notes,Yes,Yes
+107,Progress Note,Progress Quick Note,OT Pail ent/Famlly Goals,Yes,Yes
+108,Progress Note,Progress Quick Note,ON Events,No,Yes
+109,Progress Note,Progress Quick Note,OBJECTIVE/PHYSICAL EXAMINATION,Yes,Yes
+110,Progress Note,Progress Quick Note,Objective/Exam,Yes,Yes
+111,Progress Note,Progress Quick Note,Objective/ Exam,Yes,Yes
+112,Progress Note,Progress Quick Note,Objective Data and Assessment,Yes,Yes
+113,Progress Note,Progress Quick Note,Objective Data,Yes,Yes
+114,Progress Note,Progress Quick Note,Objective,Yes,Yes
+115,Progress Note,Progress Quick Note,O/E,Yes,Yes
+116,Progress Note,Progress Quick Note,NUTRITION INTERVENTION,Yes,Yes
+117,Progress Note,Progress Quick Note,Neurosurgery,Yes,Yes
+118,Progress Note,Progress Quick Note,Neuro ICU Attending Note,Yes,Yes
+119,Progress Note,Progress Quick Note,Neuro Exam,Yes,Yes
+120,Progress Note,Progress Quick Note,Narrative,Yes,Yes
+121,Progress Note,Progress Quick Note,Monitoring and Evaluation:,Yes,Yes
+122,Progress Note,Progress Quick Note,Midlevel/Physician Attestation,Yes,Yes
+123,Progress Note,Progress Quick Note,MICROBIOLOGY / PATHOLOGY,No,Yes
+124,Progress Note,Progress Quick Note,Medications (36) Active,Yes,Yes
+125,Progress Note,Progress Quick Note,Medications (33) Active,Yes,Yes
+126,Progress Note,Progress Quick Note,Medications (32) Active,Yes,Yes
+127,Progress Note,Progress Quick Note,Medication,Yes,Yes
+128,Progress Note,Progress Quick Note,Medical History,Yes,Yes
+129,Progress Note,Progress Quick Note,Lona Term PT Goals Grid,Yes,Yes
+130,Progress Note,Progress Quick Note,Lona Term OT Goals Grid,Yes,Yes
+131,Progress Note,Progress Quick Note,Lines/tubes/airways,Yes,Yes
+132,Progress Note,Progress Quick Note,Lines/Drains/Tubes/Devices,Yes,Yes
+133,Progress Note,Progress Quick Note,"Lines, Tubes and Drains",Yes,Yes
+134,Progress Note,Progress Quick Note,Labs and Diagnostics,No,Yes
+135,Progress Note,Progress Quick Note,LABORATORY STUDIES,Yes,Yes
+136,Progress Note,Progress Quick Note,Laboratory Results,No,Yes
+137,Progress Note,Progress Quick Note,LABORATORY EXAMINATION,No,Yes
+138,Progress Note,Progress Quick Note,Laboratory Dat,Yes,Yes
+139,Progress Note,Progress Quick Note,LABORATORIES,Yes,Yes
+140,Progress Note,Progress Quick Note,Lab Review,Yes,Yes
+141,Progress Note,Progress Quick Note,LAB RESULTS,No,Yes
+142,Progress Note,Progress Quick Note,Lab Result Diagram,Yes,Yes
+143,Progress Note,Progress Quick Note,Interventions offered during this visit,Yes,Yes
+144,Progress Note,Progress Quick Note,Interventions,Yes,Yes
+145,Progress Note,Progress Quick Note,INTERVENTIONAL CARDIOLOGY FOLLOW UP NOTE[,Yes,Yes
+146,Progress Note,Progress Quick Note,Interval hx,Yes,Yes
+147,Progress Note,Progress Quick Note,INTAKE/OUTPUT TOTALS,Yes,Yes
+148,Progress Note,Progress Quick Note,Intake/Output,Yes,Yes
+149,Progress Note,Progress Quick Note,Intake/Ouput,Yes,Yes
+150,Progress Note,Progress Quick Note,Intake & Output 3 Day Summary,Yes,Yes
+151,Progress Note,Progress Quick Note,INTAKE & OUTPUT,Yes,Yes
+152,Progress Note,Progress Quick Note,Instructions to Medical Records,Yes,Yes
+153,Progress Note,Progress Quick Note,Instructions,Yes,Yes
+154,Progress Note,Progress Quick Note,INPUT/OUTPUT,Yes,Yes
+155,Progress Note,Progress Quick Note,INPATIENT MEDICATIONS,Yes,Yes
+156,Progress Note,Progress Quick Note,Indications for Surgery/Procedure,Yes,Yes
+157,Progress Note,Progress Quick Note,Indication,Yes,Yes
+158,Progress Note,Progress Quick Note,IMPRESSION,Yes,Yes
+159,Progress Note,Progress Quick Note,Imaging studies,No,Yes
+160,Progress Note,Progress Quick Note,Imaging and Cardiology,Yes,Yes
+161,Progress Note,Progress Quick Note,IMAGING / STUDIES:,No,Yes
+162,Progress Note,Progress Quick Note,Identified resources for coping,Yes,Yes
+163,Progress Note,Progress Quick Note,HPI Summary,Yes,Yes
+164,Progress Note,Progress Quick Note,HPI / Subjective,Yes,Yes
+165,Progress Note,Progress Quick Note,HPI,Yes,Yes
+166,Progress Note,Progress Quick Note,HOSPITALIST PROGRESS NOTE,Yes,Yes
+167,Progress Note,Progress Quick Note,HOSPITAL COURSE: Th,Yes,Yes
+168,Progress Note,Progress Quick Note,Hospital Course/Interval History,Yes,Yes
+169,Progress Note,Progress Quick Note,Hospital Course,Yes,Yes
+170,Progress Note,Progress Quick Note,Historyof PresentIllness,Yes,Yes
+171,Progress Note,Progress Quick Note,HISTORY OF PRESENT ILLNESS: The p,Yes,Yes
+172,Progress Note,Progress Quick Note,History of Present Illness:,Yes,Yes
+173,Progress Note,Progress Quick Note,History of Present Illness/Subjective,Yes,Yes
+174,Progress Note,Progress Quick Note,HISTORY OF PRESENT ILLNES,Yes,Yes
+175,Progress Note,Progress Quick Note,History Obtained from chart,Yes,Yes
+176,Progress Note,Progress Quick Note,HISTORY AND INDICATIONS FOR ADMISSION,Yes,Yes
+177,Progress Note,Progress Quick Note,HISTORY AND INDICATION,Yes,Yes
+178,Progress Note,Progress Quick Note,History - Adult longitudinal,Yes,Yes
+179,Progress Note,Progress Quick Note,HEMODYNAMICS,Yes,Yes
+180,Progress Note,Progress Quick Note,General Information,Yes,Yes
+181,Progress Note,Progress Quick Note,General Info,Yes,Yes
+182,Progress Note,Progress Quick Note,General,Yes,Yes
+183,Progress Note,Progress Quick Note,Functional Mobility,Yes,Yes
+184,Progress Note,Progress Quick Note,free Text Subj Notes,Yes,Yes
+185,Progress Note,Progress Quick Note,Free Text A&P,Yes,Yes
+186,Progress Note,Progress Quick Note,Food & Nutrient Delivery,Yes,Yes
+187,Progress Note,Progress Quick Note,Findings,Yes,Yes
+188,Progress Note,Progress Quick Note,FINAL IMPRESSION,Yes,Yes
+189,Progress Note,Progress Quick Note,Family/Social History,Yes,Yes
+190,Progress Note,Progress Quick Note,Family Updates,Yes,Yes
+191,Progress Note,Progress Quick Note,FAMILY HISTORY,Yes,Yes
+192,Progress Note,Progress Quick Note,Exams,Yes,Yes
+193,Progress Note,Progress Quick Note,EXAMINATION,Yes,Yes
+194,Progress Note,Progress Quick Note,Exam,Yes,Yes
+195,Progress Note,Progress Quick Note,Estimated Blood Loss,Yes,Yes
+196,Progress Note,Progress Quick Note,Education,Yes,Yes
+197,Progress Note,Progress Quick Note,Documented Medications,Yes,Yes
+198,Progress Note,Progress Quick Note,Discharge Planning Screen,Yes,Yes
+199,Progress Note,Progress Quick Note,Discharge Medications,Yes,Yes
+200,Progress Note,Progress Quick Note,Discharge Diagnoses,Yes,Yes
+201,Progress Note,Progress Quick Note,Diet Orders,Yes,Yes
+202,Progress Note,Progress Quick Note,Diagnostics - Non-Radiology - Last 36 hours (0),No,Yes
+203,Progress Note,Progress Quick Note,Diagnostics - Non-Radiology,Yes,Yes
+204,Progress Note,Progress Quick Note,DIAGNOSTIC STUDIES,Yes,Yes
+205,Progress Note,Progress Quick Note,Diagnostic Results,Yes,Yes
+206,Progress Note,Progress Quick Note,DIAGNOSTIC DATA,Yes,Yes
+207,Progress Note,Progress Quick Note,"Diagnosis, Assessment & Plan",Yes,Yes
+208,Progress Note,Progress Quick Note,Diagnoses,Yes,Yes
+209,Progress Note,Progress Quick Note,Description of Findings,Yes,Yes
+210,Progress Note,Progress Quick Note,DC Recommendations,Yes,Yes
+211,Progress Note,Progress Quick Note,DATE OF SERVICE,Yes,Yes
+212,Progress Note,Progress Quick Note,Data/Imaging,Yes,Yes
+213,Progress Note,Progress Quick Note,Data Review,Yes,Yes
+214,Progress Note,Progress Quick Note,DATA,Yes,Yes
+215,Progress Note,Progress Quick Note,Daily subjective,Yes,Yes
+216,Progress Note,Progress Quick Note,Daily plan,Yes,Yes
+217,Progress Note,Progress Quick Note,DAILY EXAMINATION,Yes,Yes
+218,Progress Note,Progress Quick Note,CURRENT VITAL SIGNS,Yes,Yes
+219,Progress Note,Progress Quick Note,Current Respiratory Orders,Yes,Yes
+220,Progress Note,Progress Quick Note,Current Medication:,Yes,Yes
+221,Progress Note,Progress Quick Note,CURRENT MEDICATION,Yes,Yes
+222,Progress Note,Progress Quick Note,CURRENT INPATIENT MEDICATION LIST,Yes,Yes
+223,Progress Note,Progress Quick Note,Critical Care - PN: Subj,Yes,Yes
+224,Progress Note,Progress Quick Note,Critical Care - PN: Exam,Yes,Yes
+225,Progress Note,Progress Quick Note,Critical Care - Pit A/P,Yes,Yes
+226,Progress Note,Progress Quick Note,COVID-19 Strategies Deployed,Yes,Yes
+227,Progress Note,Progress Quick Note,Course / Events,Yes,Yes
+228,Progress Note,Progress Quick Note,Continuous,Yes,Yes
+229,Progress Note,Progress Quick Note,Consultants:,Yes,Yes
+230,Progress Note,Progress Quick Note,CONSULT REASON,Yes,Yes
+231,Progress Note,Progress Quick Note,CONCLUSIONS SUMMARY,Yes,Yes
+232,Progress Note,Progress Quick Note,Complications,Yes,Yes
+233,Progress Note,Progress Quick Note,Completed Action List:,Yes,Yes
+234,Progress Note,Progress Quick Note,Completed Action List,Yes,Yes
+235,Progress Note,Progress Quick Note,Completed Action Lid,Yes,Yes
+236,Progress Note,Progress Quick Note,Clinical Discussion,Yes,Yes
+237,Progress Note,Progress Quick Note,Clinical Data,Yes,Yes
+238,Progress Note,Progress Quick Note,Chief complaint on admission,Yes,Yes
+239,Progress Note,Progress Quick Note,CARDIAC CATHETERIZATION REPORT,Yes,Yes
+240,Progress Note,Progress Quick Note,Capsule Summary,No,Yes
+241,Progress Note,Progress Quick Note,Brief history review,Yes,Yes
+242,Progress Note,Progress Quick Note,Brief History,Yes,Yes
+243,Progress Note,Progress Quick Note,Brief historical review,Yes,Yes
+244,Progress Note,Progress Quick Note,BASIC INFO,No,Yes
+245,Progress Note,Progress Quick Note,Attending physician attestation,Yes,Yes
+246,Progress Note,Progress Quick Note,ATTENDING ATTESTATION,No,Yes
+247,Progress Note,Progress Quick Note,ASSESSMENT:,Yes,Yes
+248,Progress Note,Progress Quick Note,Assessment/Rec,Yes,Yes
+249,Progress Note,Progress Quick Note,ASSESSMENT/PROBLEM LIST,Yes,Yes
+250,Progress Note,Progress Quick Note,Assessment/Plan/Recommendations:,Yes,Yes
+251,Progress Note,Progress Quick Note,Assessment & Recommendations,Yes,Yes
+252,Progress Note,Progress Quick Note,Art Line,Yes,Yes
+253,Progress Note,Progress Quick Note,Anti-Coagulant Medications,Yes,Yes
+254,Progress Note,Progress Quick Note,ANTICIPATED DISPOSITION PLANNING,Yes,Yes
+255,Progress Note,Progress Quick Note,Anesthesia Pre-Evaluation,Yes,Yes
+256,Progress Note,Progress Quick Note,Ambulation Rehab Grid,Yes,Yes
+257,Progress Note,Progress Quick Note,Allergies:,Yes,Yes
+258,Progress Note,Progress Quick Note,Allergies/Intolerances,Yes,Yes
+259,Progress Note,Progress Quick Note,Allergies/Intolerance,Yes,Yes
+260,Progress Note,Progress Quick Note,Allergeis,Yes,Yes
+261,Progress Note,Progress Quick Note,Advance Directives,Yes,Yes
+262,Progress Note,Progress Quick Note,Addendum,No,Yes
+263,Progress Note,Progress Quick Note,Acute Problems,Yes,Yes
+264,Progress Note,Progress Quick Note,Active problems,Yes,Yes
+265,Progress Note,Progress Quick Note,Active Medications,Yes,Yes
+266,Progress Note,Progress Quick Note,ABG results,No,Yes
+267,Progress Note,Progress Quick Note,A/P,Yes,Yes
+268,Progress Note,Progress Quick Note,A&P Subsequent,Yes,Yes
+269,Progress Note,Progress Quick Note,24Hour Summary,Yes,Yes
+270,Progress Note,Progress Quick Note,24 HR EVENTS/SUBJECTIVE,Yes,Yes
+271,Progress Note,Progress Quick Note,24 Hour Summary,Yes,Yes
+272,Progress Note,Progress Notes:,Cardiac Testing,No,Yes
+273,Progress Note,PROGRESS NOTES (Continued),Review / Management,Yes,Yes
+274,Progress Note,Progress Notes - Nursing,Diagnosis,Yes,Yes
+275,Progress Note,Progress Notes,Subjective ,Yes,Yes
+276,Progress Note,Progress Notes,MEDICATIONS,Yes,Yes
+277,Progress Note,Progress Note-Medical Provider,Basic Information,Yes,Yes
+278,Progress Note,Progress Note - Surgical-Neurosurgery,Diagnostics,Yes,Yes
+279,Progress Note,Progress Note - Medical .- Internal Medicine,Laboratory Data:,Yes,Yes
+280,Progress Note,Progress Note - Generic,PLAN,Yes,Yes
+281,Progress Note,Progress Note,Physical Examination,Yes,Yes
+282,OPERATIVE REPORT,Procedures - Surgical/Procedural Notes,Operation/Procedure Performed,Yes,Yes
+283,OPERATIVE REPORT,Procedure report,Indication for Surgery,Yes,Yes
+284,OPERATIVE REPORT,Procedure Notes,DATE OF SERVICE,Yes,Yes
+285, PREOPERATIVE EVAluation -Anesthesia,Procedure Note - Anesthesia,Home Medications / Respiratory Treatment,Yes,Yes
+286,OPERATIVE REPORT,procedure note,Instructions to Medical Records,Yes,Yes
+287,OPERATIVE REPORT,PROCEDURE - Encounter Notes,PROCEDURES,Yes,Yes
+288,OPERATIVE REPORT,Preprocedure Note,RESULTS OF INTERVENTION,Yes,Yes
+289,OPERATIVE REPORT,Preoperative Orders — Cardio- Vascular/ Thoracic Procedures,TYPE OF ANESTHESIA ADMINISTERED,Yes,Yes
+290,OPERATIVE REPORT,PREOPERATIVE EVAluation -Anesthesia,Date of Procedure,Yes,Yes
+291, PREOPERATIVE EVAluation -Anesthesia,PREOPERATIVE EVAluation -Anesthesia,Hospital Medications,Yes,Yes
+292,OPERATIVE REPORT,PRE-OP/OSU ASSESSMENTS,Procedure(s),Yes,Yes
+293,OPERATIVE REPORT,PRE-OP ASSESSMENTS,OPENING OF THE POSTERIOR WOUND,Yes,Yes
+294, PREOPERATIVE EVAluation -Anesthesia,Pre and Post Anesthesia Evaluation,Medical History,Yes,Yes
+295, PREOPERATIVE EVAluation -Anesthesia,Pre and Post Anesthesia Evaluation,Surgical History,Yes,Yes
+296, PREOPERATIVE EVAluation -Anesthesia,Pre and Post Anesthesia Evaluation,Additional Historw/ROS,Yes,Yes
+297, PREOPERATIVE EVAluation -Anesthesia,Pre and Post Anesthesia Evaluation,Date/Time procedure performed,Yes,Yes
+298, PREOPERATIVE EVAluation -Anesthesia,Pre and Post Anesthesia Evaluation,Location,Yes,Yes
+299, PREOPERATIVE EVAluation -Anesthesia,Pre and Post Anesthesia Evaluation,Pre-Procedure Diagnosis/Indication,Yes,Yes
+300, PREOPERATIVE EVAluation -Anesthesia,Pre and Post Anesthesia Evaluation,Post-ProcedureDiagnosis,Yes,Yes
+301, PREOPERATIVE EVAluation -Anesthesia,Pre and Post Anesthesia Evaluation,Performing Clinician,Yes,Yes
+302, PREOPERATIVE EVAluation -Anesthesia,Pre and Post Anesthesia Evaluation,Anesthesia Sedation Assessment,Yes,Yes
+303, PREOPERATIVE EVAluation -Anesthesia,Pre and Post Anesthesia Evaluation,Arterial Line Insertion,Yes,Yes
+304, PREOPERATIVE EVAluation -Anesthesia,Pre and Post Anesthesia Evaluation,Procedure Findings,Yes,Yes
+305,Progress Note,POST-PROCEDURAL PROGRESS NOTES,I/O,Yes,Yes
+306,OPERATIVE REPORT,POST-OPERATIVE PROGRESS NOTES,DESCRIPTION OF PROCEDUR,Yes,Yes
+307,Progress Note,POST-OPERATIVE PROGRESS NOTES,OBJECTIVE - MEDICINE,Yes,Yes
+308,OPERATIVE REPORT,POST-OPERATIVE NOTES,ANTERIOR OPERATION,Yes,Yes
+309,OPERATIVE REPORT,POST OP NOTE,POSTERIOR OPERATION,Yes,Yes
+310,Progress Note,PLASTIC SURGERY PROGRESS NOTE,Pathology result,Yes,Yes
+311,Progress Note,Physician Progress Notes,Health Status,Yes,Yes
+312,Discharge Summary,Physician Discharge Summary,Discharge Instructions,Yes,Yes
+313,OPERATIVE REPORT,PERMANENT MEDICAL RECORD COPY,PLACEMENT OF THE PEDICLE SCREW INSTRUMENTATION,Yes,Yes
+314,OPERATIVE REPORT,Perioperative Record,COMPLICATIONS,Yes,Yes
+315,OPERATIVE REPORT,Perioperative Nursing Note - Encounter Notes,SPECIMEN(S) REMOVED,Yes,Yes
+316,OPERATIVE REPORT,Perioperative Documentation,Consent,Yes,Yes
+317,OPERATIVE REPORT,Perioperative Documentation,Description of Procedure(s),Yes,Yes
+318,OPERATIVE REPORT,Patient Fluoroscopy Radiation Dose Information,Findings,Yes,Yes
+319,Discharge Summary,Patient Discharge Instructions,Review / Management,Yes,Yes
+320,CONSULTATION REPORT,Palliative Medicine Consult,lab results,Yes,Yes
+321,Progress Note,Otolaryngology Daily Progress Not,LABS,Yes,Yes
+322,OPERATIVE REPORT,Other Procedures,INDICATION,Yes,Yes
+323,OPERATIVE REPORT,Orthopedics Operative Note,Reason for Procedure,Yes,Yes
+324,Progress Note,Orthopaedic Progress Note,Chief complaint Description,Yes,Yes
+325,OPERATIVE REPORT,Operative/Procedure Reports,Patient Condition,Yes,Yes
+326,OPERATIVE REPORT,Operative/procedure note,ESTIMATED BLOOD LOSS,Yes,Yes
+327,OPERATIVE REPORT,Operative Report Proc. Note,BRIEF HISTORY,Yes,Yes
+328,OPERATIVE REPORT,Operative Report Note,Addendum,Yes,Yes
+329,OPERATIVE REPORT,OPERATIVE REPORT,PREOPERATIVE DIAGNOSIS,Yes,Yes
+330,OPERATIVE REPORT,Operative procedure,procedure,Yes,Yes
+331,OPERATIVE REPORT,Operative procedure,IMPRESSION,Yes,Yes
+332,OPERATIVE REPORT,Operative Procedure,Operation,Yes,Yes
+333,OPERATIVE REPORT,Operative Procedure,ecommendation,Yes,Yes
+334,OPERATIVE REPORT,Operative Procedure,Assistant,Yes,Yes
+335,OPERATIVE REPORT,Operative Procedure,postoperative plan,Yes,Yes
+336,OPERATIVE REPORT,Operative Procedure,Pre-procedure diagnosis,Yes,Yes
+337,OPERATIVE REPORT,Operative Procedure,Post-procedure diagnosis,Yes,Yes
+338,OPERATIVE REPORT,Operative Procedure,Procedures performed,Yes,Yes
+339,OPERATIVE REPORT,Operative Procedure,IMPRESSIONS,Yes,Yes
+340,OPERATIVE REPORT,Operative Procedure,RECOMMENDATIONS,Yes,Yes
+341,OPERATIVE REPORT,Operative Procedure,Diagnosis,Yes,Yes
+342,OPERATIVE REPORT,Operative Procedure,ANESTHESIOLOGIST,Yes,Yes
+343,OPERATIVE REPORT,Operative Procedure,Classification,Yes,Yes
+344,OPERATIVE REPORT,Operative Procedure,Pre-ProcedureDiagnosis,Yes,Yes
+345,OPERATIVE REPORT,Operative Procedure,Coronary Anatomy,Yes,Yes
+346,OPERATIVE REPORT,Operative Procedure,Post Procedure Findings,Yes,Yes
+347,OPERATIVE REPORT,Operative Procedure,INCISION,Yes,Yes
+348,OPERATIVE REPORT,Operative Procedure,INDICATIONS FOR OPERATION,Yes,Yes
+349,OPERATIVE REPORT,Operative Procedure,Physical Therapy Daily Note,Yes,Yes
+350,OPERATIVE REPORT,Operative Procedure,FINDINGS AT SURGERY,Yes,Yes
+351,OPERATIVE REPORT,Operative Procedure,ESTIMATED BLOOD LOS,Yes,Yes
+352,OPERATIVE REPORT,Operative Procedure,Procedural details,Yes,Yes
+353,OPERATIVE REPORT,Operative Procedure,Technique,Yes,Yes
+354,OPERATIVE REPORT,Operative Procedure,Procedure Detail,Yes,Yes
+355,OPERATIVE REPORT,Operative Procedure,Objective,Yes,Yes
+356,OPERATIVE REPORT,Operative Procedure,Assessment and Plan,Yes,Yes
+357,OPERATIVE REPORT,Operative Procedure,Technical Procedures Ilsted,Yes,Yes
+358,OPERATIVE REPORT,Operative Procedure,Gross Description,Yes,Yes
+359,OPERATIVE REPORT,Operative Procedure,Description of Procedure(,Yes,Yes
+360,OPERATIVE REPORT,Operative Procedure,indications for the procedure,Yes,Yes
+361,OPERATIVE REPORT,Operative Procedure,PREOPERATIVE DIAGNOSIS (ES),Yes,Yes
+362,OPERATIVE REPORT,Operative Procedure,PROCEDURE (S) PERFORMED,Yes,Yes
+363,OPERATIVE REPORT,Operative Procedure,POSTOPERATIVE DIAGNOSIS (ES),Yes,Yes
+364,OPERATIVE REPORT,Operative Procedure,SPECIMEN (S),Yes,Yes
+365,OPERATIVE REPORT,Operative Procedure,preoperative report,Yes,Yes
+366,OPERATIVE REPORT,Operative Procedure,post operative report,Yes,Yes
+367,OPERATIVE REPORT,Operative Procedure,Drains,Yes,Yes
+368,OPERATIVE REPORT,Operative Procedure,Indication for procedure,Yes,Yes
+369,OPERATIVE REPORT,Operative Procedure,Discription procedure,Yes,Yes
+370,OPERATIVE REPORT,Operative Procedure,General Information,Yes,Yes
+371,OPERATIVE REPORT,Operative Procedure,Case Tracking Events,Yes,Yes
+372,OPERATIVE REPORT,Operative Procedure,Event Tracking,Yes,Yes
+373,OPERATIVE REPORT,Operative Procedure,Panel Information,Yes,Yes
+374,OPERATIVE REPORT,Operative Procedure,Surgeons,Yes,Yes
+375,OPERATIVE REPORT,Operative Procedure,Staff,Yes,Yes
+376,OPERATIVE REPORT,Operative Procedure,Anesthesia Staff,Yes,Yes
+377,OPERATIVE REPORT,Operative Procedure,Questionnaire Data,Yes,Yes
+378,OPERATIVE REPORT,Operative Procedure,Patient Preparation,Yes,Yes
+379,OPERATIVE REPORT,Operative Procedure,Skin Condition,Yes,Yes
+380,OPERATIVE REPORT,Operative Procedure,Handoff Documentation,Yes,Yes
+381,OPERATIVE REPORT,Operative Procedure,Specimens,Yes,Yes
+382,OPERATIVE REPORT,Operative Procedure,Other Equipment,Yes,Yes
+383,OPERATIVE REPORT,Operative Procedure,Electrosurgery Devices,Yes,Yes
+384,OPERATIVE REPORT,Operative Procedure,Instruments,Yes,Yes
+385,OPERATIVE REPORT,Operative Procedure,Supplies & Drugs,Yes,Yes
+386,OPERATIVE REPORT,Operative Procedure,Post-op Skin Information,Yes,Yes
+387,OPERATIVE REPORT,Operative Procedure,Counts by Panel,Yes,Yes
+388,OPERATIVE REPORT,Operative Procedure,Timeouts,Yes,Yes
+389,OPERATIVE REPORT,Operative Procedure,Case Completion Information,Yes,Yes
+390,OPERATIVE REPORT,Operative Procedure,Verification Information,Yes,Yes
+391,OPERATIVE REPORT,Operative Procedure,OPERATION PERFORMED,Yes,Yes
+392,OPERATIVE REPORT,Operative Procedure,OPERATIVE DESCRIPTION,Yes,Yes
+393,OPERATIVE REPORT,Operative Procedure,RADIOGRAPHIC ASSESSMENT,Yes,Yes
+394,OPERATIVE REPORT,Operative Procedure,DATE OF OPERATION/PROCEDURE,Yes,Yes
+395,OPERATIVE REPORT,Operative Procedure,DESCRIPTION OF THE OPERATION IN BRIEF,Yes,Yes
+396,OPERATIVE REPORT,Operative Procedure,BLOOD LOSS,Yes,Yes
+397,OPERATIVE REPORT,Operative Procedure,OPERATION IN DETAIL,Yes,Yes
+398,OPERATIVE REPORT,Operative Procedure,DETAILS OF THE PROCEDURE,Yes,Yes
+399,OPERATIVE REPORT,Operative Procedure,Specimen,Yes,Yes
+400,OPERATIVE REPORT,Operative Procedure,Operative Procedure Performed,Yes,Yes
+401,OPERATIVE REPORT,Operative Procedure,Type of Anesthesia,Yes,Yes
+402,OPERATIVE REPORT,Operative Procedure,Complaints,Yes,Yes
+403,OPERATIVE REPORT,Operative Procedure,Operative Procedure technique,Yes,Yes
+404,OPERATIVE REPORT,Operative Procedure,Date of Operation,Yes,Yes
+405,OPERATIVE REPORT,Operative Procedure,Indications for Surgery/Procedure,Yes,Yes
+406,OPERATIVE REPORT,Operative Procedure,Description of Findings,Yes,Yes
+407,OPERATIVE REPORT,Operative Procedure,Technical/Surgical Procedures Used,Yes,Yes
+408,OPERATIVE REPORT,Operative Procedure,Specimens/Tissue Removed,Yes,Yes
+409,OPERATIVE REPORT,Operative Procedure,Hospital Medications,Yes,Yes
+410,OPERATIVE REPORT,Operative Procedure,Home Medications / Respiratory Treatment,Yes,Yes
+411,OPERATIVE REPORT,Operative Procedure,Medical History,Yes,Yes
+412,OPERATIVE REPORT,Operative Procedure,Surgical History,Yes,Yes
+413,OPERATIVE REPORT,Operative Procedure,Additional Historw/ROS,Yes,Yes
+414,OPERATIVE REPORT,Operative Procedure,Operative Summary,Yes,Yes
+415,OPERATIVE REPORT,Operative Procedure,PROSTHETIC DEVICES,Yes,Yes
+416,OPERATIVE REPORT,Operative Procedure,Date of Surgery,Yes,Yes
+417,OPERATIVE REPORT,Operative Procedure,Preop Diagnosis,Yes,Yes
+418,OPERATIVE REPORT,Operative Procedure,Postop Diagnosis,Yes,Yes
+419,OPERATIVE REPORT,Operative Procedure,DATE OF PROCEDURE,Yes,Yes
+420,OPERATIVE REPORT,Operative Procedure,DISPOSITION,Yes,Yes
+421,OPERATIVE REPORT,Operative Procedure,OPERATIVE REPORT,Yes,Yes
+422,OPERATIVE REPORT,Operative Procedure,Postoperative Information,Yes,Yes
+423,OPERATIVE REPORT,Operative Procedure,Subjective,Yes,Yes
+424,OPERATIVE REPORT,Operative Procedure,Assessment,Yes,Yes
+425,OPERATIVE REPORT,Operative Procedure,Procedure Name,Yes,Yes
+426,OPERATIVE REPORT,Operative Procedure,Procedure Findings,Yes,Yes
+427,OPERATIVE REPORT,Operative Procedure,OPERATIVE FINDINGS,Yes,Yes
+428,OPERATIVE REPORT,Operative Procedure,DESCRIPTION OF THE PROCEDURE,Yes,Yes
+429,OPERATIVE REPORT,Operative Procedure,HISTORY OF PRESENT ILLNESS AND DOCUMENTATION OF INFORMED CO,Yes,Yes
+430,OPERATIVE REPORT,Operative Procedure,IMPLANTED MATERIAL,Yes,Yes
+431,OPERATIVE REPORT,Operative Procedure,STIMULATION THRESHOLDS,Yes,Yes
+432,OPERATIVE REPORT,Operative Procedure,BRADY PARAMETER SETTINGS,Yes,Yes
+433,OPERATIVE REPORT,Operative Procedure,TACHY PARAMETER SETTINGS,Yes,Yes
+434,OPERATIVE REPORT,Operative Procedure,Detailed description of procedure,Yes,Yes
+435,OPERATIVE REPORT,Operative Procedure,Attestation,Yes,Yes
+436,OPERATIVE REPORT,Operative Procedure,Procedure Summary,Yes,Yes
+437,OPERATIVE REPORT,Operative Procedure,Procedure(s),Yes,Yes
+438,OPERATIVE REPORT,Operative Procedure,Procedure Description,Yes,Yes
+439,OPERATIVE REPORT,Operative Procedure,ESTIMATED FLOOD LOSS,Yes,Yes
+440,OPERATIVE REPORT,Operative Procedure,Procedural Background,Yes,Yes
+441,OPERATIVE REPORT,Operative Procedure,Other Procedures,Yes,Yes
+442,OPERATIVE REPORT,Operative Procedure,Anesthesia Type,Yes,Yes
+443,OPERATIVE REPORT,Operative Procedure,Implants and Tissue,Yes,Yes
+444,OPERATIVE REPORT,Operative Procedure,Specimen(s),Yes,Yes
+445,OPERATIVE REPORT,Operative Procedure,Impression/Plan,Yes,Yes
+446,OPERATIVE REPORT,Operative Procedure,PROCEDURE IN DETAIL,Yes,Yes
+447,OPERATIVE REPORT,Operative Procedure,PROCEDURES DONE,Yes,Yes
+448,OPERATIVE REPORT,Operative Procedure,Surgery start date/time,Yes,Yes
+449,OPERATIVE REPORT,Operative Procedure,Name of procedure,Yes,Yes
+450,OPERATIVE REPORT,Operative Procedure,Complication(s),Yes,Yes
+451,OPERATIVE REPORT,Operative Procedure,Description of technique/procedure,Yes,Yes
+452,OPERATIVE REPORT,Operative Procedure,Anesthesi,Yes,Yes
+453,OPERATIVE REPORT,Operative Procedure,Operative Indications,Yes,Yes
+454,OPERATIVE REPORT,Operative Procedure,Cardiac Catheterization Procedure Report,Yes,Yes
+455,OPERATIVE REPORT,Operative Notes nd Reports,INDICATIONS,Yes,Yes
+456,OPERATIVE REPORT,Operative Notes,POSTOPERATIVE DIAGNOSIS,Yes,Yes
+457,OPERATIVE REPORT,Operative Note,SURGICAL PROCEDURE(S) PERFORMED,Yes,Yes
+458,OPERATIVE REPORT,OPERATING ROOM/SURGICAL REPORT,Post-Op Diagnosis,Yes,Yes
+459,OPERATIVE REPORT,Op/Proc Report and OR Notes Only,Pre-Op Diagnosis,Yes,Yes
+460,OPERATIVE REPORT,Op/proc Report and OR notes,POSTERIOR OPERATIVE PROCEDURE,Yes,Yes
+461,OPERATIVE REPORT,Op Note - Encounter Notes,PROCEDURE IN DETAIl,Yes,Yes
+462,OPERATIVE REPORT,Op Note,Surgeon(s),Yes,Yes
+463,Progress Note,NEUROSURGICAL PROGRESS NOTE,Assessment/Plan,Yes,Yes
+464,Progress Note,Neurosurgery ICU Progress Note,Allergies,Yes,Yes
+465,History & Physical,NEUROSURGERY HISTORY AND PHYSICAL,Chief Complaint/Proposed Procedures,Yes,Yes
+466,OPERATIVE REPORT,Neurosurgery Bedside Procedure Note,STATEMENT OF TECHNIQUE,Yes,Yes
+467,OPERATIVE REPORT,Neuroendovascular Brief Operative Note,Anesthesia,Yes,Yes
+468,Progress Note,NEUROCRITICAL CARE,Vitals,No,Yes
+469,Progress Note,Neuro Medical Progress Note,Home Medications,Yes,Yes
+470,Progress Note,Neuro ICU Progress Notes,Laboratory Data,Yes,Yes
+471,Progress Note,Neuro ICU Progress Note,Impression and Plan,Yes,Yes
+472,Progress Note,Neuro ICU Progress Not,Disposition,Yes,Yes
+473,Progress Note,Multidisciplinary Progress Notes,History,Yes,Yes
+474,Discharge Summary,MEDICATION DISCHARGE SUMMARY,MOST RECENT LABS ON DAY OF DISCHARGE,No,Yes
+475,Progress Note,Medical Progress Note,Physical Examination:,Yes,Yes
+476,OPERATIVE REPORT,Main EP Report,DESCRIPTION OF PROCEDURE,Yes,Yes
+477,OPERATIVE REPORT,Invasive Cardiology Procedures,PRIMARY SURGEON,Yes,Yes
+478,OPERATIVE REPORT,Intraoperative Notes,Summary of Findings,Yes,Yes
+479,OPERATIVE REPORT,Intra operative Neurophysiological MonitoringReport,NAME OF SURGEON,Yes,Yes
+480,OPERATIVE REPORT,Interventional Neuroradiology,PROCEDURE,Yes,Yes
+481,CONSULTATION REPORT,Interventional Cardiology Consult, Reason for Consultation,Yes,Yes
+482,Progress Note,Interim Summary Note / Event Note,Chief Complaint,Yes,Yes
+483,Progress Note,Intensivist Progress Note,Current Medications,Yes,Yes
+484,Discharge Summary,Inpatient Discharge Instructions,Radiology,No,Yes
+485,CONSULTATION REPORT,INPATIENT CARDIOLOGY CONSULT,Histories,Yes,Yes
+486,CONSULTATION REPORT,INPATIENT CARDIOLOGY CONSULT,problem list/Past Medical History,Yes,Yes
+487,CONSULTATION REPORT,Inpatient Cardiac Rehab Consult,HPI,Yes,Yes
+488,CONSULTATION REPORT,Initial Consultation/History and Physical,Review of Systems,Yes,Yes
+489,CONSULTATION REPORT,INITIAL CONSULTATION NOTE,Psychiatric History,Yes,Yes
+490,OPERATIVE REPORT,ICD Implant Report,INDICATIONS FOR PROCEDURE,Yes,Yes
+491,Progress Note,Hospitalist progress note,Review /Management,Yes,Yes
+492,History & Physical,Hospitalist History& Physical,Medication Allergies,Yes,Yes
+493,History & Physical,Hospitalist History &physical,Medical History,Yes,Yes
+494,History & Physical,Hospitalist History &physical,Surgical History,Yes,Yes
+495,History & Physical,Hospitalist History &physical,Family Medical History,Yes,Yes
+496,History & Physical,Hospitalist History &physical,Hospital Medications,Yes,Yes
+497,History & Physical,Hospitalist History &physical,Medications Prior To Hospitalization,Yes,Yes
+498,History & Physical,Hospitalist History &physical,Brief Historical Review,Yes,Yes
+499,History & Physical,Hospitalist History &physical,Procedure / Operative Data,Yes,Yes
+500,History & Physical,Hospitalist History &physical,CONSULTING PHYSICIAN,Yes,Yes
+501,History & Physical,Hospitalist History &physical,REASON FOR CONSULTATION,Yes,Yes
+502,History & Physical,Hospitalist History &physical,Labs,No,Yes
+503,History & Physical,Hospitalist History &physical,Imaging,No,Yes
+504,History & Physical,Hospitalist History &physical,Vitals,Yes,Yes
+505,History & Physical,Hospitalist History &physical,REASON FOR CONSULT,Yes,Yes
+506,History & Physical,Hospitalist History &physical,CARDIOLOGY ATTENDING,Yes,Yes
+507,History & Physical,Hospitalist History &physical,Brief HPI,Yes,Yes
+508,History & Physical,Hospitalist History &physical,Recent Labs,No,Yes
+509,History & Physical,Hospitalist History &physical,ASSESSMENT/ PLAN,Yes,Yes
+510,History & Physical,Hospitalist History &physical,Objective,Yes,Yes
+511,History & Physical,Hospitalist History &physical,PRE-PROCEDURE ATTESTATION STATEMENT,No,Yes
+512,History & Physical,Hospitalist History &physical,PREVIOUS CARDIAC TESTING,No,Yes
+513,History & Physical,Hospitalist History &physical,RECOMMENDATIONS,Yes,Yes
+514,History & Physical,Hospitalist History &physical,Basic Information,No,Yes
+515,History & Physical,Hospitalist History &physical,Problems,Yes,Yes
+516,History & Physical,Hospitalist History &physical,Consultants,Yes,Yes
+517,History & Physical,Hospitalist History &physical,Health Status,Yes,Yes
+518,History & Physical,Hospitalist History &physical,Problem list,Yes,Yes
+519,History & Physical,Hospitalist History &physical,Review I Managemen,Yes,Yes
+520,History & Physical,Hospitalist History &physical,impression and Plan,Yes,Yes
+521,History & Physical,Hospitalist History &physical,Completed Action List,Yes,Yes
+522,History & Physical,Hospitalist History &physical,Review! Management,Yes,Yes
+523,History & Physical,Hospitalist History &physical,MEDICATIONS PRIOR TO HOSPITAL ADMISSION,Yes,Yes
+524,History & Physical,Hospitalist History &physical,LABS/DIAGNOSTIC TESTS,No,Yes
+525,History & Physical,Hospitalist History &physical,History information,Yes,Yes
+526,History & Physical,Hospitalist History &physical,Reason for History and Physical,Yes,Yes
+527,History & Physical,Hospitalist History &physical,Prior to Admission medications,Yes,Yes
+528,History & Physical,Hospitalist History &physical,ICU Checklist,No,Yes
+529,History & Physical,Hospitalist History &physical,Imaging/Procedures,Yes,Yes
+530,History & Physical,Hospitalist History &physical,LABS / RADIOLOGY,Yes,Yes
+531,History & Physical,Hospitalist History &physical,PSH,Yes,Yes
+532,History & Physical,Hospitalist History &physical,problem List/Past Medical History,Yes,Yes
+533,History & Physical,Hospitalist History &physical,Procedure/Surgical History,Yes,Yes
+534,History & Physical,Hospitalist History &physical,Procedure/ Operative Data,Yes,Yes
+535,History & Physical,Hospitalist History &physical,Vital Signs,Yes,Yes
+536,History & Physical,Hospitalist History &physical,Procedure/Operative Data,Yes,Yes
+537,History & Physical,Hospitalist History &physical,Radiological images,Yes,Yes
+538,History & Physical,Hospitalist History &physical,Visit Information,Yes,Yes
+539,History & Physical,Hospitalist History &physical,Histories,Yes,Yes
+540,History & Physical,Hospitalist History &physical,Review / Management,Yes,Yes
+541,History & Physical,Hospitalist History &physical,Past Medical History/Problem List,Yes,Yes
+542,History & Physical,Hospitalist History &physical,Allergy,Yes,Yes
+543,History & Physical,Hospitalist History &physical,PREOPERATIVE DIAGNOSES,Yes,Yes
+544,History & Physical,Hospitalist History &physical,POSTOPERATIVE DIAGNOSES,Yes,Yes
+545,History & Physical,Hospitalist History &physical,PROCEDURE PERFORMED,Yes,Yes
+546,History & Physical,Hospitalist History &physical,DESCRIPTION OF PROCEDURE,Yes,Yes
+547,History & Physical,Hospitalist History &physical,Allergies/Adverse Allergies/Adverse Reactions,Yes,Yes
+548,History & Physical,Hospitalist History &physical,Past Past Medical/Surgical Medical/Surgical History,Yes,Yes
+549,History & Physical,Hospitalist History &physical,Exam,Yes,Yes
+550,History & Physical,Hospitalist History &physical,History,Yes,Yes
+551,History & Physical,Hospitalist History &physical,ASSESSMENT AND PLAN,Yes,Yes
+552,History & Physical,Hospitalist History &physical,Informed Consent,No,Yes
+553,History & Physical,Hospitalist History &physical,Hospital course,Yes,Yes
+554,History & Physical,Hospitalist History &physical,Disposition,Yes,Yes
+555,History & Physical,Hospitalist History &physical,Past History Review,Yes,Yes
+556,History & Physical,Hospitalist History &physical,TESTING,No,Yes
+557,History & Physical,Hospitalist History &physical,Assessment/Orders,Yes,Yes
+558,History & Physical,Hospitalist History &physical,Discontinued Medications,Yes,Yes
+559,History & Physical,Hospitalist History &physical,Assessment & Plan,Yes,Yes
+560,History & Physical,Hospitalist History &physical,Procedure,Yes,Yes
+561,History & Physical,Hospitalist History &physical,Date of Service,Yes,Yes
+562,History & Physical,Hospitalist History &physical,Intake and Output,Yes,Yes
+563,History & Physical,Hospitalist History &physical,Lab Results,Yes,Yes
+564,History & Physical,Hospitalist History &physical,Review of system,Yes,Yes
+565,History & Physical,Hospitalist History &physical,REASON FOR ADMISSION,Yes,Yes
+566,History & Physical,Hospitalist History &physical,EXAMINATION,Yes,Yes
+567,History & Physical,Hospitalist History &physical,IMPRESSION,Yes,Yes
+568,History & Physical,Hospitalist History &physical,physical Examinations,Yes,Yes
+569,History & Physical,Hospitalist History &physical,Diagnostic data,Yes,Yes
+570,History & Physical,Hospitalist History &physical,Data Review,Yes,Yes
+571,History & Physical,Hospitalist History &physical,Diagnostic Results,Yes,Yes
+572,History & Physical,Hospitalist History &physical,General HPI,Yes,Yes
+573,History & Physical,Hospitalist History &physical,trauma Information,Yes,Yes
+574,History & Physical,Hospitalist History &physical,Primary Survey,No,Yes
+575,History & Physical,Hospitalist History &physical,Disability Assessment,No,Yes
+576,History & Physical,Hospitalist History &physical,Review of Systems/ Patient History,Yes,Yes
+577,History & Physical,Hospitalist History &physical,Secondary Survey Physical Exam,Yes,Yes
+578,History & Physical,Hospitalist History &physical,Results and Procedures Interpretation,No,Yes
+579,History & Physical,Hospitalist History &physical,CURRENT MEDICATIONS,Yes,Yes
+580,History & Physical,Hospitalist History &physical,RECOMMENDATION,Yes,Yes
+581,History & Physical,Hospitalist History &physical,problem ist/past medical history,Yes,Yes
+582,History & Physical,Hospitalist History &physical,Reason for Angiogram,Yes,Yes
+583,History & Physical,Hospitalist History &physical,RADIOGRAPHIC STUDIES,No,Yes
+584,History & Physical,Hospitalist History &physical,SocialWork Assessment,No,Yes
+585,History & Physical,Hospitalist History &physical,Assessment Data,Yes,Yes
+586,History & Physical,Hospitalist History &physical,Initial Discharge Planning,No,Yes
+587,History & Physical,Hospitalist History &physical,ADMISSION DIAGNOSIS,Yes,Yes
+588,History & Physical,Hospitalist History &physical,DISCHARGE CONDITION,Yes,Yes
+589,History & Physical,Hospitalist History &physical,DISCHARGE MEDICATIONS,Yes,Yes
+590,History & Physical,Hospitalist History &physical,Social History summary,Yes,Yes
+591,History & Physical,Hospitalist History &physical,PastMedical History/Problem List,Yes,Yes
+592,History & Physical,Hospitalist History &physical,Social,Yes,Yes
+593,History & Physical,Hospitalist History &physical,Family,Yes,Yes
+594,History & Physical,Hospitalist History &physical,MEDS,Yes,Yes
+595,History & Physical,Hospitalist History &physical,FAM Hx,Yes,Yes
+596,History & Physical,Hospitalist History &physical,SOC Hx,Yes,Yes
+597,History & Physical,Hospitalist History &physical,DIAGNOSTIC STUDIES,No,Yes
+598,History & Physical,Hospitalist History &physical,ADMISSION CHECKLIST,No,Yes
+599,History & Physical,Hospitalist History &physical,ORDERS,Yes,Yes
+600,History & Physical,Hospitalist History &physical,Diagnosis and Procedure Summary,Yes,Yes
+601,History & Physical,Hospitalist History &physical,Known Family History of,Yes,Yes
+602,History & Physical,Hospitalist History &physical,Impression & Plan Summary,Yes,Yes
+603,History & Physical,Hospitalist History &physical,PMHx,Yes,Yes
+604,History & Physical,Hospitalist History &physical,Social Hx,Yes,Yes
+605,History & Physical,Hospitalist History &physical,Data,Yes,Yes
+606,History & Physical,Hospitalist History &physical,REASON FOR HOSPITALIZATION,Yes,Yes
+607,History & Physical,Hospitalist History &physical,ALLERGIES AND INTOLERANCES,Yes,Yes
+608,History & Physical,Hospitalist History &physical,History of Present Illness/Subjective,Yes,Yes
+609,History & Physical,Hospitalist History &physical,Chronic Problem List,Yes,Yes
+610,History & Physical,Hospitalist History &physical,Physical Exam/Objective,Yes,Yes
+611,History & Physical,Hospitalist History &physical,Results,Yes,Yes
+612,History & Physical,Hospitalist History &physical,Cchronic Problems,Yes,Yes
+613,History & Physical,Hospitalist History &physical,Past History,Yes,Yes
+614,History & Physical,Hospitalist History &physical,Diagnostics,Yes,Yes
+615,History & Physical,Hospitalist History &physical,Secondary Survey,Yes,Yes
+616,History & Physical,Hospitalist History &physical,Attending Assessment and Plan Attestation,Yes,Yes
+617,History & Physical,Hospitalist History &physical,PERSONAL AND SOCIAL HISTORY,Yes,Yes
+618,History & Physical,Hospitalist History &physical,SYSTEM REVIEW,Yes,Yes
+619,History & Physical,Hospitalist History &physical,Free Text HPI Notes,Yes,Yes
+620,History & Physical,Hospitalist History &physical,Medication/Allergy,Yes,Yes
+621,History & Physical,Hospitalist History &physical,"Diagnosis, Assessment & Plan",Yes,Yes
+622,History & Physical,Hospitalist History &physical,past Medical & surgical hx,Yes,Yes
+623,History & Physical,Hospitalist History &physical,"Diagnosis, Assessment& Plan",Yes,Yes
+624,History & Physical,Hospitalist History &physical,Free Text A&P,Yes,Yes
+625,History & Physical,Hospitalist History &physical,Allergies/Intolerances,Yes,Yes
+626,History & Physical,Hospitalist History &physical,Objective Data,Yes,Yes
+627,History & Physical,Hospitalist History &physical,Risk factors,Yes,Yes
+628,History & Physical,Hospitalist History &physical,General exam,Yes,Yes
+629,History & Physical,Hospitalist History &physical,Ortho Exam,Yes,Yes
+630,History & Physical,Hospitalist History &physical,Orders Added,No,Yes
+631,History & Physical,Hospitalist History &physical,Assessment / Plan,Yes,Yes
+632,History & Physical,Hospitalist History &physical,Home Medications Active,Yes,Yes
+633,History & Physical,Hospitalist History &physical,Free Text Dx A&P Notes,Yes,Yes
+634,Discharge Summary,Hospitalist Discharge Summary,DISCHARGE DATE,Yes,Yes
+635,Discharge Summary,HOSPITAL DISCHARGE SUMMARY,Procedures,Yes,Yes
+636,Progress Note,HIT - IM Progress Note,Narrative Hospital course,Yes,Yes
+637,History & Physical,History and physicals,Chief Complaint,Yes,Yes
+638,History & Physical,History and Physical/Admission Notes,Physical Examination,Yes,Yes
+639,History & Physical,History and Physical Reports,History of Present Illness,Yes,Yes
+640,History & Physical,History and Physical Notes,PMH,Yes,Yes
+641,History & Physical,History and Physical,Review of Systems,Yes,Yes
+642,History & Physical,History and Physical,Assessment/Plan,Yes,Yes
+643,History & Physical,HISTORY AND PHYSICA,Medications,Yes,Yes
+644,History & Physical,History & Physicals (continued),Social History,Yes,Yes
+645,History & Physical,History & Physicals,Family History,Yes,Yes
+646,History & Physical,History & Physical:,Laboratory Data,Yes,Yes
+647,History & Physical,History & Physical - Adul,IMMEDIATE PREOPERATIVE REASSESSMENT,Yes,Yes
+648,History & Physical,HISTORY & PHYSICAL,Home Medications,Yes,Yes
+649,History & Physical,HISTORY & PHYSICAL,Physical Exam,Yes,Yes
+650,History & Physical,H&P Notes (continued),Allergies,Yes,Yes
+651,History & Physical,H&P Notes,Code Status,No,Yes
+652,History & Physical,H&P (continued),Past Surgical History,Yes,Yes
+653,History & Physical,H&P - Inpatient Notes (,Present Illness,Yes,Yes
+654,History & Physical,H&P - Encounter Notes,HPI,Yes,Yes
+655,History & Physical,H&P - Encounter Notes,ROS,Yes,Yes
+656,History & Physical,H&P,Past Medical History,Yes,Yes
+657,Progress Note,General Progress/ Information Relay Note,PHYSICAL EXAM:,Yes,Yes
+658,OPERATIVE REPORT,General Procedures,MEDICATIONS,Yes,Yes
+659,Progress Note,General Medicine Medicine Progress Note,Vital Signs,Yes,Yes
+660,CONSULTATION REPORT,FMCH FOLLOW UP CONSULTATION NOTE,Allergies,Yes,Yes
+661,OPERATIVE REPORT,FMC Operative Report,Specimens Removed,Yes,Yes
+662,History & Physical,FMC H&P,Impression/Plan,Yes,Yes
+663,Discharge Summary,FMC Discharge Summary,PRIMARY DISCHARGE DIAGNOSIS,Yes,Yes
+664,Anesthesia Reports,FMC Anesthesia Record,Substance History ,Yes,Yes
+665,OPERATIVE REPORT,FGTBA Left ARTERIAL CATHETERIZATION,POST PROCEDURAL DIAGNOSIS,Yes,Yes
+666,OPERATIVE REPORT,EP Lab Intraoperative Record,OPERATIVE NOTE,Yes,Yes
+667,CONSULTATION REPORT,EP Consultation Note,Recommendations,Yes,Yes
+668,CONSULTATION REPORT,EP Consultation Note,Diagnosis,Yes,Yes
+669,CONSULTATION REPORT,EP Consultation Note,Interventions,Yes,Yes
+670,CONSULTATION REPORT,EP Consultation Note,Monitoring and Evaluation,Yes,Yes
+671,CONSULTATION REPORT,EP Consultation Note,Result,No,Yes
+672,CONSULTATION REPORT,EP Consultation Note,Basic information,No,Yes
+673,CONSULTATION REPORT,EP Consultation Note,Current medications,Yes,Yes
+674,CONSULTATION REPORT,EP Consultation Note,Intake and Output,Yes,Yes
+675,CONSULTATION REPORT,EP Consultation Note,Review / Management,Yes,Yes
+676,CONSULTATION REPORT,EP Consultation Note,procedure,Yes,Yes
+677,CONSULTATION REPORT,EP Consultation Note,Procedure/surgical history,Yes,Yes
+678,CONSULTATION REPORT,EP Consultation Note,Code Status,No,Yes
+679,CONSULTATION REPORT,EP Consultation Note,GENERAL,Yes,Yes
+680,CONSULTATION REPORT,EP Consultation Note,Laboratory Data,No,Yes
+681,CONSULTATION REPORT,EP Consultation Note,CT Abd/Pelvis w/o Contras,No,Yes
+682,CONSULTATION REPORT,EP Consultation Note,CT Thorax w/ Contrast,No,Yes
+683,CONSULTATION REPORT,EP Consultation Note,IMAGING,No,Yes
+684,CONSULTATION REPORT,EP Consultation Note,IMPRESSION,Yes,Yes
+685,CONSULTATION REPORT,EP Consultation Note,RECOMMENDATION,Yes,Yes
+686,CONSULTATION REPORT,EP Consultation Note,CONCLUSIONS,Yes,Yes
+687,CONSULTATION REPORT,EP Consultation Note,DIAGNOSTIC DATA,Yes,Yes
+688,CONSULTATION REPORT,EP Consultation Note,Reason for Consultations,Yes,Yes
+689,CONSULTATION REPORT,EP Consultation Note,Procedures/surgical history,Yes,Yes
+690,CONSULTATION REPORT,EP Consultation Note,SUBJECTIVE,Yes,Yes
+691,CONSULTATION REPORT,EP Consultation Note,PROBLEM LIST,Yes,Yes
+692,CONSULTATION REPORT,EP Consultation Note,PROPHYLAXIS,No,Yes
+693,CONSULTATION REPORT,EP Consultation Note,PHYSICIAN COVID ASSESSMENT,Yes,Yes
+694,CONSULTATION REPORT,EP Consultation Note, DISPOSITION,Yes,Yes
+695,CONSULTATION REPORT,EP Consultation Note,OBJECTIVE,Yes,Yes
+696,CONSULTATION REPORT,EP Consultation Note, LABS,No,Yes
+697,CONSULTATION REPORT,EP Consultation Note,RADIOLOGY,No,Yes
+698,CONSULTATION REPORT,EP Consultation Note,DISPOSITION,Yes,Yes
+699,CONSULTATION REPORT,EP Consultation Note,Home Medications,Yes,Yes
+700,CONSULTATION REPORT,EP Consultation Note,Hospital Medications,Yes,Yes
+701,CONSULTATION REPORT,EP Consultation Note,Past History,Yes,Yes
+702,CONSULTATION REPORT,EP Consultation Note,Diagnostics,Yes,Yes
+703,CONSULTATION REPORT,EP Consultation Note,IDENTIFYING DATA,Yes,Yes
+704,CONSULTATION REPORT,EP Consultation Note,PAST MEDICAL AND SURGICAL HISTORY,Yes,Yes
+705,CONSULTATION REPORT,EP Consultation Note,PSYCHO SOCIAL HISTORY,Yes,Yes
+706,CONSULTATION REPORT,EP Consultation Note,Reason for consult,Yes,Yes
+707,CONSULTATION REPORT,EP Consultation Note,"Diagnosis, Assessment & Plan",Yes,Yes
+708,CONSULTATION REPORT,EP Consultation Note,NARRATIVE,Yes,Yes
+709,CONSULTATION REPORT,EP Consultation Note,PMH,Yes,Yes
+710,CONSULTATION REPORT,EP Consultation Note,History - Adult longitudinal,Yes,Yes
+711,CONSULTATION REPORT,EP Consultation Note,MAGING AND LABORATORY DATA,Yes,Yes
+712,CONSULTATION REPORT,EP Consultation Note,REVIEW OF SYSTEM,Yes,Yes
+713,CONSULTATION REPORT,EP Consultation Note,DIAGNOSTIC STUDIES,Yes,Yes
+714,CONSULTATION REPORT,EP Consultation Note,Home Medications (2) Active,Yes,Yes
+715,CONSULTATION REPORT,EP Consultation Note,CHIEFCOMPLAINT,Yes,Yes
+716,CONSULTATION REPORT,EP Consultation Note,HISTORY OFPRESENT ILLNESS,Yes,Yes
+717,CONSULTATION REPORT,EP Consultation Note,PASTMEDICAL HISTORY,Yes,Yes
+718,CONSULTATION REPORT,EP Consultation Note,LABORATORY EXAMINATION,Yes,Yes
+719,CONSULTATION REPORT,EP Consultation Note,Historyof Present Illness,Yes,Yes
+720,CONSULTATION REPORT,EP Consultation Note,Review /Management,Yes,Yes
+721,CONSULTATION REPORT,EP Consultation Note,CONSULTING PHYSICIAN,Yes,Yes
+722,Progress Note,Encounter Details,Past Medical/Surgical History,Yes,Yes
+723,Emergency provider report,Emergency/Urgent Care,impression,Yes,Yes
+724,Emergency provider report,Emergency/Urgent Care,disposition,Yes,Yes
+725,Emergency provider report,Emergency/Urgent Care,ed procedures,Yes,Yes
+726,Emergency provider report,Emergency/Urgent Care,transfer note,No,Yes
+727,Emergency provider report,Emergency/Urgent Care,vital signs,No,Yes
+728,Emergency provider report,Emergency/Urgent Care,objective,Yes,Yes
+729,Emergency provider report,Emergency/Urgent Care,Free text HPI notes,Yes,Yes
+730,Emergency provider report,Emergency/Urgent Care,"Diagnosis, Assessment &  Plan",Yes,Yes
+731,Emergency provider report,Emergency/Urgent Care,Social & Psychosocial Habits,No,Yes
+732,Emergency provider report,Emergency/Urgent Care,Social & Psychosocial Habit,No,Yes
+733,Emergency provider report,Emergency/Urgent Care,nterpretation & Diagnostics,Yes,Yes
+734,Emergency provider report,Emergency/Urgent Care, Past Medical/ Family/ Social History,Yes,Yes
+735,Emergency provider report,Emergency/Urgent Care,discharge/Care Plan,Yes,Yes
+736,Emergency provider report,Emergency/Urgent Care,ros,Yes,Yes
+737,Emergency provider report,Emergency/Urgent Care,Free Text Risk Notes,Yes,Yes
+738,Emergency provider report,Emergency/Urgent Care,Free Text PE Notes,Yes,Yes
+739,Emergency provider report,Emergency/Urgent Care,Re-Evaluation & MDM,Yes,Yes
+740,Emergency provider report,Emergency/Urgent Care,Interpretation & Diagnostics,Yes,Yes
+741,Emergency provider report,Emergency/Urgent Care,Lab & Imaging Statement,Yes,Yes
+742,Emergency provider report,Emergency/Urgent Care,Re-Evaluation& MDM,Yes,Yes
+743,Emergency provider report,Emergency/Urgent Care,Patient Discharge & Departure,Yes,Yes
+744,Emergency provider report,Emergency/Urgent Care,ROS Statements,Yes,Yes
+745,Emergency provider report,Emergency/Urgent Care,Free Text PE Note,Yes,Yes
+746,Emergency provider report,Emergency/Urgent Care,HPI-Stroke/CVA,Yes,Yes
+747,Emergency provider report,Emergency/Urgent Care,basic information,No,Yes
+748,Emergency provider report,Emergency/Urgent Care,General,Yes,Yes
+749,Emergency provider report,Emergency/Urgent Care,Medical decision making,Yes,Yes
+750,Emergency provider report,Emergency/Urgent Care,Ddischarge Summary,Yes,Yes
+751,Emergency provider report,Emergency/Urgent Care,Medication Reconciliation,Yes,Yes
+752,Emergency provider report,Emergency/Urgent Care,Procedure,Yes,Yes
+753,Emergency provider report,Emergency/Urgent Care,General Assessment,Yes,Yes
+754,Emergency provider report,Emergency/Urgent Care,Diagnoses,Yes,Yes
+755,Emergency provider report,Emergency/Urgent Care,ED Triage Allergies/Meds ,Yes,Yes
+756,Emergency provider report,Emergency/Urgent Care,Medication List,Yes,Yes
+757,Emergency provider report,Emergency/Urgent Care,History pf present Illness,Yes,Yes
+758,Emergency provider report,Emergency/Urgent Care,Health Status,Yes,Yes
+759,Emergency provider report,Emergency/Urgent Care,Past Medical/Family/Social history,Yes,Yes
+760,Emergency provider report,Emergency/Urgent Care,Notes,Yes,Yes
+761,Emergency provider report,Emergency/Urgent Care,ReExamination/ Reevaluation,Yes,Yes
+762,Emergency provider report,Emergency/Urgent Care,Impression and Plan,Yes,Yes
+763,Emergency provider report,Emergency/Urgent Care,Subjective Nursing Assessment,Yes,Yes
+764,Emergency provider report,Emergency/Urgent Care,Emergency Department Orders,Yes,Yes
+765,Emergency provider report,Emergency/Urgent Care,Procedures,Yes,Yes
+766,Emergency provider report,Emergency/Urgent Care,CRITICAL CARE,Yes,Yes
+767,Emergency provider report,Emergency/Urgent Care,Laboratory Results,Yes,Yes
+768,Emergency provider report,Emergency/Urgent Care,Medications,Yes,Yes
+769,Emergency provider report,Emergency/Urgent Care,Past Medical/ Family/ Social History,Yes,Yes
+770,Emergency provider report,Emergency/Urgent Care,Surgical history,Yes,Yes
+771,Emergency provider report,Emergency/Urgent Care,Impression/plan,Yes,Yes
+772,Emergency provider report,Emergency/Urgent Care,BASIC INFO,Yes,Yes
+773,Emergency provider report,Emergency/Urgent Care,Physical Exam/Objective ,Yes,Yes
+774,Emergency provider report,Emergency/Urgent Care,Clinical Scores,Yes,Yes
+775,Emergency provider report,Emergency/Urgent Care,Chronic Problem List,Yes,Yes
+776,Emergency provider report,Emergency/Urgent Care,Procedure/Surgical History,Yes,Yes
+777,Emergency provider report,Emergency/Urgent Care,Physical Exam/Objective,Yes,Yes
+778,Emergency provider report,Emergency/Urgent Care,Medication Administration,Yes,Yes
+779,Emergency provider report,Emergency/Urgent Care,Family History,Yes,Yes
+780,Emergency provider report,Emergency/Urgent Care,Diagnostic Results,Yes,Yes
+781,Emergency provider report,Emergency/Urgent Care,HPI,Yes,Yes
+782,Emergency provider report,Emergency/Urgent Care,Free TextHPI Notes,Yes,Yes
+783,Emergency provider report,Emergency/Urgent Care,Additional Review of Systems,Yes,Yes
+784,Emergency provider report,Emergency/Urgent Care,Past Medical History - Adult,Yes,Yes
+785,Emergency provider report,Emergency/Urgent Care,Past Medical History:,Yes,Yes
+786,Emergency provider report,Emergency/Urgent Care,Focused PE,Yes,Yes
+787,Emergency provider report,Emergency/Urgent Care,HPI-General Illness,Yes,Yes
+788,Emergency provider report,Emergency/Urgent Care,HPI-General Illness Free Text HPI Notes,Yes,Yes
+789,Emergency provider report,Emergency/Urgent Care, Allergies,Yes,Yes
+790,Emergency provider report,Emergency/Urgent Care, Chief Complaint,Yes,Yes
+791,Emergency provider report,Emergency/Urgent Care,INITIAL MEDICAL SCREENING,Yes,Yes
+792,Emergency provider report,Emergency/Urgent Care, Impression and Plan,Yes,Yes
+793,Emergency provider report,Emergency/Urgent Care,Physical Examination,Yes,Yes
+794,Emergency provider report,Emergency/Urgent Care, History of Present Illness,Yes,Yes
+795,Emergency provider report,Emergency/Urgent Care, Physical Examination,Yes,Yes
+796,Emergency provider report,Emergency/Urgent Care, Medical Decision Making,Yes,Yes
+797,Emergency provider report,Emergency/Urgent Care, Reexamination/ Reevaluation,Yes,Yes
+798,Emergency provider report,Emergency/Trauma Documentation,Results,No,Yes
+799,Emergency provider report,Emergency Report,social history,Yes,Yes
+800,Emergency provider report,EMERGENCY PROVIDER REPORT,present medical history,Yes,Yes
+801,Emergency provider report,Emergency provider report,past surgical history,Yes,Yes
+802,Emergency provider report,Emergency Medicine,past medical history,Yes,Yes
+803,Emergency provider report,Emergency Documentations,Ed course,Yes,Yes
+804,Emergency provider report,Emergency Documentation,physical exam,Yes,Yes
+805,Emergency provider report,Emergency department reports,chief complaint,Yes,Yes
+806,Emergency provider report,Emergency Department Reports,Review of systems,Yes,Yes
+807,Emergency provider report,Emergency Department Chart,history of present illness,Yes,Yes
+808,Emergency provider report,ED to Hosp-Admission,assessment,Yes,Yes
+809,Emergency provider report,ED Records,labs,Yes,Yes
+810,Emergency provider report,ED Record,plan,Yes,Yes
+811,Emergency provider report,ED Provider Notes - ED Notes,mode of arrival,Yes,Yes
+812,Emergency provider report,ED Provider Notes,current medications,Yes,Yes
+813,Emergency provider report,ED Provider Note (,assessment/plan,Yes,Yes
+814,Emergency provider report,ED Provider Note,allergies,Yes,Yes
+815,Emergency provider report,ED Provider Note,laboratory,Yes,Yes
+816,Emergency provider report,ED PATIENT DISCHARGE INFORMATION,medical dicision making,Yes,Yes
+817,Emergency provider report,ED Notes,diagnostics,Yes,Yes
+818,Emergency provider report,ED Note-Physician,home medications,Yes,Yes
+819,Discharge Summary,Discharge Summary:,Assessment,Yes,Yes
+820,Discharge Summary,Discharge Summary Note (continued),Procedure,Yes,Yes
+821,Discharge Summary,Discharge Summary Note,Plan,Yes,Yes
+822,Discharge Summary,Discharge summary (inpatient) advanced practice provider-Dis,ALL DISCHARGE MEDICATIONS,Yes,Yes
+823,Discharge Summary,Discharge Summary (continued),Admitting HP,Yes,Yes
+824,Discharge Summary,Discharge Summary,Consultants,Yes,Yes
+825,Discharge Summary,DISCHARGE SUMMARY,VITAL SIGNS ON THE DAYS OF DISCHARGE,Yes,Yes
+826,Discharge Summary,Discharge Summaries (continued),Hospital Course,Yes,Yes
+827,Discharge Summary,Discharge Summaries,Discharge Diagnosis,Yes,Yes
+828,Discharge Summary,Discharge Recommendations,General Information,Yes,Yes
+829,Discharge Summary,Discharge Planner Note,Impression and Plan,Yes,Yes
+830,Discharge Summary,Discharge Planner Note,Disposition,Yes,Yes
+831,Discharge Summary,DISCHARGE NOTE,Narrative Hospital course,Yes,Yes
+832,Discharge Summary,Discharge Medication List,Admitting HPI,Yes,Yes
+833,Discharge Summary,Discharge Instructions,FINAL REPORT ,Yes,Yes
+834,Discharge Summary,Discharge Information (continued),Current medications,Yes,Yes
+835,Discharge Summary,DISCHARGE INFORMATION,Instructions,Yes,Yes
+836,Discharge Summary,Discharge Documentation,Basic Information,No,Yes
+837,CONSULTATION REPORT,DEPARTMENT OF MEDICINE,Results,No,Yes
+838,Discharge Summary,Death summary,IMAGING,No,Yes
+839,Progress Note,DAILY MEDICINE PROGRESS NOTE,Labs/Imaging,Yes,Yes
+840,Progress Note,CV DIABETES CONSULT DAILY PROGRESS NOTE,HOSPITAL MEDICATIONS,Yes,Yes
+841,OPERATIVE REPORT,CT surgery preop evaluation note,operative procedures performed,Yes,Yes
+842,Progress Note,CRITICALCARE PROGRESS NOTE,Review / Managemen,Yes,Yes
+843,Progress Note,Critical Care/ICU Progress Note,Physical Exam,Yes,Yes
+844,Progress Note,Critical Care Progress Note,Recommendations,Yes,Yes
+845,Progress Note,Critical Care Note,Radiology/Imaging last 72 hours,No,Yes
+846,Progress Note,CRITICAL CARE DAILY NOTE,SUBJECTIVE/OBJECTIVE,Yes,Yes
+847,CONSULTATION REPORT,Critical Care Consult Note,Impression and Plan,Yes,Yes
+848,Progress Note,Critical Care,Type of Study,Yes,Yes
+849,Progress Note,Cranlofaclal Plastic Surgery Progress Note,Admitting HPI,Yes,Yes
+850,CONSULTATION REPORT,consults,Health Status,Yes,Yes
+851,CONSULTATION REPORT,Consults,Assessment,Yes,Yes
+852,CONSULTATION REPORT,Consulting physician,Plan,Yes,Yes
+853,CONSULTATION REPORT,Consultations,Past Medical History,Yes,Yes
+854,CONSULTATION REPORT,CONSULTATION REPORT,Past Surgical History,Yes,Yes
+855,CONSULTATION REPORT,Consultation Notes,Reason for Consultation,Yes,Yes
+856,CONSULTATION REPORT,Consultation,History of Present Illness,Yes,Yes
+857,CONSULTATION REPORT,CONSULTATION,Estimated blood loss,Yes,Yes
+858,CONSULTATION REPORT,Consult Notes,Social History,Yes,Yes
+859,CONSULTATION REPORT,Consult Note*-NS - Neurosciences,Substance Use History,Yes,Yes
+860,CONSULTATION REPORT,Consult Note - Medical-Internal Medicine,Diagnostic results,Yes,Yes
+861,CONSULTATION REPORT,Consult Note,Chief Complaint,Yes,Yes
+862,CONSULTATION REPORT,Consult,Family History,Yes,Yes
+863,Anesthesia Reports,"Consentfor,Anesthesia / Moderate Sedation",Procedure Notes,Yes,Yes
+864,Progress Note,Clinical Summary,Cath Attending Admission H&P,Yes,Yes
+865,OPERATIVE REPORT,Clinical Notes,Operative Data,Yes,Yes
+866,Progress Note,Clinical Notes,DATE OF PROCEDURE,Yes,Yes
+867,OPERATIVE REPORT,CLINICAL NOTE,DISPOSITION,Yes,Yes
+868,OPERATIVE REPORT,Clinical Documents,PLAN,Yes,Yes
+869,OPERATIVE REPORT,Central Venous Catheter Insertion,operative procedure techniques,Yes,Yes
+870,Progress Note,CASE MANAGEMENT PROGRESS NOTE,TELEMETRY,No,Yes
+871,Progress Note,Case Management Progress Note,ASSESSMENT - MEDICINE,Yes,Yes
+872,CONSULTATION REPORT,CARDIOVASCULAR DIABETES CONSULT H&P, Home Medications,Yes,Yes
+873,Progress Note,CARDIOVASCULAR AND THORACIC SURGERY,History of Present Illness,Yes,Yes
+874,CONSULTATION REPORT,CARDIOTHORACIC-VASCULAR SURGERY CONSULT NOTE,Famiy History,Yes,Yes
+875,CONSULTATION REPORT,Cardio-Thoracic Surgery,Physical Examination,Yes,Yes
+876,Progress Note,Cardiothoracic & Transplant Surgery Progress Note,Labs reviewed,Yes,Yes
+877,Progress Note,Cardiology Progress note,REVIEW OF SYSTEMS:,Yes,Yes
+878,Progress Note,Cardiology progress Note,Assessment and Plan,Yes,Yes
+879,Progress Note,CARDIOLOGY PROGRESS NOTE,Assessment & Plan for today,Yes,Yes
+880,OPERATIVE REPORT,Cardiology Procedures,EXAM,Yes,Yes
+881,OPERATIVE REPORT,Cardiology procedure,implants,Yes,Yes
+882,CONSULTATION REPORT,Cardiology Initial Consult Note,physical exam,Yes,Yes
+883,Progress Note,Cardiology Critical Care Progress Note,Imaging,Yes,Yes
+884,CONSULTATION REPORT,CARDIOLOGY CONSULTATION,Medications,Yes,Yes
+885,Progress Note,CARDIOLOGY CONSULT PROGRESS NOTE,PHYSICIAN ATTESTATION,No,Yes
+886,OPERATIVE REPORT,Cardiac Catheterization Report,PRE PROCEDURAL DIAGNOSIS,Yes,Yes
+887,OPERATIVE REPORT,Cardiac cath,SEDATION,Yes,Yes
+888,History & Physical,Blue Surgery History and Physical,Assessment,Yes,Yes
+889,Anesthesia Reports,Anesthesia Records,Surgical History,Yes,Yes
+890,Anesthesia Reports,Anesthesia record Report,Anesthesia Summary,Yes,Yes
+891,Anesthesia Reports,Anesthesia Record,Anesthesia History,Yes,Yes
+892,Anesthesia Reports,ANESTHESIA PRE-PROCEDURE CONSULT / H & P,Central Venous Line,Yes,Yes
+893,Anesthesia Reports,Anesthesia Pre-Evaluation,TEE ,Yes,Yes
+894,Anesthesia Reports,ANESTHESIA ORDERS,Anesthesia Plan ,Yes,Yes
+895,Anesthesia Reports,ANESTHESIA ORDERS,Anesthesia Post Evaluation ,Yes,Yes
+896,Anesthesia Reports,ANESTHESIA ORDERS,Medications,Yes,Yes
+897,Anesthesia Reports,ANESTHESIA ORDERS,PRBC,Yes,Yes
+898,Anesthesia Reports,ANESTHESIA ORDERS,Patient Record,Yes,Yes
+899,Anesthesia Reports,ANESTHESIA ORDERS,Review of Medical History and Risk Assessment,Yes,Yes
+900,Anesthesia Reports,ANESTHESIA ORDERS,Extracorporeal Circulation Record ,Yes,Yes
+901,Anesthesia Reports,ANESTHESIA ORDERS,Planned procedure,Yes,Yes
+902,Anesthesia Reports,ANESTHESIA ORDERS,HPI,Yes,Yes
+903,Anesthesia Reports,ANESTHESIA ORDERS,Anesthesia/Sedation History,Yes,Yes
+904,Anesthesia Reports,ANESTHESIA ORDERS,Ros/PMH(Review of System/past Medical History),Yes,Yes
+905,Anesthesia Reports,ANESTHESIA ORDERS,ASA plan,Yes,Yes
+906,Anesthesia Reports,ANESTHESIA ORDERS,Anesthesia Information,Yes,Yes
+907,Anesthesia Reports,ANESTHESIA ORDERS,Procedure Summary,Yes,Yes
+908,Anesthesia Reports,ANESTHESIA ORDERS,Responsible Staff,Yes,Yes
+909,Anesthesia Reports,ANESTHESIA ORDERS,Attestation Information,Yes,Yes
+910,Anesthesia Reports,ANESTHESIA ORDERS,Anesthesia Checklist,Yes,Yes
+911,Anesthesia Reports,ANESTHESIA ORDERS,Pre-anesthesia evaluation,Yes,Yes
+912,Anesthesia Reports,ANESTHESIA ORDERS,Active Hospital Problems,Yes,Yes
+913,Anesthesia Reports,ANESTHESIA ORDERS,Medical History,Yes,Yes
+914,Anesthesia Reports,ANESTHESIA ORDERS,Other History,Yes,Yes
+915,Anesthesia Reports,ANESTHESIA ORDERS,Assessment,Yes,Yes
+916,Anesthesia Reports,ANESTHESIA ORDERS,ANESTHESIA RECORD,Yes,Yes
+917,Anesthesia Reports,ANESTHESIA ORDERS,Anesthesia record Continuation,Yes,Yes
+918,Anesthesia Reports,ANESTHESIA ORDERS,CARDIO PULMONARY PERFUSION RECORD,Yes,Yes
+919,Anesthesia Reports,ANESTHESIA ORDERS,BLOOD BANK TRANSFUSION RECORD,Yes,Yes
+920,Anesthesia Reports,ANESTHESIA ORDERS,RADIOLOGY NURSING VITALS SHEET ,Yes,Yes
+921,Anesthesia Reports,ANESTHESIA ORDERS,ENDOSCOPY I rADIOLOGY NURSING RECORD,Yes,Yes
+922,Anesthesia Reports,ANESTHESIA ORDERS,PRE-PROCEDURE REVIEW OF SYSTEMS,Yes,Yes
+923,Anesthesia Reports,ANESTHESIA ORDERS,Medication,Yes,Yes
+924,Anesthesia Reports,ANESTHESIA ORDERS,Past Medical History,Yes,Yes
+925,Anesthesia Reports,ANESTHESIA ORDERS,Past Surgical History,Yes,Yes
+926,Anesthesia Reports,ANESTHESIA ORDERS,Social History,Yes,Yes
+927,Anesthesia Reports,ANESTHESIA ORDERS,Vital Signs,No,Yes
+928,Anesthesia Reports,ANESTHESIA ORDERS,Labs,No,Yes
+929,Anesthesia Reports,ANESTHESIA ORDERS,PROPOSED PROCEDURE,Yes,Yes
+930,Anesthesia Reports,ANESTHESIA ORDERS,SURGEON/PROCEDURAUST,Yes,Yes
+931,Anesthesia Reports,ANESTHESIA ORDERS,HISTORY OF PRESENT ILLNESS,Yes,Yes
+932,Anesthesia Reports,ANESTHESIA ORDERS,ROS,Yes,Yes
+933,Anesthesia Reports,ANESTHESIA ORDERS,ANESTHETIC HISTORY,Yes,Yes
+934,Anesthesia Reports,ANESTHESIA ORDERS,ALLERGIES,Yes,Yes
+935,Anesthesia Reports,ANESTHESIA ORDERS,LABORATORY STUDIES,Yes,Yes
+936,Anesthesia Reports,ANESTHESIA ORDERS,OTHER STUDIES,Yes,Yes
+937,Anesthesia Reports,ANESTHESIA ORDERS,PHYSICAL EXAMINATION:,Yes,Yes
+938,Anesthesia Reports,ANESTHESIA ORDERS,PLAN,Yes,Yes
+939,Anesthesia Reports,ANESTHESIA GRAPH,Facility Administered Medications ,Yes,Yes
+940,Anesthesia Reports,Anesthesia Encountes,Procedure Summary ,Yes,Yes
+941,Anesthesia Reports,Anesthesia Encounter,Events,Yes,Yes
+942,Anesthesia Reports,Anesthesia,Staff ,No,Yes
+943,Anesthesia Reports,Anesthesia,Prescription Medications,Yes,Yes
+944,Discharge Summary,Admit/Transfer/Discharge Orders,NEW DISCHARGE MEDICATIONS,Yes,Yes
+945,Discharge Summary,Admit/Transfer/Discharge Orders,Admitting diagnosis,Yes,Yes
+946,Discharge Summary,Admit/Transfer/Discharge Orders,Principal diagnosis,Yes,Yes
+947,Discharge Summary,Admit/Transfer/Discharge Orders,Secondary diagnosis,Yes,Yes
+948,Discharge Summary,Admit/Transfer/Discharge Orders,History of Present Illness,Yes,Yes
+949,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Echocardiogram,No,Yes
+950,Discharge Summary,Admit/Transfer/Discharge Orders,Comprehensive Care,Yes,Yes
+951,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Exam,Yes,Yes
+952,Discharge Summary,Admit/Transfer/Discharge Orders,Labs,Yes,Yes
+953,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Medications,Yes,Yes
+954,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Echocardiogram ,Yes,Yes
+955,Discharge Summary,Admit/Transfer/Discharge Orders,After Visit Summary,Yes,Yes
+956,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Diagnoses,Yes,Yes
+957,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge time,Yes,Yes
+958,Discharge Summary,Admit/Transfer/Discharge Orders,Admission Diagnoses,Yes,Yes
+959,Discharge Summary,Admit/Transfer/Discharge Orders,Principal procedures,Yes,Yes
+960,Discharge Summary,Admit/Transfer/Discharge Orders,Indication for Admission,Yes,Yes
+961,Discharge Summary,Admit/Transfer/Discharge Orders,Hospital course &Complications,Yes,Yes
+962,Discharge Summary,Admit/Transfer/Discharge Orders,Primary care physician,Yes,Yes
+963,Discharge Summary,Admit/Transfer/Discharge Orders,Objective/ Exam ,Yes,Yes
+964,Discharge Summary,Admit/Transfer/Discharge Orders,Intake and Output,Yes,Yes
+965,Discharge Summary,Admit/Transfer/Discharge Orders,Surgical Procedures,Yes,Yes
+966,Discharge Summary,Admit/Transfer/Discharge Orders,Procedures ,Yes,Yes
+967,Discharge Summary,Admit/Transfer/Discharge Orders,Surgery A/P ,Yes,Yes
+968,Discharge Summary,Admit/Transfer/Discharge Orders,consulting Services,Yes,Yes
+969,Discharge Summary,Admit/Transfer/Discharge Orders,CONDITION,Yes,Yes
+970,Discharge Summary,Admit/Transfer/Discharge Orders,Reason for hospitalization,Yes,Yes
+971,Discharge Summary,Admit/Transfer/Discharge Orders,Diagnostic and procedural events,Yes,Yes
+972,Discharge Summary,Admit/Transfer/Discharge Orders,Assessment/plan,Yes,Yes
+973,Discharge Summary,Admit/Transfer/Discharge Orders,Face Sheet,Yes,Yes
+974,Discharge Summary,Admit/Transfer/Discharge Orders,History and Physical,Yes,Yes
+975,Discharge Summary,Admit/Transfer/Discharge Orders,ROS,Yes,Yes
+976,Discharge Summary,Admit/Transfer/Discharge Orders,Past Medical History/ Past Surgical History,Yes,Yes
+977,Discharge Summary,Admit/Transfer/Discharge Orders,Family History,Yes,Yes
+978,Discharge Summary,Admit/Transfer/Discharge Orders,Social History,Yes,Yes
+979,Discharge Summary,Admit/Transfer/Discharge Orders,VITALS,No,Yes
+980,Discharge Summary,Admit/Transfer/Discharge Orders,PHYSICAL EXAM ,Yes,Yes
+981,Discharge Summary,Admit/Transfer/Discharge Orders,Brief History,Yes,Yes
+982,Discharge Summary,Admit/Transfer/Discharge Orders,Vital Signs,No,Yes
+983,Discharge Summary,Admit/Transfer/Discharge Orders,Review of Systems,Yes,Yes
+984,Discharge Summary,Admit/Transfer/Discharge Orders,Physical Exam at Discharge,Yes,Yes
+985,Discharge Summary,Admit/Transfer/Discharge Orders,Assessment ,Yes,Yes
+986,Discharge Summary,Admit/Transfer/Discharge Orders,Plan/Recommendations,Yes,Yes
+987,Discharge Summary,Admit/Transfer/Discharge Orders,Interval History,Yes,Yes
+988,Discharge Summary,Admit/Transfer/Discharge Orders,Objective,Yes,Yes
+989,Discharge Summary,Admit/Transfer/Discharge Orders,Clinical Data ,Yes,Yes
+990,Discharge Summary,Admit/Transfer/Discharge Orders,Diagnosis,Yes,Yes
+991,Discharge Summary,Admit/Transfer/Discharge Orders,Interventions,Yes,Yes
+992,Discharge Summary,Admit/Transfer/Discharge Orders,Monitoring and Evaluation,Yes,Yes
+993,Discharge Summary,Admit/Transfer/Discharge Orders,Physical Exam,Yes,Yes
+994,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Information,Yes,Yes
+995,Discharge Summary,Admit/Transfer/Discharge Orders,Follow-up,Yes,Yes
+996,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Plan,Yes,Yes
+997,Discharge Summary,Admit/Transfer/Discharge Orders,Follow-Up Appolntment,Yes,Yes
+998,Discharge Summary,Admit/Transfer/Discharge Orders,PATIENT EDUCATION INFORMATION,Yes,Yes
+999,Discharge Summary,Admit/Transfer/Discharge Orders,Patient Information,Yes,Yes
+1000,Discharge Summary,Admit/Transfer/Discharge Orders,Functional Status,Yes,Yes
+1001,Discharge Summary,Admit/Transfer/Discharge Orders,Allergies ,Yes,Yes
+1002,Discharge Summary,Admit/Transfer/Discharge Orders,Medications ,Yes,Yes
+1003,Discharge Summary,Admit/Transfer/Discharge Orders,Assessment & Plan ,Yes,Yes
+1004,Discharge Summary,Admit/Transfer/Discharge Orders,Vital Signs ,Yes,Yes
+1005,Discharge Summary,Admit/Transfer/Discharge Orders,Lab results,Yes,Yes
+1006,Discharge Summary,Admit/Transfer/Discharge Orders,Radiology results ,Yes,Yes
+1007,Discharge Summary,Admit/Transfer/Discharge Orders,Follow Up Information,Yes,Yes
+1008,Discharge Summary,Admit/Transfer/Discharge Orders,OTHER DIAGNOSES,Yes,Yes
+1009,Discharge Summary,Admit/Transfer/Discharge Orders,OPERATIONS/PROCEDURES,Yes,Yes
+1010,Discharge Summary,Admit/Transfer/Discharge Orders,CONDITION ON DISCHARGE,Yes,Yes
+1011,Discharge Summary,Admit/Transfer/Discharge Orders,REASON FOR ADMISSION,Yes,Yes
+1012,Discharge Summary,Admit/Transfer/Discharge Orders,LAST LABS,Yes,Yes
+1013,Discharge Summary,Admit/Transfer/Discharge Orders,SICU History and Physical,Yes,Yes
+1014,Discharge Summary,Admit/Transfer/Discharge Orders,Documented Medications,Yes,Yes
+1015,Discharge Summary,Admit/Transfer/Discharge Orders,Problem list,Yes,Yes
+1016,Discharge Summary,Admit/Transfer/Discharge Orders,Physical Examination,Yes,Yes
+1017,Discharge Summary,Admit/Transfer/Discharge Orders,Review / Management ,Yes,Yes
+1018,Discharge Summary,Admit/Transfer/Discharge Orders,Completed Action List,Yes,Yes
+1019,Discharge Summary,Admit/Transfer/Discharge Orders,Short Term PT Goals Grid,Yes,Yes
+1020,Discharge Summary,Admit/Transfer/Discharge Orders,Lona Term PT Goals Grid ,Yes,Yes
+1021,Discharge Summary,Admit/Transfer/Discharge Orders,General Info,Yes,Yes
+1022,Discharge Summary,Admit/Transfer/Discharge Orders,Assessment,Yes,Yes
+1023,Discharge Summary,Admit/Transfer/Discharge Orders,Primary Pain,Yes,Yes
+1024,Discharge Summary,Admit/Transfer/Discharge Orders,Transfer Rehab Grid,Yes,Yes
+1025,Discharge Summary,Admit/Transfer/Discharge Orders,Ambulation Rehab Grid ,Yes,Yes
+1026,Discharge Summary,Admit/Transfer/Discharge Orders,Treatment Log,Yes,Yes
+1027,Discharge Summary,Admit/Transfer/Discharge Orders,DC Recommendations,Yes,Yes
+1028,Discharge Summary,Admit/Transfer/Discharge Orders,Education,Yes,Yes
+1029,Discharge Summary,Admit/Transfer/Discharge Orders,OT Pail ent/Famlly Goals,Yes,Yes
+1030,Discharge Summary,Admit/Transfer/Discharge Orders,Lona Term OT Goals Grid ,Yes,Yes
+1031,Discharge Summary,Admit/Transfer/Discharge Orders,Plan Review ,Yes,Yes
+1032,Discharge Summary,Admit/Transfer/Discharge Orders,Prior Functional Level Grid ,Yes,Yes
+1033,Discharge Summary,Admit/Transfer/Discharge Orders,Functional Mobility ,Yes,Yes
+1034,Discharge Summary,Admit/Transfer/Discharge Orders,Transfers OT,Yes,Yes
+1035,Discharge Summary,Admit/Transfer/Discharge Orders,Significant Findings,Yes,Yes
+1036,Discharge Summary,Admit/Transfer/Discharge Orders,INDICATION,Yes,Yes
+1037,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Diagnosis/Plan,Yes,Yes
+1038,Discharge Summary,Admit/Transfer/Discharge Orders,Treatments & Procedures,Yes,Yes
+1039,Discharge Summary,Admit/Transfer/Discharge Orders,Admission diagnosis,Yes,Yes
+1040,Discharge Summary,Admit/Transfer/Discharge Orders,Med Rec,Yes,Yes
+1041,Discharge Summary,Admit/Transfer/Discharge Orders,Education Materials,Yes,Yes
+1042,Discharge Summary,Admit/Transfer/Discharge Orders,Problems,Yes,Yes
+1043,Discharge Summary,Admit/Transfer/Discharge Orders,Consultations,Yes,Yes
+1044,Discharge Summary,Admit/Transfer/Discharge Orders,Person information,Yes,Yes
+1045,Discharge Summary,Admit/Transfer/Discharge Orders,Clinical Discharge instructions,Yes,Yes
+1046,Discharge Summary,Admit/Transfer/Discharge Orders,Medical information,Yes,Yes
+1047,Discharge Summary,Admit/Transfer/Discharge Orders,Orders,Yes,Yes
+1048,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge arrangements,Yes,Yes
+1049,Discharge Summary,Admit/Transfer/Discharge Orders,Patient education Instructions,Yes,Yes
+1050,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge diagnosis and plan,Yes,Yes
+1051,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge disposition,Yes,Yes
+1052,Discharge Summary,Admit/Transfer/Discharge Orders,Complications and/or Infections,Yes,Yes
+1053,Discharge Summary,Admit/Transfer/Discharge Orders,DischargeExam,Yes,Yes
+1054,Discharge Summary,Admit/Transfer/Discharge Orders,provider information,Yes,Yes
+1055,Discharge Summary,Admit/Transfer/Discharge Orders,patient Education  information,Yes,Yes
+1056,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Diagnoses and plan,Yes,Yes
+1057,Discharge Summary,Admit/Transfer/Discharge Orders,Follow up appointments,Yes,Yes
+1058,Discharge Summary,Admit/Transfer/Discharge Orders,Patient Discharge condition,Yes,Yes
+1059,Discharge Summary,Admit/Transfer/Discharge Orders,Operative Procedures,Yes,Yes
+1060,Discharge Summary,Admit/Transfer/Discharge Orders,Hospital Events,Yes,Yes
+1061,Discharge Summary,Admit/Transfer/Discharge Orders,Patient Discharge instructions,Yes,Yes
+1062,Discharge Summary,Admit/Transfer/Discharge Orders, Disposition,Yes,Yes
+1063,Discharge Summary,Admit/Transfer/Discharge Orders, Hospital Course,Yes,Yes
+1064,Discharge Summary,Admit/Transfer/Discharge Orders,Condition at Discharge,Yes,Yes
+1065,Discharge Summary,Admit/Transfer/Discharge Orders, Discharge Diagnosis,Yes,Yes
+1066,Discharge Summary,Admit/Transfer/Discharge Orders,PrimaryDiagnosis,Yes,Yes
+1067,Discharge Summary,Admit/Transfer/Discharge Orders,Procedures This Visit,Yes,Yes
+1068,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Summary,Yes,Yes
+1069,Discharge Summary,Admit/Transfer/Discharge Orders,Cansule Summary,Yes,Yes
+1070,Discharge Summary,Admit/Transfer/Discharge Orders,ON Events,Yes,Yes
+1071,Discharge Summary,Admit/Transfer/Discharge Orders,Acute Problems,Yes,Yes
+1072,Discharge Summary,Admit/Transfer/Discharge Orders,Cchronic Problems,Yes,Yes
+1073,Discharge Summary,Admit/Transfer/Discharge Orders,Physical exam on day of discharge,Yes,Yes
+1074,Discharge Summary,Admit/Transfer/Discharge Orders,Patient Instructions,Yes,Yes
+1075,Discharge Summary,Admit/Transfer/Discharge Orders,Reason for Hospitalitation,Yes,Yes
+1076,Discharge Summary,Admit/Transfer/Discharge Orders,Patients Discharge Medications,Yes,Yes
+1077,Discharge Summary,Admit/Transfer/Discharge Orders,Significant Diagnostic Studies,Yes,Yes
+1078,Discharge Summary,Admit/Transfer/Discharge Orders,Diagnoses,Yes,Yes
+1079,Discharge Summary,Admit/Transfer/Discharge Orders,CLINICAL RECOMMENDATIONS,Yes,Yes
+1080,Discharge Summary,Admit/Transfer/Discharge Orders,Follow-up Appointments,Yes,Yes
+1081,Discharge Summary,Admit/Transfer/Discharge Orders,Physical Exam today,Yes,Yes
+1082,Discharge Summary,Admit/Transfer/Discharge Orders,HPI,Yes,Yes
+1083,Discharge Summary,Admit/Transfer/Discharge Orders,Chief Complaint,Yes,Yes
+1084,Discharge Summary,Admit/Transfer/Discharge Orders,Risk Stratification,Yes,Yes
+1085,Discharge Summary,Admit/Transfer/Discharge Orders,ROS Statements,Yes,Yes
+1086,Discharge Summary,Admit/Transfer/Discharge Orders,Re-Evaluation & MDM,Yes,Yes
+1087,Discharge Summary,Admit/Transfer/Discharge Orders,Patient Discharge & Departure,Yes,Yes
+1088,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge/Care Plan,Yes,Yes
+1089,Discharge Summary,Admit/Transfer/Discharge Orders,CONSULTATION,Yes,Yes
+1090,Discharge Summary,Admit/Transfer/Discharge Orders,DIET,Yes,Yes
+1091,Discharge Summary,Admit/Transfer/Discharge Orders,Major events/complications,Yes,Yes
+1092,Discharge Summary,Admit/Transfer/Discharge Orders,Major Events/Compli,Yes,Yes
+1093,Discharge Summary,Admit/Transfer/Discharge Orders,HPI/Reason for Hospitalization,Yes,Yes
+1094,Discharge Summary,Admit/Transfer/Discharge Orders,Hospital Course with Significant Findings,Yes,Yes
+1095,Discharge Summary,Admit/Transfer/Discharge Orders,DischargeDiagnosis and Plan,Yes,Yes
+1096,Discharge Summary,Admit/Transfer/Discharge Orders,Other Pertinent Discharge Information,Yes,Yes
+1097,Discharge Summary,Admit/Transfer/Discharge Orders,Providers,Yes,Yes
+1098,Discharge Summary,Admit/Transfer/Discharge Orders,Laboratory,Yes,Yes
+1099,Discharge Summary,Admit/Transfer/Discharge Orders,PROCEDURE PERFORMED,Yes,Yes
+1100,Discharge Summary,Admit/Transfer/Discharge Orders,BRIEF HOSPITAL COURSE,Yes,Yes
+1101,Discharge Summary,Admit/Transfer/Discharge Orders,DISCHARGE LABS,Yes,Yes
+1102,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Diagnosis1,Yes,Yes
+1103,Discharge Summary,Admit/Transfer/Discharge Orders,High Risk OSA,Yes,Yes
+1104,Discharge Summary,Admit/Transfer/Discharge Orders,Medication List,Yes,Yes
+1105,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Discharge Summary,Yes,Yes
+1106,Discharge Summary,Admit/Transfer/Discharge Orders,Chief Chief complaintHPI,Yes,Yes
+1107,Discharge Summary,Admit/Transfer/Discharge Orders,Exam,Yes,Yes
+1108,Discharge Summary,Admit/Transfer/Discharge Orders,DS DS Data,Yes,Yes
+1109,Discharge Summary,Admit/Transfer/Discharge Orders, Physical Exam,Yes,Yes
+1110,Discharge Summary,Admit/Transfer/Discharge Orders,PMH,Yes,Yes
+1111,Discharge Summary,Admit/Transfer/Discharge Orders,PSH,Yes,Yes
+1112,Discharge Summary,Admit/Transfer/Discharge Orders,Patient Active Problem List,Yes,Yes
+1113,Discharge Summary,Admit/Transfer/Discharge Orders,Subjective,Yes,Yes
+1114,Discharge Summary,Admit/Transfer/Discharge Orders,FINAL DIAGNOSES,Yes,Yes
+1115,Discharge Summary,Admit/Transfer/Discharge Orders,PROCEDURES PERFORMED DURING THIS HOSPITALIZATION,Yes,Yes
+1116,Discharge Summary,Admit/Transfer/Discharge Orders,CHIEF COMPLAINT AND HISTORY OF PRESENT ILLNESS,Yes,Yes
+1117,Discharge Summary,Admit/Transfer/Discharge Orders,PAST HISTORY AND REVIEW OF SYSTEMS,Yes,Yes
+1118,Discharge Summary,Admit/Transfer/Discharge Orders,LABORATORY REPORTS,Yes,Yes
+1119,Discharge Summary,Admit/Transfer/Discharge Orders,Procedures Documented This Visit,Yes,Yes
+1120,Discharge Summary,Admit/Transfer/Discharge Orders,Vitals-Last Recorded,Yes,Yes
+1121,Discharge Summary,Admit/Transfer/Discharge Orders,Diagnostic Results,Yes,Yes
+1122,Discharge Summary,Admit/Transfer/Discharge Orders,Follow Up,Yes,Yes
+1123,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge orders,Yes,Yes
+1124,Discharge Summary,Admit/Transfer/Discharge Orders,Daily Medication list,Yes,Yes
+1125,Discharge Summary,Admit/Transfer/Discharge Orders,PROCEDURES PERFORMED,Yes,Yes
+1126,Discharge Summary,Admit/Transfer/Discharge Orders,HISTORY AND INDICATIONS FOR ADMISSION,Yes,Yes
+1127,Discharge Summary,Admit/Transfer/Discharge Orders,PAST SURGICAL HISTORY,Yes,Yes
+1128,Discharge Summary,Admit/Transfer/Discharge Orders,EXAMINATION,Yes,Yes
+1129,Discharge Summary,Admit/Transfer/Discharge Orders,Patient Identification,Yes,Yes
+1130,Discharge Summary,Admit/Transfer/Discharge Orders,Images ,Yes,Yes
+1131,Discharge Summary,Admit/Transfer/Discharge Orders,Encounter Diagnoses,Yes,Yes
+1132,Discharge Summary,Admit/Transfer/Discharge Orders,Interpretation Summary,Yes,Yes
+1133,Discharge Summary,Admit/Transfer/Discharge Orders,Medications Administered ,Yes,Yes
+1134,Discharge Summary,Admit/Transfer/Discharge Orders,Medication,Yes,Yes
+1135,Discharge Summary,Admit/Transfer/Discharge Orders,Description of Procedure ,Yes,Yes
+1136,Discharge Summary,Admit/Transfer/Discharge Orders,Findings,Yes,Yes
+1137,Discharge Summary,Admit/Transfer/Discharge Orders,Recommendations,Yes,Yes
+1138,Discharge Summary,Admit/Transfer/Discharge Orders,Physical Exam/Objective,Yes,Yes
+1139,Discharge Summary,Admit/Transfer/Discharge Orders,Chronic Problem List,Yes,Yes
+1140,Discharge Summary,Admit/Transfer/Discharge Orders,PRIMARY DISCHARGE DIAGNOSES,Yes,Yes
+1141,Discharge Summary,Admit/Transfer/Discharge Orders,SECONDARY DISCHARGE DIAGNOSES,Yes,Yes
+1142,Discharge Summary,Admit/Transfer/Discharge Orders,PERTINENT DIAGNOSTICS,Yes,Yes
+1143,Discharge Summary,Admit/Transfer/Discharge Orders,ISSUES TO BE ADDRESSED AT PCP FOLLOWUP,Yes,Yes
+1144,Discharge Summary,Admit/Transfer/Discharge Orders,CODE STATUS,Yes,Yes
+1145,Discharge Summary,Admit/Transfer/Discharge Orders,ATTENDING PROVIDERS,Yes,Yes
+1146,Discharge Summary,Admit/Transfer/Discharge Orders,CONSULTING PROVIDERS,Yes,Yes
+1147,Discharge Summary,Admit/Transfer/Discharge Orders,Prescriptions & Medication Information,Yes,Yes
+1148,Discharge Summary,Admit/Transfer/Discharge Orders,MEDICAL AND VISIT INFORMATION,Yes,Yes
+1149,Discharge Summary,Admit/Transfer/Discharge Orders,Patient Safety Instructions,Yes,Yes
+1150,Discharge Summary,Admit/Transfer/Discharge Orders, Patient Portal Information,Yes,Yes
+1151,Discharge Summary,Admit/Transfer/Discharge Orders,Instructions from your Health Care Provider,Yes,Yes
+1152,Discharge Summary,Admit/Transfer/Discharge Orders,Medication & Last dose information,Yes,Yes
+1153,Discharge Summary,Admit/Transfer/Discharge Orders,Medication Instructions,Yes,Yes
+1154,Discharge Summary,Admit/Transfer/Discharge Orders,Admission data,Yes,Yes
+1155,Discharge Summary,Admit/Transfer/Discharge Orders,HPI reason for consultation,Yes,Yes
+1156,Discharge Summary,Admit/Transfer/Discharge Orders,Hospital with significant Findings,Yes,Yes
+1157,Discharge Summary,Admit/Transfer/Discharge Orders,Resolved Hospital Problems,Yes,Yes
+1158,Discharge Summary,Admit/Transfer/Discharge Orders,Active Non-Hospital Problems,Yes,Yes
+1159,Discharge Summary,Admit/Transfer/Discharge Orders,REASON FOR HOSPITALIZATION AND HOSPITAL COURSE,Yes,Yes
+1160,Discharge Summary,Admit/Transfer/Discharge Orders,TRANSITION/POST DISCHARGE CARE/PENDING TESTS/REFERRALS,Yes,Yes
+1161,Discharge Summary,Admit/Transfer/Discharge Orders,LINES/DRAINS/WOUNDS AT DISCHARGE,Yes,Yes
+1162,Discharge Summary,Admit/Transfer/Discharge Orders,Admit Diagnosis,Yes,Yes
+1163,Discharge Summary,Admit/Transfer/Discharge Orders,Active Problems,Yes,Yes
+1164,Discharge Summary,Admit/Transfer/Discharge Orders,Surgical Procedure(s),Yes,Yes
+1165,Discharge Summary,Admit/Transfer/Discharge Orders,Summary of History and Hospital Course,Yes,Yes
+1166,Discharge Summary,Admit/Transfer/Discharge Orders,RECOMMENDATION,Yes,Yes
+1167,Discharge Summary,Admit/Transfer/Discharge Orders,Diagnoses present on admission,Yes,Yes
+1168,Discharge Summary,Admit/Transfer/Discharge Orders,Operation /procedure performed,Yes,Yes
+1169,Discharge Summary,Admit/Transfer/Discharge Orders,lines and tubes,Yes,Yes
+1170,Discharge Summary,Admit/Transfer/Discharge Orders,Consultating services,Yes,Yes
+1171,Discharge Summary,Admit/Transfer/Discharge Orders,FINDINGS/IMPRESSION,Yes,Yes
+1172,Discharge Summary,Admit/Transfer/Discharge Orders,DISCHARGE CONDITION,Yes,Yes
+1173,Discharge Summary,Admit/Transfer/Discharge Orders,DC Information,Yes,Yes
+1174,Discharge Summary,Admit/Transfer/Discharge Orders,Quality Measures Discharge,Yes,Yes
+1175,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Order,Yes,Yes
+1176,Discharge Summary,Admit/Transfer/Discharge Orders,New Prescriptions,Yes,Yes
+1177,Discharge Summary,Admit/Transfer/Discharge Orders,Continue taking the following Medication ,Yes,Yes
+1178,Discharge Summary,Admit/Transfer/Discharge Orders,STOP taking the following Medication ,Yes,Yes
+1179,Discharge Summary,Admit/Transfer/Discharge Orders,Additional Diagnoses Treated During This Hospitalization,Yes,Yes
+1180,Discharge Summary,Admit/Transfer/Discharge Orders,History on Presentation (from H & P),Yes,Yes
+1181,Discharge Summary,Admit/Transfer/Discharge Orders,Events Leading to Death ,Yes,Yes
+1182,Discharge Summary,Admit/Transfer/Discharge Orders,Death Physical Exam,Yes,Yes
+1183,Discharge Summary,Admit/Transfer/Discharge Orders,CARDIOLOGY ATTENDING,Yes,Yes
+1184,Discharge Summary,Admit/Transfer/Discharge Orders,ICD placement,Yes,Yes
+1185,Discharge Summary,Admit/Transfer/Discharge Orders,IDENTIFYING DATA,Yes,Yes
+1186,Discharge Summary,Admit/Transfer/Discharge Orders,SUCCINCT SUMMARY OF ADMISSION STATUS AND HOSPITAL COURSE,Yes,Yes
+1187,Discharge Summary,Admit/Transfer/Discharge Orders,PATIENT'S MEDICAL CONDITION AT DISCHARGE,Yes,Yes
+1188,Discharge Summary,Admit/Transfer/Discharge Orders,SUMMARY OF PROCEDURE(S) PERFORMED,Yes,Yes
+1189,Discharge Summary,Admit/Transfer/Discharge Orders,RESULTS PENDING AT TIME OF DISCHARGE,Yes,Yes
+1190,Discharge Summary,Admit/Transfer/Discharge Orders,MEDICATIONS TAKEN PRIOR TO ADMISSION,Yes,Yes
+1191,Discharge Summary,Admit/Transfer/Discharge Orders,IMMUNIZATION HISTOR,Yes,Yes
+1192,Discharge Summary,Admit/Transfer/Discharge Orders,DISCHARGE ORDERS AND INSTRUCTIONS,Yes,Yes
+1193,Discharge Summary,Admit/Transfer/Discharge Orders,Brief HPI,Yes,Yes
+1194,Discharge Summary,Admit/Transfer/Discharge Orders,Care Management,Yes,Yes
+1195,Discharge Summary,Admit/Transfer/Discharge Orders,Palliative Care SW,Yes,Yes
+1196,Discharge Summary,Admit/Transfer/Discharge Orders,Patient Education Services,Yes,Yes
+1197,Discharge Summary,Admit/Transfer/Discharge Orders,Therapeutic Activities,Yes,Yes
+1198,Discharge Summary,Admit/Transfer/Discharge Orders,Vital Signs/Skin,Yes,Yes
+1199,Discharge Summary,Admit/Transfer/Discharge Orders,PCP,Yes,Yes
+1200,Discharge Summary,Admit/Transfer/Discharge Orders,Hospital Care Provider(s) for this visit,Yes,Yes
+1201,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Diet,Yes,Yes
+1202,Discharge Summary,Admit/Transfer/Discharge Orders,Discharge Activity,Yes,Yes
+1203,Discharge Summary,Admit/Transfer/Discharge Orders,Incision/Wound Care,Yes,Yes
+1204,Discharge Summary,Admit/Transfer/Discharge Orders,Additional Education,Yes,Yes
+1205,Discharge Summary,Admit/Transfer/Discharge Orders,My Follow-up Appointment(s,Yes,Yes
+1206,Discharge Summary,Admit/Transfer/Discharge Orders,Procedures and Diagnostics,Yes,Yes
+1207,Discharge Summary,Admit/Transfer/Discharge Orders,Problem List/Past Medical History,Yes,Yes
+1208,Discharge Summary,Admit/Transfer/Discharge Orders,DISCHARGE PHYSICAL EXAMINATION,Yes,Yes
+1209,Discharge Summary,Admit/Transfer/Discharge Orders,Examinations,Yes,Yes
+1210,Discharge Summary,Admit/Transfer/Discharge Orders,Encounter information,Yes,Yes
+1211,Discharge Summary,Admit/Transfer/Discharge Orders,Free Text Dx A&P Notes,Yes,Yes
+1212,Discharge Summary,Admit/Transfer/Discharge Orders,Active plan,Yes,Yes
+1213,Discharge Summary,Admit/Transfer/Discharge Orders,Laboratory results,Yes,Yes
+1214,Discharge Summary,Admit/Transfer/Discharge Orders,Patient education,Yes,Yes
+1215,Discharge Summary,Admit/Transfer/Discharge Orders,surgical history,Yes,Yes
+1216,Discharge Summary,Admit/Transfer/Discharge Orders,Clinical Resume,Yes,Yes
+1217,Discharge Summary,Admit/Transfer/Discharge Orders,Summary of Hospitalization,Yes,Yes
+1218,Discharge Summary,Admit/Transfer/Discharge Orders,Free text Dx A&P Note,Yes,Yes
+1219,Discharge Summary,Admit/Transfer/Discharge Orders,Free text obj Note,Yes,Yes
+1220,Discharge Summary,Admit/Transfer/Discharge Orders,Chief complaint on admission,Yes,Yes
+1221,Discharge Summary,Admit/Transfer/Discharge Orders,Intake andOutput,Yes,Yes
+1222,Discharge Summary,Admit/Transfer/Discharge Orders,Active Medications,Yes,Yes
+1223,Discharge Summary,Admit/Transfer/Discharge Orders,Admitting Diagnoses,Yes,Yes
+1224,Discharge Summary,Admit/Transfer/Discharge Orders,Medical History,Yes,Yes
+1225,Discharge Summary,Admit/Transfer/Discharge Orders,Active Hospital Problems,Yes,Yes
+1226,Discharge Summary,Admit/Transfer/Discharge Orders,General Information,Yes,Yes
+1227,Discharge Summary,Admit/Transfer/Discharge Orders,Operations and procedures,Yes,Yes
+1228,Discharge Summary,"Admit, Discharge, Transfer Forms",PAST MEDICAL HISTORY,Yes,Yes
+1229,Discharge Summary,ADMISSION/DISCHARGE INFORMATION,Physical Examination at Discharge,Yes,Yes
+1230,CONSULTATION REPORT,Acute Rehab Consult,Medical History,Yes,Yes
+1231,History & Physical,: HISTORY AND PHYSICAL,Plan,Yes,Yes
+1232,Discharge Summary,*Discharge Quick Note,CONSULTS,Yes,Yes
+1233,History & Physical,Summary of Medical History,Lab Results,Yes,Yes
+1234,CONSULTATION REPORT,Results and Medications,Laboratory Tests,Yes,Yes
+1235,CONSULTATION REPORT,Results and Medications,Laboratory Tests,Yes,Yes
+1236,Progress Note,Pulmonary Progress Note,Labs reviewed,Yes,Yes
+1237,Progress Note,Pulmonary Progress Note,Chemistry Comprehensive  - Last 36 hours (11),Yes,Yes
+1238,Progress Note,Pulmonary Progress Note,Chemistry Basic - Last 36 hours (9),Yes,Yes
+1239,Progress Note,Progress Notes - All Other Notes,Recent Labs,Yes,Yes
+1240,Progress Note,Progress Notes - All Other Notes,MICROBIOLOGY:,Yes,Yes
+1241,Progress Note,Progress Notes - All Other Notes,LABORATORY RESULTS:,Yes,Yes
+1242,Progress Note,Progress Note,Urinalysis with Possible Microscopy and Possible Culture ,Yes,Yes
+1243,Progress Note,Progress Note,Results,Yes,Yes
+1244,Progress Note,Progress Note,Recent Labs,Yes,Yes
+1245,Progress Note,Progress Note,Plan/Recommendations,Yes,Yes
+1246,Progress Note,Progress Note,Objective,Yes,Yes
+1247,Progress Note,Progress Note,Microbiology- Last 7 days (3),Yes,Yes
+1248,Progress Note,Progress Note,Labs:,Yes,Yes
+1249,Progress Note,Progress Note,Interval History,Yes,Yes
+1250,Progress Note,Progress Note,Culture,Yes,Yes
+1251,Progress Note,Progress Note,Comprehensive Metabolic Panel,Yes,Yes
+1252,Progress Note,Progress Note,CMP [216227700] (Abnormal),Yes,Yes
+1253,Progress Note,Progress Note,Chemistry Comprehensive - Last 36 hours,Yes,Yes
+1254,Progress Note,Progress Note,Chemistry,Yes,Yes
+1255,Progress Note,Progress Note,CBC,Yes,Yes
+1256,Progress Note,Progress Note,BMP [216586535] (Abnormal),Yes,Yes
+1257,Progress Note,Progress Note,Blood Culture,Yes,Yes
+1258,Progress Note,Progress Note,Basic metabolic panel [216128946] (Abnormal),Yes,Yes
+1259,Progress Note,Progress Note,Basic metabolic panel ,Yes,Yes
+1260,Progress Note,Progress Note,Basic Metabolic Panel,Yes,Yes
+1261,Progress Note,Physician Progress Notes,Results,Yes,Yes
+1262,Progress Note,Physician Progress Notes,Respiratory: ,Yes,Yes
+1263,Progress Note,Physician Progress Notes,Radiology - Last 36 hours (2),Yes,Yes
+1264,Progress Note,Physician Progress Notes,Plan:,Yes,Yes
+1265,Progress Note,Physician Progress Notes,Physical Examination,Yes,Yes
+1266,Progress Note,Physician Progress Notes,Microbiology - Last 7 days (2),Yes,Yes
+1267,Progress Note,Physician Progress Notes,LUNGS:,Yes,Yes
+1268,Progress Note,Physician Progress Notes,LABS:,Yes,Yes
+1269,Progress Note,Physician Progress Notes,LABORATORY STUDIES:,Yes,Yes
+1270,Progress Note,Physician Progress Notes,Laboratory Data:,Yes,Yes
+1271,Progress Note,Physician Progress Notes,INTERVAL HISTORY:,Yes,Yes
+1272,Progress Note,Physician Progress Notes,Infectious Disease:,Yes,Yes
+1273,Progress Note,Physician Progress Notes,Hematology Basic - Last 36 hours (25),Yes,Yes
+1274,Progress Note,Physician Progress Notes,Diagnosis(3),Yes,Yes
+1275,Progress Note,Physician Progress Notes,Chemistry Comprehensive-Last 36 hours (11),Yes,Yes
+1276,Progress Note,Physician Progress Notes,Chemistry Comprehensive  - Last 36 hours (16),Yes,Yes
+1277,Progress Note,Physician Progress Notes,Chemistry Comprehensive  - Last 36 hours (15),Yes,Yes
+1278,Progress Note,Physician Progress Notes,Chemistry Comprehensive  - Last 36 hours (14),Yes,Yes
+1279,Progress Note,Physician Progress Notes,Chemistry Comprehensive  - Last 36 hours (12),Yes,Yes
+1280,Progress Note,Physician Progress Notes,Chemistry Comprehensive  - Last 36 hours (11),Yes,Yes
+1281,Progress Note,Physician Progress Notes,Chemistry Basic - Last 36 hours (9),Yes,Yes
+1282,Progress Note,Physician Progress Notes,Assessment:,Yes,Yes
+1283,Progress Note,Physician Progress Notes,Assessment/Plan:,Yes,Yes
+1284,Progress Note,Physician Progress Note,Blood Culture (Peripheral Draw,Yes,Yes
+1285,Progress Note,Neuro ICU Progress Note,Infectious,Yes,Yes
+1286,Progress Note,Neuro ICU Progress Note,Assessment and Plan,Yes,Yes
+1287,Progress Note,Moderate Sedation Pre-Procedure Evaluation,History & Results,Yes,Yes
+1288,History & Physical,Laboratory Data:,Hematology Basic - Last 36 hours (20),Yes,Yes
+1289,History & Physical,Laboratory Data:,Chemistry Comprehensive - Last 36 hours (21) Result,Yes,Yes
+1290,Laboratory,Laboratory,Urinalysis,Yes,Yes
+1291,Laboratory,Lab Results,Date of procedure: ,Yes,Yes
+1292,Laboratory,Lab Results,DESCRIPTION,Yes,Yes
+1293,Laboratory,Lab Results,Procalcitonin,Yes,Yes
+1294,Laboratory,Lab Results,Basic Metabolic Panel,Yes,Yes
+1295,Laboratory,Lab Results,CBC,Yes,Yes
+1296,Laboratory,Lab Results,CBC And Differential,Yes,Yes
+1297,Laboratory,Lab Results,Urinalysis [1043822396] (Abnormal),Yes,Yes
+1298,Laboratory,Lab - All Results (continued),CMP [216506314] (Abnormal),Yes,Yes
+1299,Laboratory,Lab - All Results (continued),CBC and Automated Differential w/reflex [216506313] (Abnormal) ,Yes,Yes
+1300,Laboratory,Lab - All Results (continued),BMP [216506310] (Abnormal),Yes,Yes
+1301,Laboratory,Lab - All Results (continued),BMP [216506274] (Abnormal),Yes,Yes
+1302,Laboratory,Lab - All Results (continued),CMP [216465233] (Abnormal),Yes,Yes
+1303,Table of contents,H&P Notes,Assessment/Plan:,Yes,toc
+1304,Table of contents,H&P Notes,Infectious Disease,Yes,toc
+1305,Laboratory,Lab - All Results (continued),CBC and Automated Differential w/reflex [216465232] (Abnormal)  ,Yes,Yes
+1306,Laboratory,Lab - All Results (continued),CBC and Automated Differential w/reflex [216340676] (Abnormal),Yes,Yes
+1307,Laboratory,Lab - All Results (continued),CMP [216340677] (Abnormal),Yes,Yes
+1308,Laboratory,Lab - All Results (continued),CBC and Automated Differential w/reflex [216227699] (Abnormal),Yes,Yes
+1309,Laboratory,Lab - All Results (continued),CMP [216138914] (Abnormal),Yes,Yes
+1310,Laboratory,Lab - All Results (continued),CBC and Automated Differential w/reflex [216138913] (Abnormal),Yes,Yes
+1311,Laboratory,Lab - All Results (continued),Basic metabolic panel [216128946] (Abnormal),Yes,Yes
+1312,Laboratory,Lab - All Results (continued),CBC and Automated Differential w/reflex [216128960] (Abnormal),Yes,Yes
+1313,Laboratory,Lab - All Results (continued),CBC and Automated Differential w/reflex [216128960] (Abnormal)   (continued),Yes,Yes
+1314,Laboratory,Lab - All Results (continued),Urinalysis [216129122] (Abnormal),Yes,Yes
+1315,Laboratory,Lab - All Results,BMP [216586535] (Abnormal),Yes,Yes
+1316,Laboratory,Lab - All Results,CMP [216227700] (Abnormal),Yes,Yes
+1317,Progress Note,ICU RESIDENT PROGRESS AND TRANSFER NOTE,System-based Assessment and Plan,Yes,Yes
+1318,Progress Note,ICU RESIDENT PROGRESS AND TRANSFER NOTE,Infectious Disease,Yes,Yes
+1319,History & Physical,History & Physicals,Labs,Yes,Yes
+1320,Laboratory,Hematology,Automated Hematology,Yes,Yes
+1321,Laboratory,Hematology,Orderable Name:  Automated Diff,Yes,Yes
+1322,Laboratory,Hematology,Orderable Name: CBC w/ Diff,Yes,Yes
+1323,Laboratory,Hematology,Orderable Name: CBC without Diff,Yes,Yes
+1324,Progress Note,General Laboratory,Urinalysis Screening Chemistry,Yes,Yes
+1325,Laboratory,General Laboratory,Blood Chemistry,Yes,Yes
+1326,Laboratory,General Laboratory,Urine Chemistry,Yes,Yes
+1327,Laboratory,General Laboratory,Urinalysis Screening Chemistry,Yes,Yes
+1328,Food and Nutrition Reassessment,Food and Nutrition Reassessment,Recent Labs,Yes,Yes
+1329,Food and Nutrition Reassessment,Food and Nutrition Reassessment,Biochemical Data/Procedures/Medical Tests:,Yes,Yes
+1330,Food and Nutrition Initial Assessment,Food and Nutrition Initial Assessment,Assessment:,Yes,Yes
+1331,Food and Nutrition Initial Assessment,Food and Nutrition Initial Assessment,Biochemical Data/Procedures/Medical Tests:,Yes,Yes
+1332,Food and Nutrition Initial Assessment,Food and Nutrition Initial Assessment,Recent Labs,Yes,Yes
+1333,Laboratory,Cumulative Summary Report,Urinalysis,Yes,Yes
+1334,Laboratory,Cumulative Summary Report,Hematology - CBC,Yes,Yes
+1335,Progress Note,Consults - All Other Notes (continued),Recent Labs,Yes,Yes
+1336,Progress Note,Consultation Report,Vital Signs:,Yes,Yes
+1337,Progress Note,Consultation Report,Chemistry Comprehensive - Last 36 hours (22),Yes,Yes
+1338,Table of contents,Labs:,CBC,Yes,toc
+1339,Progress Note,Consultation Report,Chemistry Basic - Last 36 hours (10),Yes,Yes
+1340,Progress Note,Consultation,Urine Electrolytes,Yes,Yes
+1341,Progress Note,Consultation,Urine Chemistry Results,Yes,Yes
+1342,Progress Note,Consultation,Urinalysis with Possible Microscopy and Possible Culture ,Yes,Yes
+1343,Laboratory,Chemistry,Random Urine Chemistry,Yes,Yes
+1344,Laboratory,Chemistry,Routine Chemistry,Yes,Yes
+1345,Laboratory,Chemistry,Orderable Name: Basic Metabolic Panel (BMP),Yes,Yes
+1346,Laboratory,Chemistry,Orderable Name: Comprehensive Metabolic Panel (CMP),Yes,Yes
+1347,Laboratory,Chemistry,Orderable Name: Basic Metabolic Panel,Yes,Yes
+1348,Progress Note,Cardiology Critical Care Progress Note,Chemistry Comprehensive  - Last 36 hours (12),Yes,Yes
+1349,Table of contents,Results,BASIC METABOLIC PANEL (12/28/2020 2:13 AM EST):,Yes,toc
+1350,Table of contents,Results,"BASIC METABOLIC PANEL, NON-FASTING (12/29/2020 1:14 AM EST):",Yes,toc
+1351,Table of contents,Results,"BASIC METABOLIC PANEL, FASTING (01/09/2021 12:56 AM EST):",Yes,toc
+1352,Table of contents,Results,BASIC METABOLIC PANEL (01/08/2021 7:45 AM EST):,Yes,toc
+1353,Table of contents,Results,BASIC METABOLIC PANEL (01/01/2021 12:37 AM EST):,Yes,toc
+1354,Table of contents,Results,COMPREHENSIVE METABOLIC PANEL (01/30/2020 1:26 PM CST):,Yes,toc
+1355,Table of contents,Results,BASIC METABOLIC PANEL - AM ONCE (01/02/2021 4:29 AM EST):,Yes,toc
+1356,Table of contents,Results,"ADULT ROUTINE BLOOD CULTURE, SET OF 2 BOTTLES (BACTERIA AND YEAST) (01/08/2021 1:59 PM EST):",Yes,toc
+1357,Table of contents,Results,BLOOD CULTURE (02/03/2020 6:06 PM CST):,Yes,toc
+1358,Table of contents,Results,SPUTUM CULTURE WITH GRAM STAIN (02/04/2020 2:09 PM CST):,Yes,toc
+1359,Table of contents,Results,CBC WITH DIFFERENTIAL  (01/30/2020 4:37 AM CST):,Yes,toc
+1360,Table of contents,Results,CBC/DIFF (12/27/2020 12:33 AM EST):,Yes,toc
+1361,Table of contents,Results,CBC WITH DIFF (12/27/2020 12:33 AM EST):,Yes,toc
+1362,Table of contents,Results,CBC (01/05/2021 4:55 AM EST),Yes,toc
+1363,Table of contents,Results,COMPREHENSIVE METABOLIC PANEL  (01/30/2020 4:37 AM CST):,Yes,toc
+1364,Table of contents,Results,BASIC METABOLIC PANEL (02/01/2020 4:17 AM CST):,Yes,toc
+1365,Table of contents,Results,BLOOD CULTURE  (02/03/2020 6:06 PM CST):,Yes,toc
+1366,Table of contents,Results,Procalcitonin (05/06/2020 11:09 AM EDT):,Yes,toc
+1367,Table of contents,Results,PROCALCITONIN ALGORITHM (01/08/2021 4:19 AM EST):,Yes,toc
+1368,Table of contents,Results,PROCALCITONIN REFLEX 6HR (01/08/2021 1:59 PM EST):,Yes,toc
+1369,Table of contents,Results ,"Urinalysis, Microscopic if Indicated (09/17/2021 10:35 AM CDT):",Yes,toc
+1370,Table of contents,Results ,Urinalysis with Possible Microscopy and Possible Culture (05/04/2020 2:50 PM EDT):,Yes,toc
+1371,Table of contents,Results ,URINALYSIS WITH REFLEX CULTURE (01/29/2020 2:27 PM CST):,Yes,toc
+1372,Table of contents,Results ,URINALYSIS WITH REFLEX MICROSCOPIC (02/03/2020 5:40 PM CST):,Yes,toc
+1373,Progress Note,Cardiology Consult Report,Procedure,Yes,Yes
+1374,Progress Note,Cardiology Consult Report,Microbiology,Yes,Yes
+1375,Progress Note,Cardiology Consult Report,Aerobic Blood Culture,Yes,Yes

@@ -1,0 +1,177 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  PoliciesPayment
+
+  Sample SAM Template for PoliciesPayment
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 900
+    MemorySize: 10240
+Parameters:
+  buildEnv:
+    Type: String
+    Description: Build environment parameter
+
+Resources:
+  PaymentPoliciesAbstractionDevelopmentFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: PaymentPoliciesAbstractionDevelopment/PaymentPoliciesAbstract/PaymentPoliciesAbstraction/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          BUCKET_NAME : 'zai-revmax-test'
+          API : 'https://253w8ijrh0.execute-api.us-east-1.amazonaws.com/Prod/policy/'
+          SECRET_PATH : "zai/system/qa/policy"
+          CLIENT_NAME : "sample_client"
+      FunctionName : PaymentPoliciesAbstractionDevelopment-dev
+      Role: arn:aws:iam::833984991867:role/revmax_data_qa
+
+    
+  paymentPoliciesDownloadFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: paymentPoliciesDownload/paymentPolicesDownloader/paymentPoliciesDownload/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          BUCKET_NAME : 'zai-revmax-test'
+          API : 'https://253w8ijrh0.execute-api.us-east-1.amazonaws.com/Prod/policy/'
+          SECRET_PATH : "zai/system/qa/policy"
+      FunctionName : paymentPoliciesDownload-dev
+      Role: arn:aws:iam::833984991867:role/revmax_data_qa
+ 
+    
+  paymentPoliciesExtractionDevelopmentFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: paymentPoliciesExtractionDevelopment/paymentPoliciesExtractDevelop/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          BUCKET_NAME : 'zai-revmax-test'
+          API : 'https://253w8ijrh0.execute-api.us-east-1.amazonaws.com/Prod/policy/'
+          SECRET_PATH : "zai/system/qa/policy"
+      FunctionName : paymentPoliciesExtractionDevelopment-dev
+      Role: arn:aws:iam::833984991867:role/revmax_data_qa
+
+  policyMovesRenameFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: policyrenamemoves/policymoves/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          BUCKET_NAME : 'zai-revmax-test'
+          API : 'https://253w8ijrh0.execute-api.us-east-1.amazonaws.com/Prod/policy/'
+          SECRET_PATH : "zai/system/qa/policy"
+          CLIENT_NAME : "sample_client"
+      FunctionName : policyMovesRename-dev
+      Role: arn:aws:iam::833984991867:role/revmax_data_qa
+  
+  sectionSubsectionFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: section_subsection/section_subsection/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          PROCESSING_ENVIRONMENT : 'qa'
+          BUCKET_NAME : 'zai-revmax-test'
+          SAVE_PATH : 'sample_client/audits/medical_records'
+          API_URL : 'https://api-qa.revmaxai.com/policy/insert_task_into_queue'
+          SECRET_PATH : "zai/system/qa/audit"
+      FunctionName : sectionSubsection-qa
+      Role: arn:aws:iam::833984991867:role/revmax_data_qa
+   
+  vitalLabExtractionFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: vital_lab_extraction/vital_lab_extraction/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          PROCESSING_ENVIRONMENT : 'qa'
+          BUCKET_NAME : 'zai-revmax-test'
+          SAVE_PATH : 'sample_client/audits/medical_records'
+          API_URL : 'https://api-qa.revmaxai.com/policy/insert_task_into_queue'
+          SECRET_PATH : "zai/system/qa/audit"
+      FunctionName : vitalLabExtraction-qa
+      Role: arn:aws:iam::833984991867:role/revmax_data_qa
+
+  rawDataPostprocessFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: raw_data_postprocess/raw_data_postprocess/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          PROCESSING_ENVIRONMENT : 'qa'
+          BUCKET_NAME : 'zai-revmax-test'
+          SAVE_PATH : 'sample_client/audits/medical_records'
+          API_URL : 'https://api-qa.revmaxai.com/policy/insert_task_into_queue'
+          SECRET_PATH : "zai/system/qa/audit"
+      FunctionName : rawDataPostprocess-qa
+      Role: arn:aws:iam::833984991867:role/revmax_data_qa
+
+  documentTransferFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: document_transfer_module/document_transfer/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          SECRET_PATH : "zai/system/qa/audit"
+      FunctionName : documentTransferModule-qa
+      Role: arn:aws:iam::833984991867:role/documentTransferModule-qa
+
+  ProcessTimeoutMRsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ProcessTimeoutMRs/ProcessTimeoutMRs/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          SECRET_PATH : "zai/system/qa/audit"
+          PROCESSING_ENVIRONMENT : 'qa'
+          BUCKET_NAME : 'zai-revmax-qa'
+          INSTANCE_ID : "i-012d5620b52cdd13a"
+          PUBLISH_LOGS_TO : '/aws/lambda/ProcessTimeoutMRs-qa'
+      FunctionName : ProcessTimeoutMRs-qa
+      Role: arn:aws:iam::833984991867:role/ProcessTimeoutMRs-qa
+
+  PreprocessPDFFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: PreprocessPDF/PreprocessPDF/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Environment:
+        Variables:
+          BUILD_ENV: !Ref buildEnv
+          SECRET_PATH : "zai/system/qa/audit"
+          PROCESSING_ENVIRONMENT : 'qa'
+          BUCKET_NAME : 'zai-revmax-test'
+      FunctionName : PreprocessPDF-qa
+      Role: arn:aws:iam::833984991867:role/PreprocessPDF-qa

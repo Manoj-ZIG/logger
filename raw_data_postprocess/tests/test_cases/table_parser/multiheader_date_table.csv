@@ -1,0 +1,33 @@
+0,1,2,3,4,5
+,,,,,
+Row Name ,07/12/23 03:48:09 ,07/12/23 03:48:20 ,07/12/23 0725 ,07/12/23 07:26:42 ,07/12/23 0801 
+Vital Signs ,,,,,
+Temp ,36.4 °C (97.6 °F) ,,- ,36.6 °C (97.9 °F) ,
+Pulse ,,69 ,- ,55 ,
+Cardiac Rhythm ,,,- ,,Atrial fibrillation 
+Resp ,,14 ,- ,16 ,
+BP ,,- ,120/86 ,- ,
+MAP (mmHg) Oxygen Therapy ,,- ,97 mmHg ,- ,
+SpO2 ,,95 % ,- ,96% ,
+Row Name ,07/12/23 1030 ,07/12/23 1057 ,07/12/23 10:58:23 ,07/12/23 15:29:15 ,07/12/23 15:29:27 
+Vital Signs ,,,,,
+Temp ,- ,- ,36.4 °C (97.5 °F) ,- ,36.4 °C (97.6 F) 
+Pulse ,,,102 ,,
+Resp ,,- ,16 ,,
+BP ,,131/85 ,- ,129/83 ,
+MAP (mmHg) Oxygen Therapy ,,98 mmHg ,,96 mmHg ,
+SpO2 ,,,93% ! ,- ,
+Pain Assessment ,,,,,
+Pain Assessment ,No/denies pain ,,,- ,
+Row Name ,07/12/23 15:30:16 ,07/12/23 17:24:12 ,07/12/23 1942 ,07/12/23 2003 ,07/12/23 20:03:48 
+Vital Signs ,,,,,
+Temp ,- ,- ,- ,- ,36.4 °C (97.5 °F) 
+Pulse ,62 ,,- ,- ,
+Cardiac Rhythm ,- ,,- ,- ,Atrial fibrillation 
+Resp ,16 ,,- ,- ,
+BP ,,,- ,118/81 ,
+MAP (mmHg) Oxygen Therapy ,,,,94 mmHg ,
+SpO2 ,93% ! ,,,,
+Oxygen Therapy Pain Assessment ,,,None (Room air) ,,
+Pain Assessment IODINE DRG ,,- ,No/denies pain ,,
+lodine DRG ,,683 RENAL FAILURE WITH CC ,,,

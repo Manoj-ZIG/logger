@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /home/revmaxai_data/
+
+permissions:
+  - object: /home/revmaxai_data/scripts
+    pattern: "**"
+    owner: rahul
+    group: rahul
+    mode: 755
+
+hooks:
+  AfterInstall:
+    - location: scripts/deploy.sh
+      timeout: 1200
+      runas: rahul
