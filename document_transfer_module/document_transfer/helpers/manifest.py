@@ -184,8 +184,8 @@ class UpdateManifest():
                     print(f"Moved pdf to manual review QA:- {self.document_name_cleaned}")
                     
 
-        pdf_chunks = [chunk for chunk in updated_pdf_paths.keys()]
-        print(f"Chunks Generated {pdf_chunks}:- {self.document_name_cleaned}")
+        pdf_chunks = [i[0].split('/')[-1] for i in list(list(updated_pdf_paths.values())[0])]
+        print(f"Chunks Generated: {len(pdf_chunks)}:- {self.document_name_cleaned}") 
         return updated_pdf_paths
 
     def update_chunk_info(self, df,updated_pdf_paths):

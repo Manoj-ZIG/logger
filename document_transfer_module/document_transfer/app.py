@@ -36,8 +36,10 @@ except ModuleNotFoundError as e:
     from .helpers.manifest import UpdateManifest
     from .helpers.generate_validation_query import generate_query, get_all_pcn_and_arl
 
+
+enable_custom_logging()
+
 def lambda_handler(event, context):
-    enable_custom_logging()
     bucket_name = event['Records'][0]['s3']['bucket']['name']   
     key = urllib.parse.unquote_plus(event['Records'][0]['s3']['object']['key'], encoding='utf-8')
     client_name = key.split("/")[0]
@@ -133,8 +135,10 @@ def lambda_handler(event, context):
             print(rf"query for all related ARLs started:- {document_name}")
             df_arl = get_all_pcn_and_arl(athena_client, s3c, adjudication_record_locator, client_doc_pattern_json)
             print(rf"query for all related ARLs completed:- {document_name}")
-
-            root_payer_control_number = df_arl['root_payer_control_number'].iloc[0]
+            try:
+                root_payer_control_number = df_arl['root_payer_control_number'].iloc[0]
+            except:
+                root_payer_control_number=''
         else:
             df_arl = pd.DataFrame({})
             root_payer_control_number = ''
@@ -207,7 +211,7 @@ def lambda_handler(event, context):
 
 
 keys=[
-    "devoted/audits/sftp/inboundFromClient/AJX2JEHKGW_MR.pdf",
+'AJX329767R_HBA.pdf',
 ]
 for key in keys:
     
@@ -219,7 +223,7 @@ for key in keys:
             "name": "zai-revmax-qa"
         },
         "object": {                                                                           
-            "key": key
+            "key": f"devoted/audits/sftp/inboundFromClient/{key}"
         }
         }
     }

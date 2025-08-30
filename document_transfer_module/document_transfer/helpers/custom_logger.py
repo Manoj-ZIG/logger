@@ -92,27 +92,6 @@ category={
 #                     category_ = ""
 #             Message = message.split(':-')[0]
 #             writer.writerow([timestamp,ARL,file,category_, Message])
-
-def enable_custom_logging():
-    builtins._original_print = builtins.print
-    builtins.print = custom_print
-
-def disable_custom_logging():
-    builtins.print = builtins._original_print
-
-S3_BUCKET = os.environ['PARAMETERS_BUCKET_NAME']
-S3_FOLDER = f"process_logs"
-try:
-    s3c = boto3.client('s3', region_name='us-east-1')
-    s3c.list_buckets()
-    print("S3 client initialized successfully using IAM role in app.py.")
-except Exception as e:
-    print(f"Failed to initialize S3 client with IAM role: {str(e)} in app.py.")
-    if aws_access_key_id and aws_secret_access_key:
-        s3c = boto3.client('s3', 
-                            aws_access_key_id=aws_access_key_id,
-                            aws_secret_access_key=aws_secret_access_key)
-
 def custom_print(*args, **kwargs):
     timestamp = datetime.now().isoformat(timespec='milliseconds')
     message = " ".join(str(arg) for arg in args)
@@ -166,3 +145,24 @@ def custom_print(*args, **kwargs):
                 s3c.upload_fileobj(buffer, S3_BUCKET, s3_key)
             except Exception as e:
                 builtins._original_print(f"Failed to upload Parquet to S3: {e}")
+                
+def enable_custom_logging():
+    builtins._original_print = builtins.print
+    builtins.print = custom_print
+
+def disable_custom_logging():
+    builtins.print = builtins._original_print
+
+S3_BUCKET = os.environ['PARAMETERS_BUCKET_NAME']
+S3_FOLDER = f"process_logs"
+try:
+    s3c = boto3.client('s3', region_name='us-east-1')
+    s3c.list_buckets()
+    print("S3 client initialized successfully using IAM role in app.py.")
+except Exception as e:
+    print(f"Failed to initialize S3 client with IAM role: {str(e)} in app.py.")
+    if aws_access_key_id and aws_secret_access_key:
+        s3c = boto3.client('s3', 
+                            aws_access_key_id=aws_access_key_id,
+                            aws_secret_access_key=aws_secret_access_key)
+
