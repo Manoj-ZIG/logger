@@ -1897,10 +1897,17 @@ class Section:
         self.update_main_section_v2(df)
         self.update_main_section_v3(df)
 
+<<<<<<< HEAD
         print(f"subsections extraction started:- {self.document_name}")
         self.update_section_to_sub_section(df)
         self.sub_section_logic(df)
         print(f"subsections extraction completed:- {self.document_name}")
+=======
+        print(f"subsection extraction started:- {self.document_name}")
+        self.update_section_to_sub_section(df)
+        self.sub_section_logic(df)
+        print(f"subsection extraction completed:- {self.document_name}")
+>>>>>>> 32865442776f53354c63d4113a8326dfe1864099
 
         self.section_dates(df)
         df = self.get_lab_dates(df)
