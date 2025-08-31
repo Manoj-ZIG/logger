@@ -39,9 +39,10 @@ except ModuleNotFoundError as e:
     from .utils import read_csv_file
 
 class Section:
-    def __init__(self, textract_file, bucket_name, file_name, section_subsection_constant, date_tag_constant, zai_emr_system_name, zai_emr_system_version, grd_file) -> None:
+    def __init__(self, textract_file, bucket_name, file_name, document_name,section_subsection_constant, date_tag_constant, zai_emr_system_name, zai_emr_system_version, grd_file) -> None:
         self.textract_file = textract_file
         self.file_name = file_name
+        self.document_name=document_name
         self.bucket_name = bucket_name
         self.section_continue_terms_regex = "|".join(section_subsection_constant['section_constant_terms']['section_continue_terms'])
         self.fp_text = section_subsection_constant['section_constant_terms']['fp_text']
@@ -1883,21 +1884,33 @@ class Section:
         self.get_lookup_table_df(df)
         self.detect_section_end(df)
         self.section_end_info(df)
+
+        print(f"section extraction started:- {self.document_name}")
         df = self.section_logic(df)
         self.suppress_section(df)
+        print(f"section extraction completed:- {self.document_name}")
+
         self.get_main_section_dict(df)
         # self.is_section_end_present(df)
         self.is_section_end_presentv1(df, self.sec_sub_intersec_dic, 'entity')
         # self.update_main_section(df)
         self.update_main_section_v2(df)
         self.update_main_section_v3(df)
+
+        print(f"subsection extraction started:- {self.document_name}")
         self.update_section_to_sub_section(df)
         self.sub_section_logic(df)
+        print(f"subsection extraction completed:- {self.document_name}")
+
         self.section_dates(df)
         df = self.get_lab_dates(df)
+
+        print(f"chart order extraction started:- {self.document_name}")
         self.get_chart_order_0_v1(df)
         self.chart_order_logic(df)
         self.concat_files()
+        print(f"chart order extraction completed:- {self.document_name}")
+
         df = self.subsection_mapping(df)
         
         df.rename(columns={'sub_section_entity': 'sub_section'}, inplace=True)

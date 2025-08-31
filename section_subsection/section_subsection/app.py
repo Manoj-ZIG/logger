@@ -39,6 +39,7 @@ def lambda_handler(event, context):
     textract_file = urllib.parse.unquote_plus(
         event['Records'][0]['s3']['object']['key'], encoding='utf-8')
     file_name = textract_file.split('/')[-1]
+    document_name = file_name.replace('.csv','.pdf')
     client_name = textract_file.split("/")[0]
 
     document_directory = file_name.replace('.csv','').replace('_','-').replace('.','-')
@@ -116,7 +117,8 @@ def lambda_handler(event, context):
 
         section_object = Section(textract_file,
                                 bucket_name = bucket_name,
-                                file_name=file_name, 
+                                file_name=file_name,
+                                document_name = document_name,
                                 section_subsection_constant = section_subsection_constant, 
                                 date_tag_constant = date_tag_constant, 
                                 zai_emr_system_name = zai_emr_system_name, 
