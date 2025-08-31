@@ -22,6 +22,9 @@ from get_lab_extraction import get_lab_metadata
 from get_bucket_api import get_bucket_api
 import fitz
 import sys
+from helpers.custom_logger import enable_custom_logging
+
+enable_custom_logging()
 def lambda_handler(event, context):
     logger = logging.getLogger(__name__)
     logging.basicConfig(level=logging.INFO,
@@ -47,7 +50,7 @@ def lambda_handler(event, context):
             raise Exception("Unable to initialize S3 client. Check IAM role or provide AWS credentials in app.py.")
          
     try:
-        s3_r = boto3.resource('s3', region_name='us-east-1')
+        s3_r = boto3.resource('s3', region_name='us-east-1', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
         s3_r.buckets.all()
         print("S3 resource initialized using IAM role in app.py.")
     except Exception as e:
@@ -307,80 +310,95 @@ def lambda_handler(event, context):
         }),
     }
 
-if __name__ == "__main__":
-    try: 
-        s3_c = boto3.client('s3', region_name='us-east-1')
-        s3_c.list_buckets()
-        print("S3 client initialized successfully using IAM role in app.py.")
-    except Exception as e:
-        print(f"Failed to initialize S3 client with IAM role: {str(e)} in app.py.")
-        if aws_access_key_id and aws_secret_access_key:
-            s3_c = boto3.client('s3', 
-                                aws_access_key_id=aws_access_key_id,
-                                aws_secret_access_key=aws_secret_access_key)
-            print("S3 client initialized successfully using manual keys in app.py.")
-        else:
-            raise Exception("Unable to initialize S3 client. Check IAM role or provide AWS credentials in app.py.")
-    sns_topic_arn = "arn:aws:sns:us-east-1:833984991867:revmaxai_mr_data_processing_alarms"
-    sns_client = boto3.client("sns", region_name = "us-east-1")
-    def send_sns_message(messaage):
-        response = sns_client.publish(
-            TopicArn = sns_topic_arn,
-            Message = messaage,
-            Subject = "EC2 Notification"
-        )
-        print(f"Message sent! Message ID: {response['MessageId']}")
+# if __name__ == "__main__":
+#     try: 
+#         s3_c = boto3.client('s3', region_name='us-east-1')
+#         s3_c.list_buckets()
+#         print("S3 client initialized successfully using IAM role in app.py.")
+#     except Exception as e:
+#         print(f"Failed to initialize S3 client with IAM role: {str(e)} in app.py.")
+#         if aws_access_key_id and aws_secret_access_key:
+#             s3_c = boto3.client('s3', 
+#                                 aws_access_key_id=aws_access_key_id,
+#                                 aws_secret_access_key=aws_secret_access_key)
+#             print("S3 client initialized successfully using manual keys in app.py.")
+#         else:
+#             raise Exception("Unable to initialize S3 client. Check IAM role or provide AWS credentials in app.py.")
+#     sns_topic_arn = "arn:aws:sns:us-east-1:833984991867:revmaxai_mr_data_processing_alarms"
+#     sns_client = boto3.client("sns", region_name = "us-east-1")
+#     def send_sns_message(messaage):
+#         response = sns_client.publish(
+#             TopicArn = sns_topic_arn,
+#             Message = messaage,
+#             Subject = "EC2 Notification"
+#         )
+#         print(f"Message sent! Message ID: {response['MessageId']}")
 
-    try:
-        # cmd=f'python3 {script_path} {bucket_name} {key}'
-        # bucket_name = ""
-        # key = ""
-        bucket_name = sys.argv[1]
-        json_file_path = sys.argv[2]
-        print(sys.argv)
+#     try:
+#         # cmd=f'python3 {script_path} {bucket_name} {key}'
+#         # bucket_name = ""
+#         # key = ""
+#         bucket_name = sys.argv[1]
+#         json_file_path = sys.argv[2]
+#         print(sys.argv)
         
-        response = s3_c.get_object(Bucket=bucket_name,Key=json_file_path)
-        content = response['Body'].read().decode('utf-8')
-        json_data = json.loads(content)
+#         response = s3_c.get_object(Bucket=bucket_name,Key=json_file_path)
+#         content = response['Body'].read().decode('utf-8')
+#         json_data = json.loads(content)
 
-        print(json_data)
-        bucket_name = json_data['Bucket']
-        key = json_data['Key']
+#         print(json_data)
+#         bucket_name = json_data['Bucket']
+#         key = json_data['Key']
 
-        print(f"Bucket name : {bucket_name}")
-        print(f"S3 Key : {key}")
-        json_data = str({
-            "processing_status":"Started", 
-            "s3_file_path":f"{json_file_path}"
-            })
-        send_sns_message(f"{json_data}")
-        event = {
-          "Records": [
-            {
-              "s3": {
-                "bucket": {
-                  "name": f"{bucket_name}"
-                },
-                "object": {
-                  "key": f"{key}"
-                }
-              }
-            }
-          ]
+#         print(f"Bucket name : {bucket_name}")
+#         print(f"S3 Key : {key}")
+#         json_data = str({
+#             "processing_status":"Started", 
+#             "s3_file_path":f"{json_file_path}"
+#             })
+#         send_sns_message(f"{json_data}")
+#         event = {
+#           "Records": [
+#             {
+#               "s3": {
+#                 "bucket": {
+#                   "name": f"{bucket_name}"
+#                 },
+#                 "object": {
+#                   "key": f"{key}"
+#                 }
+#               }
+#             }
+#           ]
+#         }
+#         response = lambda_handler(event, "")
+#         # s3_file_path = ""
+#         json_data = str({
+#             "processing_status":"Completed", 
+#             "s3_file_path":f"{json_file_path}"
+#             })
+#         send_sns_message(f"{json_data}")
+
+#     except Exception as  e:
+#         print(f"EC2 : EXCEPTION OCCURED : {str(e)}")
+#         json_data = str({
+#             "processing_status":"Error", 
+#             "error": f"{str(e)}",
+#             "s3_file_path":f"{json_file_path}"
+#             })
+#         send_sns_message(f"{json_data}")
+lambda_handler(event={
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "zai-revmax-qa"
+        },
+        "object": {
+          "key": "devoted/zai_medical_records_pipeline/medical-records-extract/sectioned-data/b0225647-400e-484d-b199-683d2166537e-AJX4G9HU4Y-IP1/b0225647-400e-484d-b199-683d2166537e_AJX4G9HU4Y_IP1_section_subsection.csv"
         }
-        response = lambda_handler(event, "")
-        # s3_file_path = ""
-        json_data = str({
-            "processing_status":"Completed", 
-            "s3_file_path":f"{json_file_path}"
-            })
-        send_sns_message(f"{json_data}")
-
-    except Exception as  e:
-        print(f"EC2 : EXCEPTION OCCURED : {str(e)}")
-        json_data = str({
-            "processing_status":"Error", 
-            "error": f"{str(e)}",
-            "s3_file_path":f"{json_file_path}"
-            })
-        send_sns_message(f"{json_data}")
+      }
+    }
+  ]
+},
+context='')
