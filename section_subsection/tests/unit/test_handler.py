@@ -6,10 +6,10 @@ from io import StringIO
 
 try:
     from section_subsection.utility.section_subsection_detection import Section
-    from section_subsection.constant.aws_config import aws_access_key_id, aws_secret_access_key
+    from section_subsection.constants.aws_config import aws_access_key_id, aws_secret_access_key
 except:
     from ...section_subsection.utility.section_subsection_detection import Section
-    from ...section_subsection.constant.aws_config import aws_access_key_id, aws_secret_access_key
+    from ...section_subsection.constants.aws_config import aws_access_key_id, aws_secret_access_key
 
     
 class TestStringMethods(unittest.TestCase):

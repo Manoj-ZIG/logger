@@ -6,13 +6,13 @@ import numpy as np
 import pandas as pd
 from io import StringIO
 try:
-    from constant.date_tag_constant import demographics_ls
-    from constant.section_constant_terms import map_constant
-    from constant.aws_config import aws_access_key_id, aws_secret_access_key
+    from constants.date_tag_constant import demographics_ls
+    from constants.section_constant_terms import map_constant
+    from constants.aws_config import aws_access_key_id, aws_secret_access_key
 except:
-    from ..constant.date_tag_constant import demographics_ls
-    from ..constant.section_constant_terms import map_constant
-    from ..constant.aws_config import aws_access_key_id, aws_secret_access_key
+    from ..constants.date_tag_constant import demographics_ls
+    from ..constants.section_constant_terms import map_constant
+    from ..constants.aws_config import aws_access_key_id, aws_secret_access_key
 
 try:
     from utils import read_csv_file

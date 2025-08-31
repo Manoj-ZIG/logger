@@ -11,23 +11,25 @@ warnings.filterwarnings("ignore")
 try:
     from utility.get_json_data import JsonData
     from utility.get_index_page import IndexPage
-    from constant.constant_dict import mapped_template
+    from constants.constant_dict import mapped_template
     from utility.section_subsection_detection import Section
-    from constant.aws_config import aws_access_key_id, aws_secret_access_key
+    from constants.aws_config import aws_access_key_id, aws_secret_access_key
     from utility.utils import lifecycle_file_generator, send_payload, get_bucket_api, read_csv_file, get_zai_emr_system_name_version, calculate_missing_section_percentage
     from utility.lifecycle_generator import process
+    from helpers.custom_logger import enable_custom_logging
+    
 
 except ModuleNotFoundError as e:
     from .utility.get_json_data import JsonData
     from .utility.get_index_page import IndexPage
-    from .constant.constant_dict import mapped_template
+    from .constants.constant_dict import mapped_template
     from .utility.section_subsection_detection import Section
-    from .constant.aws_config import aws_access_key_id, aws_secret_access_key
+    from .constants.aws_config import aws_access_key_id, aws_secret_access_key
     from .utility.utils import lifecycle_file_generator, send_payload, get_bucket_api, read_csv_file, get_zai_emr_system_name_version, calculate_missing_section_percentage
     from .utility.lifecycle_generator import process
 
 
-
+enable_custom_logging()
 def lambda_handler(event, context):
     logger = logging.getLogger(__name__)
     logging.basicConfig(level=logging.INFO,
@@ -39,6 +41,7 @@ def lambda_handler(event, context):
     textract_file = urllib.parse.unquote_plus(
         event['Records'][0]['s3']['object']['key'], encoding='utf-8')
     file_name = textract_file.split('/')[-1]
+    document_name = file_name.replace('.csv','.pdf')
     client_name = textract_file.split("/")[0]
 
     document_directory = file_name.replace('.csv','').replace('_','-').replace('.','-')
@@ -116,7 +119,8 @@ def lambda_handler(event, context):
 
         section_object = Section(textract_file,
                                 bucket_name = bucket_name,
-                                file_name=file_name, 
+                                file_name=file_name,
+                                document_name = document_name,
                                 section_subsection_constant = section_subsection_constant, 
                                 date_tag_constant = date_tag_constant, 
                                 zai_emr_system_name = zai_emr_system_name, 
@@ -140,3 +144,17 @@ def lambda_handler(event, context):
                 "mr_json_data keys": f"{mr_json_data.keys()}",
             }),
         }
+lambda_handler(event={
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "zai-revmax-qa"
+        },
+        "object": {
+          "key": "devoted/zai_medical_records_pipeline/textract-response/json-csv/b0225647-400e-484d-b199-683d2166537e_AJX4G9HU4Y_IP1.csv"
+        }
+      }
+    }
+  ]
+},context='')

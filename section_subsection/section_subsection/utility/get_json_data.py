@@ -23,9 +23,9 @@ class JsonData:
         print(f'copied {copy_source} to the key:  {copy_key}')
         secret_path = os.environ['SECRET_PATH']
         access_token = get_auth_token(secret_path)
-        status_code = send_payload(
-            api_endpoint_url, copy_key, access_token, mr_name, job_type='auditDrg_sections', comments='mr section inserted')
-        print(status_code)
+        # status_code = send_payload(
+        #     api_endpoint_url, copy_key, access_token, mr_name, job_type='auditDrg_sections', comments='mr section inserted')
+        # print(status_code)
         return 'copied'
 
     @staticmethod
