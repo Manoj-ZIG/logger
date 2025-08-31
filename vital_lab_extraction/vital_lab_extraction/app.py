@@ -66,7 +66,7 @@ def lambda_handler(event, context):
     sec_subsec_csv = urllib.parse.unquote_plus(event['Records'][0]['s3']['object']['key'], encoding='utf-8')
     client_name = sec_subsec_csv.split("/")[0]
     file_name = sec_subsec_csv.split('/')[-1].replace('_section_subsection', '')
-    document_name=file_name
+    document_name=file_name.replace('.csv','.pdf')
     path_to_save_result = f"{client_name}/zai_medical_records_pipeline/medical-records-extract/excerpts" 
     path_to_save_logs = f"{client_name}/zai_medical_records_pipeline/medical-records-extract/logs/{file_name.replace('.csv','')}"
     textract_csv_path = f"{client_name}/zai_medical_records_pipeline/textract-response/json-csv/{file_name}"

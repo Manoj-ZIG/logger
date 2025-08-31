@@ -18,8 +18,21 @@ except:
 # LOG_FILE = "/Users/manojkumar.nagula/Downloads/custom_losgs.csv"
 
 category={
+<<<<<<< HEAD
+<<<<<<< HEAD
+'json to csv conversion':'Json to CSV conversion',
+'merging tables and parsing':'Merging and Parsing',
+'post processing':'Post-processing',
+'analytics':'Analytics',
+'data files':'Final data files'
+=======
 
 
+>>>>>>> 15b01eb136071636d2ef21777d9dc8f4467dc3d5
+=======
+
+
+>>>>>>> 15b01eb136071636d2ef21777d9dc8f4467dc3d5
 }
 
 def custom_print(*args, **kwargs):
@@ -54,7 +67,15 @@ def custom_print(*args, **kwargs):
             # Prepare data for Parquet
             df = pd.DataFrame([{
                 "timestamp": timestamp,
+<<<<<<< HEAD
+<<<<<<< HEAD
+                "lambda":"rawDataPostprocess",
+=======
                 "lambda":"Json_to_CSV",
+>>>>>>> 15b01eb136071636d2ef21777d9dc8f4467dc3d5
+=======
+                "lambda":"Json_to_CSV",
+>>>>>>> 15b01eb136071636d2ef21777d9dc8f4467dc3d5
                 "arl": ARL,
                 "file": file_name_part,
                 "category": category_,

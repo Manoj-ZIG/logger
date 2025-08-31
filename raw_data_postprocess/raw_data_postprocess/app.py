@@ -42,6 +42,7 @@ try:
     from postprocess.get_postprocess_data_generic import GetPostProcessData as GetPostProcessDataGeneric
     from postprocess.get_postprocess_data_ami import GetPostProcessData as GetPostProcessDataAMI
     from postprocess.get_postprocess_data_sepsis import GetPostProcessData as GetPostProcessDataSEPSIS
+    from helpers.custom_logger import enable_custom_logging
 
 except ModuleNotFoundError as e:
     from .utility.textract_response import TextractTableResponse
@@ -75,7 +76,9 @@ except ModuleNotFoundError as e:
     from .postprocess.get_postprocess_data_generic import GetPostProcessData as GetPostProcessDataGeneric
     from .postprocess.get_postprocess_data_ami import GetPostProcessData as GetPostProcessDataAMI
     from .postprocess.get_postprocess_data_sepsis import GetPostProcessData as GetPostProcessDataSEPSIS
+    from .helpers.custom_logger import enable_custom_logging
 
+enable_custom_logging()
 sns_topic_arn = "arn:aws:sns:us-east-1:833984991867:revmaxai_mr_data_processing_alarms"
 sns_client = boto3.client("sns", region_name = "us-east-1")
 def send_sns_message(messaage):
@@ -109,7 +112,7 @@ def lambda_handler(event, context):
     table_merged_json = urllib.parse.unquote_plus(
         event['Records'][0]['s3']['object']['key'], encoding='utf-8')
     file_name = table_merged_json.split('/')[-1].replace('_textract_table_merged.json', '')
-    document_name=file_name
+    document_name=file_name+".pdf"
     # adj_tag = file_name.split('_')[0]
     client_name = table_merged_json.split("/")[0]
     path_to_save_result = f"{client_name}/zai_medical_records_pipeline/medical-records-extract/tables"
@@ -151,7 +154,7 @@ def lambda_handler(event, context):
         else:
             raise Exception("Unable to initialize S3 client. Check IAM role or provide AWS credentials in app.py.")
     try:
-        s3_r = boto3.resource('s3', region_name='us-east-1')
+        s3_r = boto3.resource('s3', region_name='us-east-1', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
         s3_r.buckets.all()
         print("S3 resource initialized using IAM role in app.py.")
     except Exception as e:
@@ -576,6 +579,7 @@ def lambda_handler(event, context):
     print(f"analytics completed:- {document_name}")
 
     print('final json data storing...')
+    print(f'data files sending:- {document_name}')
     logging.info(
         f'FUNCTION END: template_analytics.py, analytics data keys: {len(analysis_json_data.keys())}')
     logging.info(
@@ -596,34 +600,34 @@ def lambda_handler(event, context):
     final_js_table, source_key_table = jsDataObj.get_table_json_data(
         claim_id, postprocess_table_data, path_to_save_ui_data_result)
     # copy_keyt = f"{save_path_ui}/{claim_id}/{source_key_table.get('Key').split('/')[-1]}" with_claim
-    secret_path = os.environ["SECRET_PATH"]
-    access_token = get_auth_token(secret_path)
+    # secret_path = os.environ["SECRET_PATH"]
+    # access_token = get_auth_token(secret_path)
     ################### UI-JSON Result Storing ###########################
     # """
     copy_keyt = f"{save_path_ui}/{claim_id}/{source_key_table.get('Key').split('/')[-1].replace(claim_id+'_','')}"
     copy_object_to_s3(s3_c, save_path_ui_bucket,source_key_table,copy_keyt )
     print(f'copy_source: { source_key_table} | copy_key: {copy_keyt} ')
-    status_code_lab_test = send_payload(
-        api_endpoint_url, copy_keyt, access_token, mr_name, job_type='auditDrg_lab_tests', comments='lab test inserted')
-    print('lab_test', status_code_lab_test)
+    # status_code_lab_test = send_payload(
+    #     api_endpoint_url, copy_keyt, access_token, mr_name, job_type='auditDrg_lab_tests', comments='lab test inserted')
+    # print('lab_test', status_code_lab_test)
 
     final_js_excp, source_key_excerpt = jsDataObj.get_excerpt_json_data(
         claim_id, post_process_excerpt_df, path_to_save_ui_data_result, s3_url)
     copy_keye = f"{save_path_ui}/{claim_id}/{source_key_excerpt.get('Key').split('/')[-1].replace(claim_id+'_','')}"
     copy_object_to_s3(s3_c, save_path_ui_bucket,source_key_excerpt,copy_keye )
     print(f'copy_source: { source_key_excerpt} | copy_key: {copy_keye} ')
-    status_code_excerpt = send_payload(
-        api_endpoint_url, copy_keye, access_token, mr_name, job_type='auditDrg_excerpts', comments='excerpt inserted')
-    print('excerpt', status_code_excerpt)
+    # status_code_excerpt = send_payload(
+    #     api_endpoint_url, copy_keye, access_token, mr_name, job_type='auditDrg_excerpts', comments='excerpt inserted')
+    # print('excerpt', status_code_excerpt)
 
     final_js_populate_term, source_key_template = jsDataObj.get_template_selection_population_data(
         claim_id, analysis_json_data, path_to_save_ui_data_result, file_name)
     copy_keytmt = f"{save_path_ui}/{claim_id}/{source_key_template.get('Key').split('/')[-1].replace(claim_id+'_','')}"
     copy_object_to_s3(s3_c, save_path_ui_bucket,source_key_template,copy_keytmt )
     print(f'copy_source: { source_key_template} | copy_key: {copy_keytmt} ')
-    status_code_selection = send_payload(
-        api_endpoint_url, copy_keytmt, access_token, mr_name, job_type='auditDrg_selections', comments='selection inserted')
-    print('selection', status_code_selection)
+    # status_code_selection = send_payload(
+    #     api_endpoint_url, copy_keytmt, access_token, mr_name, job_type='auditDrg_selections', comments='selection inserted')
+    # print('selection', status_code_selection)
     # """
     ################### UI-JSON Result Storing END ###########################
 
@@ -637,7 +641,7 @@ def lambda_handler(event, context):
                        f"raw data table postprocess| {postprocess_table_data.shape}", False
                        )
     print(f'final json data stored for {file_name}')
-    print(f"Data files sent:- {document_name}")
+    print(f"data files sent:- {document_name}")
 
         
     return {
@@ -649,71 +653,86 @@ def lambda_handler(event, context):
         }),
     }
 
-if __name__ == "__main__":
-    try: 
-        s3_c = boto3.client('s3', region_name='us-east-1')
-        s3_c.list_buckets()
-        print("S3 client initialized successfully using IAM role in app.py.")
-    except Exception as e:
-        print(f"Failed to initialize S3 client with IAM role: {str(e)} in app.py.")
-        if aws_access_key_id and aws_secret_access_key:
-            s3_c = boto3.client('s3', 
-                                aws_access_key_id=aws_access_key_id,
-                                aws_secret_access_key=aws_secret_access_key)
-            print("S3 client initialized successfully using manual keys in app.py.")
-        else:
-            raise Exception("Unable to initialize S3 client. Check IAM role or provide AWS credentials in app.py.")
+# if __name__ == "__main__":
+#     try: 
+#         s3_c = boto3.client('s3', region_name='us-east-1')
+#         s3_c.list_buckets()
+#         print("S3 client initialized successfully using IAM role in app.py.")
+#     except Exception as e:
+#         print(f"Failed to initialize S3 client with IAM role: {str(e)} in app.py.")
+#         if aws_access_key_id and aws_secret_access_key:
+#             s3_c = boto3.client('s3', 
+#                                 aws_access_key_id=aws_access_key_id,
+#                                 aws_secret_access_key=aws_secret_access_key)
+#             print("S3 client initialized successfully using manual keys in app.py.")
+#         else:
+#             raise Exception("Unable to initialize S3 client. Check IAM role or provide AWS credentials in app.py.")
 
-    try:
-        # cmd=f'python3 {script_path} {bucket_name} {key}'
+#     try:
+#         # cmd=f'python3 {script_path} {bucket_name} {key}'
 
-        # bucket_name = ""
-        # key = ""
-        bucket_name = sys.argv[1]
-        json_file_path = sys.argv[2]
-        print(sys.argv)
+#         # bucket_name = ""
+#         # key = ""
+#         bucket_name = sys.argv[1]
+#         json_file_path = sys.argv[2]
+#         print(sys.argv)
 
-        response = s3_c.get_object(Bucket=bucket_name,Key=json_file_path)
-        content = response['Body'].read().decode('utf-8')
-        json_data = json.loads(content)
+#         response = s3_c.get_object(Bucket=bucket_name,Key=json_file_path)
+#         content = response['Body'].read().decode('utf-8')
+#         json_data = json.loads(content)
 
-        print(json_data)
-        bucket_name = json_data['Bucket']
-        key = json_data['Key']
+#         print(json_data)
+#         bucket_name = json_data['Bucket']
+#         key = json_data['Key']
         
-        print(f"Bucket name : {bucket_name}")
-        print(f"S3 Key : {key}")
-        json_data = str({
-            "processing_status":"Started", 
-            "s3_file_path":f"{json_file_path}"
-            })
-        send_sns_message(f"{json_data}")
-        event = {
-          "Records": [
-            {
-              "s3": {
-                "bucket": {
-                  "name": f"{bucket_name}"
-                },
-                "object": {
-                  "key": f"{key}"
-                }
-              }
-            }
-          ]
+#         print(f"Bucket name : {bucket_name}")
+#         print(f"S3 Key : {key}")
+#         json_data = str({
+#             "processing_status":"Started", 
+#             "s3_file_path":f"{json_file_path}"
+#             })
+#         send_sns_message(f"{json_data}")
+#         event = {
+#           "Records": [
+#             {
+#               "s3": {
+#                 "bucket": {
+#                   "name": f"{bucket_name}"
+#                 },
+#                 "object": {
+#                   "key": f"{key}"
+#                 }
+#               }
+#             }
+#           ]
+#         }
+#         response = lambda_handler(event, "")
+#         json_data = str({
+#             "processing_status":"Completed", 
+#             "s3_file_path":f"{json_file_path}"
+#             })
+#         send_sns_message(f"{json_data}")
+#         print("response")
+#     except Exception as  e:
+#         print(f"EC2 : EXCEPTION OCCURED : {str(e)}")
+#         json_data = str({
+#             "processing_status":"Error", 
+#             "error": f"{str(e)}",
+#             "s3_file_path":f"{json_file_path}"
+#             })
+#         send_sns_message(f"{json_data}")
+lambda_handler(event={
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "zai-revmax-qa"
+        },
+        "object": {
+          "key": "devoted/zai_medical_records_pipeline/textract-response/table-json/b0225647-400e-484d-b199-683d2166537e_AJX4G9HU4Y_IP1_textract_table_merged.json"
         }
-        response = lambda_handler(event, "")
-        json_data = str({
-            "processing_status":"Completed", 
-            "s3_file_path":f"{json_file_path}"
-            })
-        send_sns_message(f"{json_data}")
-        print("response")
-    except Exception as  e:
-        print(f"EC2 : EXCEPTION OCCURED : {str(e)}")
-        json_data = str({
-            "processing_status":"Error", 
-            "error": f"{str(e)}",
-            "s3_file_path":f"{json_file_path}"
-            })
-        send_sns_message(f"{json_data}")
+      }
+    }
+  ]
+}
+,context='')
