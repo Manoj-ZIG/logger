@@ -94,6 +94,7 @@ class PDF:
                 output_key = output_key.replace(".pdf", f"_part_0_{no_of_pages}.pdf")
                 print("Generated a PDF chunk : ", output_key)
                 copy_object(self.s3c, input_bucket, input_key, output_bucket, output_key)
+                print(f"Moved pdf to raw folder QA:- {output_file_name.split('/')[-1]}")
                 chunk_paths.append((output_key, no_of_pages))
                 return chunk_paths
             total_parts = (no_of_pages+self.batch_size-1)//self.batch_size  
