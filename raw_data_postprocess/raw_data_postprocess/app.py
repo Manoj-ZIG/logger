@@ -2,6 +2,7 @@ import json
 import logging
 import boto3
 import pandas as pd
+import numpy as np
 import urllib.parse
 from io import BytesIO, StringIO
 import os
@@ -729,7 +730,7 @@ lambda_handler(event={
           "name": "zai-revmax-qa"
         },
         "object": {
-          "key": "devoted/zai_medical_records_pipeline/textract-response/table-json/b0225647-400e-484d-b199-683d2166537e_AJX4G9HU4Y_IP1_textract_table_merged.json"
+          "key": "devoted/zai_medical_records_pipeline/textract-response/table-json/0abc34ca-5f74-4fa4-aa57-678aa0a0acfd_AJX8E56826_IP1_textract_table_merged.json"
         }
       }
     }

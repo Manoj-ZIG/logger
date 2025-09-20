@@ -18,21 +18,11 @@ except:
 # LOG_FILE = "/Users/manojkumar.nagula/Downloads/custom_losgs.csv"
 
 category={
-<<<<<<< HEAD
-<<<<<<< HEAD
 'json to csv conversion':'Json to CSV conversion',
 'merging tables and parsing':'Merging and Parsing',
 'post processing':'Post-processing',
 'analytics':'Analytics',
 'data files':'Final data files'
-=======
-
-
->>>>>>> 15b01eb136071636d2ef21777d9dc8f4467dc3d5
-=======
-
-
->>>>>>> 15b01eb136071636d2ef21777d9dc8f4467dc3d5
 }
 
 def custom_print(*args, **kwargs):
@@ -46,9 +36,9 @@ def custom_print(*args, **kwargs):
         ARL = ARL[0] if ARL else ''
         ARL = ARL.upper()
         if ARL.startswith(("AJX","IB")):
-            client = "Devoted"
+            client = "devoted"
         elif ARL.startswith(("H00", "V00", "22")):
-            client = "Helix"
+            client = "helix"
         else:
             client = ""
         
@@ -64,37 +54,22 @@ def custom_print(*args, **kwargs):
                 break
 
         if category_:
-            # Prepare data for Parquet
-            df = pd.DataFrame([{
-                "timestamp": timestamp,
-<<<<<<< HEAD
-<<<<<<< HEAD
-                "lambda":"rawDataPostprocess",
-=======
-                "lambda":"Json_to_CSV",
->>>>>>> 15b01eb136071636d2ef21777d9dc8f4467dc3d5
-=======
-                "lambda":"Json_to_CSV",
->>>>>>> 15b01eb136071636d2ef21777d9dc8f4467dc3d5
-                "arl": ARL,
-                "file": file_name_part,
-                "category": category_,
-                "message": Message,
-            }])
+            # Prepare pipe-delimited content
+            headers = "timestamp|lambda|arl|file|category|message"
+            values = f"{timestamp}|rawDataPostProcess|{ARL}|{file_name_part}|{category_}|{Message}"
+            content = f"{headers}\n{values}"
 
-            # Create a parquet
-            table = pa.Table.from_pandas(df)
+            # Create a TXT file in memory
             buffer = BytesIO()
-            pq.write_table(table, buffer, compression='snappy')
+            buffer.write(content.encode('utf-8'))
+            buffer.seek(0)
 
             # Upload to S3
             date_folder = datetime.now().strftime("%Y%m%d")
             timestamp_for_file = datetime.now().strftime("%Y%m%d_%H%M%S")
-            s3_key = f"{client}/{S3_FOLDER}/{date_folder}/{file_name_part.replace('.pdf','')}_{category_}_{timestamp_for_file}.parquet"
-            buffer.seek(0)
-
+            s3_key = f"{client}/{S3_FOLDER}/{date_folder}/{file_name_part.replace('.pdf','')}_{category_}_{timestamp_for_file}.txt"
             try:
-                s3c.upload_fileobj(buffer, S3_BUCKET, s3_key)
+                s3c.put_object(Bucket=S3_BUCKET, Key=s3_key, Body=buffer)
             except Exception as e:
                 builtins._original_print(f"Failed to upload Parquet to S3: {e}")
 
@@ -106,7 +81,7 @@ def disable_custom_logging():
     builtins.print = builtins._original_print
 
 S3_BUCKET = os.environ['PARAMETERS_BUCKET_NAME']
-S3_FOLDER = f"process_logs"
+S3_FOLDER = f"execution_trace_logs"
 try:
     s3c = boto3.client('s3', region_name='us-east-1')
     s3c.list_buckets()
