@@ -133,7 +133,7 @@ def lambda_handler(event, context):
         if document_type == 'pdf':
 
             print(rf"query for all related ARLs started:- {document_name}")
-            df_arl = get_all_pcn_and_arl(athena_client, s3c, adjudication_record_locator, client_doc_pattern_json)
+            df_arl = get_all_pcn_and_arl(athena_client, s3c, adjudication_record_locator, client_doc_pattern_json,document_name)
             print(rf"query for all related ARLs completed:- {document_name}")
             try:
                 root_payer_control_number = df_arl['root_payer_control_number'].iloc[0]
@@ -213,21 +213,7 @@ def lambda_handler(event, context):
 
 keys=[
 
-'H00011293296IP2_04-03-2025_15-02.pdf',
-'H00011293296IP2_04-03-2025_15-28.pdf',
-'H00011293296IP2_04-11-2025_12-36.pdf',
-'2224295IP1_04-09-2025_15-04.pdf',
-'2226238-IP1.pdf',
-'2227035-IP1.pdf',
-'2217709IP1_04-09-2025_14-46.pdf',
-'2223624IP1_04-09-2025_14-52.pdf',
-'MRH_Zigna_ClaimLines_041125.csv',
-'V00011737122IP61_08-29-2025_05-31.pdf',
-'V00011737566IP61_08-28-2025_11-48.pdf',
-'V00011739767IP61_08-27-2025_16-48.pdf',
-'MRH_Zigna_Claims_041125.csv',
-'MRH_Zigna_Patient_041125.csv',
-'MRH_Zigna_Proivder_041125.csv',
+'AJXUEY7Y4J_IP1.pdf'
 ]
 for key in keys:
     
@@ -239,7 +225,7 @@ for key in keys:
             "name": "zai-revmax-qa"
         },
         "object": {                                                                           
-            "key": f"helix/audits/sftp/inboundFromClient/{key}"
+            "key": f"devoted/audits/sftp/inboundFromClient/{key}"
         }
         }
     }
