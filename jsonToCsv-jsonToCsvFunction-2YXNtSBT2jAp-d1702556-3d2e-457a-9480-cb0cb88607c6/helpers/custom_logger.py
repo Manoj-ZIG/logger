@@ -15,7 +15,6 @@ except:
 
 
 
-# LOG_FILE = "/Users/manojkumar.nagula/Downloads/custom_losgs.csv"
 
 category={
 'reading the raw json file':'Reading textract json',

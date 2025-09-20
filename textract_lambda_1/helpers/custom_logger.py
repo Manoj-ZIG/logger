@@ -15,7 +15,6 @@ except:
 
 
 
-# LOG_FILE = "/Users/manojkumar.nagula/Downloads/custom_losgs.csv"
 
 category={
 'text extraction':'Text extraction',
@@ -24,40 +23,6 @@ category={
 }
 
 
-
-# if not os.path.exists(LOG_FILE):
-#     with open(LOG_FILE, mode='a', newline='') as file:
-#         writer = csv.writer(file)
-#         writer.writerow(["Timestamp","ARL","File","Category","Message"])
-
-# def custom_print(*args, **kwargs):
-#     timestamp = datetime.now().isoformat(timespec='milliseconds')
-#     message = " ".join(str(arg) for arg in args)
-#     # formatted_message = f"{timestamp}   {message}"
-
-    
-#     builtins._original_print(message, **kwargs)
-
-    
-#     if ":-" in message:
-#         with open(LOG_FILE, mode='a', newline='') as file:
-#             writer = csv.writer(file)
-
-#             pattern = r'\b(AJX[\w\-]{7}|H00[\w\-]{9}|V00[\w\-]{9}|200[\w\-]{4})'
-#             ARL = re.findall(pattern, message, flags=re.IGNORECASE)            
-#             if not ARL:
-#                 ARL = ''
-#             else:
-#                 ARL = ARL[0]
-#             file = message.split(':-')[-1]
-#             for key in category:
-#                 if key.lower() in message.lower():
-#                     category_ = category.get(key,"")
-#                     break
-#                 else:
-#                     category_ = ""
-#             Message = message.split(':-')[0]
-#             writer.writerow([timestamp,ARL,file,category_, Message])
 def custom_print(*args, **kwargs):
     timestamp = datetime.now().isoformat(timespec='milliseconds')
     message = " ".join(str(arg) for arg in args)

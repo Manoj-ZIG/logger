@@ -730,7 +730,7 @@ lambda_handler(event={
           "name": "zai-revmax-qa"
         },
         "object": {
-          "key": "devoted/zai_medical_records_pipeline/textract-response/table-json/0abc34ca-5f74-4fa4-aa57-678aa0a0acfd_AJX8E56826_IP1_textract_table_merged.json"
+          "key": ""
         }
       }
     }

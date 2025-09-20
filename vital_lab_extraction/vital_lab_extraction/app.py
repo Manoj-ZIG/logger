@@ -395,7 +395,7 @@ lambda_handler(event={
           "name": "zai-revmax-qa"
         },
         "object": {
-          "key": "devoted/zai_medical_records_pipeline/medical-records-extract/sectioned-data/b0225647-400e-484d-b199-683d2166537e-AJX4G9HU4Y-IP1/b0225647-400e-484d-b199-683d2166537e_AJX4G9HU4Y_IP1_section_subsection.csv"
+          "key": ""
         }
       }
     }

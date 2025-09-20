@@ -96,7 +96,7 @@ def lambda_handler(event, context):
 
 keys=[
 
-'devoted/zai_medical_records_pipeline/concat-files/digitized-pdf/ed4b9177-3f4f-4aca-a203-3ce25b499bd1_AJX27GW4KC_IP1_20250703_152838.pdf'
+''
 ]
 for key in keys:
     
