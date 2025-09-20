@@ -128,6 +128,8 @@ class UniqueClaimIdentifierCheck:
             if sub_name_count == len(member_name_ls):
                 is_member_name_match = True
                 print(f"The patient name is matching for the ARL '{phi_df.iloc[0]['adjudication_record_locator']}'")
+                print(f"patient Name matched:- {self.document_name_cleaned}")
+
 
             date_str_obj_ls = DatetimeExtractor.get_date_time_from_corpus_v2(text.lower(), self.date_tag_constants['date_of_birth_tags'])
             
@@ -144,6 +146,7 @@ class UniqueClaimIdentifierCheck:
                 is_member_dob_match = True
                 dob_flag = True
                 print(f"The patient dob is matching for the ARL '{phi_df.iloc[0]['adjudication_record_locator']}'")
+                print(f"patient DOB matched:- {self.document_name_cleaned}")
             
             # Step2 : Considering that the dob tags are not present in the detected dates [(date, time, tag)], we sort all the detected dates.
             if not dob_flag:
@@ -157,6 +160,8 @@ class UniqueClaimIdentifierCheck:
                     is_member_dob_match = True
                     dob_flag = True
                     print(f"The patient dob is matching for the ARL '{phi_df.iloc[0]['adjudication_record_locator']}'")
+                    print(f"patient DOB matched:- {self.document_name_cleaned}")
+
         if is_member_dob_match==False:
             print(f'patient DOB not matched:- {self.document_name_cleaned}')
         if is_member_name_match==False:
@@ -164,7 +169,7 @@ class UniqueClaimIdentifierCheck:
 
         return is_member_name_match, is_member_dob_match
             
-    def get_unique_claim_identifier_status(self, bucket_name, key, json_file_path):
+    def get_unique_claim_identifier_status(self, bucket_name, key, json_file_path,document_name_cleaned):
         '''
         ### Returns the unique_claim_identifiers found in the given json data 
         
@@ -184,7 +189,7 @@ class UniqueClaimIdentifierCheck:
         df = df[df['BlockType'] == 'LINE'].reset_index(drop=True)
         corpus = self.get_corpus(df)
         print(f'validation query starting:- {self.document_name_cleaned}')
-        validation_query_df = generate_query(self.athena_client, self.s3c, self.root_payer_control_number, self.client_doc_pattern_json)
+        validation_query_df = generate_query(self.athena_client, self.s3c, self.root_payer_control_number, self.client_doc_pattern_json,document_name_cleaned)
         print(f'validation query completed:- {self.document_name_cleaned}')
 
         is_member_name_match, is_member_dob_match = self.validate_phi(validation_query_df, corpus)

@@ -229,5 +229,6 @@ def extract_text_from_pdf(s3_bucket_name, document_key, medical_record_path, is_
         print(f'Response {job_id} - {s3_bucket_name} - {textract_pdf_key} stored for in location {out_path}')
     else:
         print(f'Response not generated for {job_id} for {s3_bucket_name} - {document_key} ')
+        print(f"text extraction failed:- {document_key.split('/')[-1]}")
     delete_object(s3c, s3_bucket_name,textract_pdf_key)
     return out_path

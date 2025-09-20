@@ -54,6 +54,8 @@ class PDF:
             print(f"Unable to open pdf {pdf_file}")
             print(traceback.format_exc())
             is_corrupted = 1
+            print(f"digitization check failed:- {self.document_name_cleaned}")
+            print(f"corrupted pdf:- {self.document_name_cleaned}")
             return is_digitised , is_corrupted , num_pages
         return is_digitised ,is_corrupted , num_pages
 

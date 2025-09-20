@@ -157,12 +157,13 @@ def lambda_handler(event, context):
             if (not is_document_duplicated):
                 print(rf"text extraction started:- {document_name_cleaned}")
                 json_path = extract_text_from_pdf(bucket_name, key, medical_record_path, False)
-                arlObj = ARLCheck(s3c, athena_client, client_name, document_name_cleaned,client_doc_pattern_json, date_tag_constants, adjudication_record_locator, root_payer_control_number)
                 print(rf"text extraction completed:- {document_name_cleaned}")
+
+                arlObj = ARLCheck(s3c, athena_client, client_name, document_name_cleaned,client_doc_pattern_json, date_tag_constants, adjudication_record_locator, root_payer_control_number)
 
                 print(f"PHI validation started:- {document_name_cleaned}")
                 dest_key ,is_arl_present_in_document_name, is_arl_received, \
-                    is_arl_matched_with_document, is_document_sent_for_manual_review, validation_query_df = arlObj.get_unique_claim_identifier_status(bucket_name, document_storage_path_, json_path)
+                    is_arl_matched_with_document, is_document_sent_for_manual_review, validation_query_df = arlObj.get_unique_claim_identifier_status(bucket_name, document_storage_path_, json_path,document_name_cleaned)
                 print(f"PHI validation completed:- {document_name_cleaned}")
                 
                 # If we get the dest_key same as key(i.e. document key), i.e. the ARL is matched we can go with the document_storage_path_ else ARL mismatch (i.e. moved to Manual Review)

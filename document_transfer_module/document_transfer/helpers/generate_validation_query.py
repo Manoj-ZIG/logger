@@ -6,7 +6,7 @@ except ModuleNotFoundError as e:
     from ..helpers.validate import run_query
     from ..helpers.constant import workgroup, query_output_location
 
-def generate_query(athena_client, s3c, root_payer_control_number, client_doc_pattern_json):
+def generate_query(athena_client, s3c, root_payer_control_number, client_doc_pattern_json,document_name_cleaned):
     source_db = f"{client_doc_pattern_json.get('client_name')}_prod"
     table_source_name1 = "transformed_claims"
     table_source_name2 = "claim_submissions"
@@ -48,9 +48,10 @@ def generate_query(athena_client, s3c, root_payer_control_number, client_doc_pat
         print("Shape of the validation_query_df : ", df.shape)
     except:
         df = pd.DataFrame({})
+        print(f"validation query result is empty:- {document_name_cleaned}")
     return df
 
-def get_all_pcn_and_arl(athena_client, s3c, adjudication_record_locator, client_doc_pattern_json):
+def get_all_pcn_and_arl(athena_client, s3c, adjudication_record_locator, client_doc_pattern_json,document_name):
     source_db = f"{client_doc_pattern_json.get('client_name')}_prod"
     table_source_name1 = "transformed_claims"
     query_string = f"""select distinct {table_source_name1}.root_payer_control_number,
@@ -66,4 +67,5 @@ def get_all_pcn_and_arl(athena_client, s3c, adjudication_record_locator, client_
         print("Shape of the query(getting all the versions of the ARL with RPCN) : ", df.shape)
     except:
         df = pd.DataFrame({})
+        print(f"query for all related ARLs result is empty:- {document_name}")
     return df

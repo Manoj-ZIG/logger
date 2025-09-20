@@ -28,7 +28,7 @@ category={
     'PHI validation':'PHI check',
     'file went to manual review because of PHI':'PHI check',
     'digitization check':'Digitization check',
-    'text extaction started':'Textraction',
+    'corrupted pdf':'Document corrupted',
     'copying file to raw':'Moving to processed',
     'copied file to raw folder':'Moving to processed',
     'validation query':'Claim level validation',

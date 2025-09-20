@@ -41,6 +41,8 @@ def lambda_handler(event, context):
             entity = 'pdf_text'
         except Exception as e:
             print(e)
+            print(f"text extraction failed:- {document_name}")
+
             print('Error getting object {} from bucket {}. Make sure they exist and your bucket is in the same region as this function.'.format(key, bucket))
             raise e
     elif 'textract_table_merged' in key:
@@ -74,6 +76,8 @@ def lambda_handler(event, context):
             entity = 'pdf_table'
         except Exception as e:
             print(e)
+            print(f"table extraction failed:- {document_name}")
+
             print('Error getting object {} from bucket {}. Make sure they exist and your bucket is in the same region as this function.'.format(key, bucket))
             raise e
     else:
