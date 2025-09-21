@@ -94,7 +94,7 @@ class PDF:
                 output_key = output_key.replace(".pdf", f"_part_0_{no_of_pages}.pdf")
                 print("Generated a PDF chunk : ", output_key)
                 copy_object(self.s3c, input_bucket, input_key, output_bucket, output_key)
-                print(f"Moved pdf to raw folder QA:- {output_file_name.split('/')[-1]}")
+                print(f"Moved pdf to raw folder QA:- {output_key.split('/')[-1].split('_part')[0]}.pdf")
                 chunk_paths.append((output_key, no_of_pages))
                 return chunk_paths
             total_parts = (no_of_pages+self.batch_size-1)//self.batch_size  
@@ -116,7 +116,7 @@ class PDF:
                         output_file_name = output_key.replace('.pdf','')+f'_ZIG_MR_{part}_part_{part}_{no_of_pages}.pdf'
                         chunk_paths.append((output_file_name,page_count))
                         self.s3r.Object(output_bucket,output_file_name).put(Body=bytes_stream.getvalue(),ContentType = 'application/pdf')
-                        print(f"Moved pdf to raw folder QA:- {output_file_name.split('/')[-1]}")
+                        print(f"Moved pdf to raw folder QA:- {output_file_name.split('/')[-1].split('_part')[0]}.pdf")
                         print("Generated a PDF chunk : ", output_file_name)
                     if part!=total_parts:
                         curr_max_pages += chunks[part]

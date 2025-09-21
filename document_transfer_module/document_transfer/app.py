@@ -212,6 +212,7 @@ def lambda_handler(event, context):
 
 
 keys=[
+    '',
 
 
 ]
@@ -225,7 +226,7 @@ for key in keys:
             "name": "zai-revmax-qa"
         },
         "object": {                                                                           
-            "key": f"helix/audits/sftp/inboundFromClient/{key}"
+            "key": f"devoted/audits/sftp/inboundFromClient/{key}"
         }
         }
     }
