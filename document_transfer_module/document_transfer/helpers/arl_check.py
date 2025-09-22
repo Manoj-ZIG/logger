@@ -188,7 +188,7 @@ class UniqueClaimIdentifierCheck:
         df = self.normalize_json(data)
         df = df[df['BlockType'] == 'LINE'].reset_index(drop=True)
         corpus = self.get_corpus(df)
-        print(f'validation query starting:- {self.document_name_cleaned}')
+        print(f'validation query started:- {self.document_name_cleaned}')
         validation_query_df = generate_query(self.athena_client, self.s3c, self.root_payer_control_number, self.client_doc_pattern_json,document_name_cleaned)
         print(f'validation query completed:- {self.document_name_cleaned}')
 
