@@ -32,7 +32,7 @@ def custom_print(*args, **kwargs):
     builtins._original_print(message, **kwargs)
 
     if ":-" in message:
-        pattern = r'(AJX[\w\-]{7}|H00[\w\-]{9}|V00[\w\-]{9}|200[\w\-]{4}'
+        pattern = r'(AJX[\w\-]{7}|H00[\w\-]{9}|V00[\w\-]{9}|200[\w\-]{4}))'
         ARL = re.findall(pattern, message, flags=re.IGNORECASE)
         ARL = ARL[0] if ARL else ''
         ARL = ARL.upper()
