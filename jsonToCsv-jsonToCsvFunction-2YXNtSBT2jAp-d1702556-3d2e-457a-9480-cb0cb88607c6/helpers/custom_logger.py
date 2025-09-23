@@ -17,6 +17,7 @@ except:
 
 
 category={
+'JSON to CSV conversion':'Json to CSV',
 'reading the raw json file':'Reading textract json',
 'conversion of json to pandas df is':'json to DF conversion',
 'csv file is':'saving CSV file',

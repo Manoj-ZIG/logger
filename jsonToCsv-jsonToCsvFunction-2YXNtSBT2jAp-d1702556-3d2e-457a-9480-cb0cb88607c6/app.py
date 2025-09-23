@@ -31,6 +31,7 @@ def lambda_handler(event, context):
     bucket_name = str(file_obj["s3"]["bucket"]["name"])
     file_name = unquote_plus(str(file_obj["s3"]["object"]["key"]))
     document_name = file_name.split('/')[-1].replace('.json','.pdf')
+    print(f"JSON to CSV conversion started:- {document_name}")
 
     print(file_name, bucket_name, 1)
 
@@ -73,6 +74,7 @@ def lambda_handler(event, context):
         print(f"Error: Invalid JSON in input file {file_name}")
     except Exception as e:
         print(f'Unexcpeted error occured during format conversion of python response to java response {str(e)}')
+    print(f"JSON to CSV conversion completed:- {document_name}")
 
 
     return {
