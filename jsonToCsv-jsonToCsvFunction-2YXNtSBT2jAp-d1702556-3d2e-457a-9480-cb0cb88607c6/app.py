@@ -39,6 +39,7 @@ def lambda_handler(event, context):
     s3_clientdata = s3_clientobj['Body'].read().decode('utf-8')
 
     jsn = json.loads(s3_clientdata)
+    print(f"completed reading the raw json file:- {document_name}")
 
     df1 = pd.DataFrame()
     print(f"conversion of json to pandas df is started:- {document_name}")
@@ -81,7 +82,7 @@ def lambda_handler(event, context):
         }),
     }
 keys=[
-''
+      
 ]
 for key in keys:
     
@@ -93,7 +94,7 @@ for key in keys:
             "name": "zai-revmax-qa"
         },
         "object": {                                                                           
-            "key": key
+            "key": fr"devoted/zai_medical_records_pipeline/textract-response/raw-json/{key.replace('.pdf','.json')}"
         }
         }
     }

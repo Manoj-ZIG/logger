@@ -94,10 +94,8 @@ def lambda_handler(event, context):
 
 
 
-keys=[
+keys=[]
 
-''
-]
 for key in keys:
     
     event = {
@@ -108,7 +106,7 @@ for key in keys:
             "name": "zai-revmax-qa"
         },
         "object": {                                                                           
-            "key": key
+            "key": f"devoted/zai_medical_records_pipeline/concat-files/digitized-pdf/{key}"
         }
         }
     }

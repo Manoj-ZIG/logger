@@ -3,6 +3,7 @@ import boto3
 import os
 from constants.aws_config import aws_secret_access_key,aws_access_key_id
 from helpers.custom_logger import enable_custom_logging
+import pandas as pd
 
 s3 = boto3.client('s3',aws_access_key_id=aws_access_key_id,
                        aws_secret_access_key=aws_secret_access_key,region_name='us-east-1')
@@ -143,5 +144,8 @@ def lambda_handler(event, context):
             "tag": f"{pdfTextTableExtractionJobTag}"
         }),
     }
-event = {'Records': [{'EventSource': 'aws:sns', 'EventVersion': '1.0', 'EventSubscriptionArn': 'arn:aws:sns:us-east-1:833984991867:AmazonTextract-lambda:621bdf14-1ad2-49d3-a41f-da6122240d20', 'Sns': {'Type': 'Notification', 'MessageId': 'c509b577-276e-5571-a3e1-d4596362002b', 'TopicArn': 'arn:aws:sns:us-east-1:833984991867:AmazonTextract-lambda', 'Message': '{"JobId":"693dc445a2a03c4e7ee04ad97beb994a0d3d17806a1bd862e358c731f6ebbec4","Status":"SUCCEEDED","API":"StartDocumentTextDetection","JobTag":"pdf_text","Timestamp":1756643788910,"DocumentLocation":{"S3ObjectName":"devoted/zai_medical_records_pipeline/concat-files/digitized-pdf/ed4b9177-3f4f-4aca-a203-3ce25b499bd1_AJX27GW4KC_IP1_20250703_152838.pdf","S3Bucket":"zai-revmax-qa"}}', 'Timestamp': '2025-08-31T12:36:28.972Z', 'SignatureVersion': '1', 'Signature': 'Cjee99sooRFKrA6AHiVKASdD6gsqZhKvDUpGAp9zBW+n/8mLl7wprhZGXB1c4VXArx7p/kYyvopeV2RUoQl+j/D9uCd2NvhUeVda82AytCcAMBjM9Ypi2ZsfJuVd4yXgLXLP6l9cchVrVpsgzjj5MIjwWtIWfy8iX8AqOV1VFT7+CxuPNqwT4EGgPmORexNtN3hmlOCXZ14twSAzNuuOg7aSEiSgmxwZ9f+qHI1AvcF2BvOGsp4RQ9iVTosT8CUC846a3LgI5KktH9fjjP2DyKR1HoKJkcASnT+ac0tkaRrafbzjK24kTMgI/bOJoFdDOg0ZhvA6jr4UIUFc7So0gw==', 'SigningCertUrl': 'https://sns.us-east-1.amazonaws.com/SimpleNotificationService-6209c161c6221fdf56ec1eb5c821d112.pem', 'Subject': None, 'UnsubscribeUrl': 'https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:833984991867:AmazonTextract-lambda:621bdf14-1ad2-49d3-a41f-da6122240d20', 'MessageAttributes': {}}}]}
-lambda_handler(event=event,context='')
+
+
+lambda_handler(event={}
+              ,
+               context='')
