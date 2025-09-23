@@ -129,6 +129,9 @@ class UniqueClaimIdentifierCheck:
                 is_member_name_match = True
                 print(f"The patient name is matching for the ARL '{phi_df.iloc[0]['adjudication_record_locator']}'")
                 print(f"patient Name matched:- {self.document_name_cleaned}")
+            else:
+                print(f"patient Name is not matched:- {self.document_name_cleaned}")
+
 
 
             date_str_obj_ls = DatetimeExtractor.get_date_time_from_corpus_v2(text.lower(), self.date_tag_constants['date_of_birth_tags'])
@@ -147,7 +150,9 @@ class UniqueClaimIdentifierCheck:
                 dob_flag = True
                 print(f"The patient dob is matching for the ARL '{phi_df.iloc[0]['adjudication_record_locator']}'")
                 print(f"patient DOB matched:- {self.document_name_cleaned}")
-            
+            else:
+                print(f"patient DOB is not matched:- {self.document_name_cleaned}")
+
             # Step2 : Considering that the dob tags are not present in the detected dates [(date, time, tag)], we sort all the detected dates.
             if not dob_flag:
                 extracted_dates = [i[0] for i in date_str_obj_ls if i[0] != re.findall(r"(\d{,4})", i[0])[0]]
