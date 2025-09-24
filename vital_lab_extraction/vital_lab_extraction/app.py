@@ -67,6 +67,7 @@ def lambda_handler(event, context):
     client_name = sec_subsec_csv.split("/")[0]
     file_name = sec_subsec_csv.split('/')[-1].replace('_section_subsection', '')
     document_name=file_name.replace('.csv','.pdf')
+    print(f"started vitalLabExtraction processing:- {document_name}")
     path_to_save_result = f"{client_name}/zai_medical_records_pipeline/medical-records-extract/excerpts" 
     path_to_save_logs = f"{client_name}/zai_medical_records_pipeline/medical-records-extract/logs/{file_name.replace('.csv','')}"
     textract_csv_path = f"{client_name}/zai_medical_records_pipeline/textract-response/json-csv/{file_name}"
@@ -299,6 +300,7 @@ def lambda_handler(event, context):
         s3_c.put_object(Bucket=bucket_name, Body=json.dumps({'TablePresent': 0}),
                         Key=f'{client_name}/zai_medical_records_pipeline/textract-response/table-json/{file_name.replace(".csv","_textract_table_merged.json")}')
          
+    print(f"completed vitalLabExtraction processing:- {document_name}")
     
     return {
         "statusCode": 200,

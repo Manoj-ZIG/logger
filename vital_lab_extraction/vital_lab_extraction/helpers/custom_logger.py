@@ -17,6 +17,7 @@ except:
 
 
 category={
+'vitalLabExtraction processing':'vitalLabExtraction',
 'vitals extraction by regex':'Vitals extraction',
 'labpage detection':'Labpage detection',
 'excerpt extraction': 'Excerpt extraction',

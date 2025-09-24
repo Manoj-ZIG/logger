@@ -114,6 +114,7 @@ def lambda_handler(event, context):
         event['Records'][0]['s3']['object']['key'], encoding='utf-8')
     file_name = table_merged_json.split('/')[-1].replace('_textract_table_merged.json', '')
     document_name=file_name+".pdf"
+    print(f"started rawDataPostprocess processing:- {document_name}")
     # adj_tag = file_name.split('_')[0]
     client_name = table_merged_json.split("/")[0]
     path_to_save_result = f"{client_name}/zai_medical_records_pipeline/medical-records-extract/tables"
@@ -644,6 +645,7 @@ def lambda_handler(event, context):
     print(f'final json data stored for {file_name}')
     print(f"data files sent:- {document_name}")
 
+    print(f"completed rawDataPostprocess processing:- {document_name}")
         
     return {
         "statusCode": 200,
