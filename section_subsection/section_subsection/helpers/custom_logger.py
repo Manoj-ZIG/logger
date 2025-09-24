@@ -17,7 +17,7 @@ except:
 
 
 category={
-    'section-subsection processing':'sectionSubsection',
+    'sectionSubsection processing':'sectionSubsection',
     'section extraction':'Section extraction',
     'subsections extraction':'Subsection extraction',
     'chart order extraction':'Chart order extraction'
