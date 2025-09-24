@@ -43,7 +43,7 @@ def lambda_handler(event, context):
     file_name = textract_file.split('/')[-1]
     document_name = file_name.replace('.csv','.pdf')
     client_name = textract_file.split("/")[0]
-    print(f"started sectionSubsection processing:- {file_name} ")
+    print(f"started sectionSubsection processing:- {file_name}")
 
     document_directory = file_name.replace('.csv','').replace('_','-').replace('.','-')
     save_path = f"{client_name}/zai_medical_records_pipeline/medical-records-extract/sectioned-data/{document_directory}"
