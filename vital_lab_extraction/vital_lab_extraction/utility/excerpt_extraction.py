@@ -571,14 +571,14 @@ class ExcerptExtraction:
                             # if not set(detected_spacific_term_pages).difference([page_no_generic]):
                             excerpts = corpus[match_.start(
                             )-lookup_index:match_.end()+lookup_index]
-                        print(f"Excerpt generic date start....")
+                    
                         date_ = self.get_date(corpus, date_, match_)
-                        print(f"Excerpt generic date end....")
+                    
 
                         if not date_:
                             # section
                             try:
-                                print("Section generic date start....")
+                              
                                 date_ = df[(match_.start() >= df['Start']) & (df['section_entity'].isin(
                                     ['SECTION']))].iloc[-1]['post_process_date/time']
                             except IndexError as e:
@@ -594,7 +594,7 @@ class ExcerptExtraction:
                         # last sanity check for date
                         if not (date_ and  self.guard_rail_date(date_, self.min_max_date, min_year)):
                             date_ = ''
-                        print("Section generic date end....")
+                      
                         
                     # if excerpts and prev_end and (prev_end <= match_.start() <= prev_end+50) and (prev_matching_group == match_.group()):
                     #     print(
@@ -639,14 +639,14 @@ class ExcerptExtraction:
                     excerpt_bb.append([self.get_bounding_box(
                         textract_df, child_id) for child_id in generic_child_id])
 
-                    print(f"Excerpt specific date start....")
+                
                     date_ = self.get_date(corpus, date_, match_)
-                    print(f"Excerpt specific date end....")
+                
 
                     if not date_:
                         # section
                         try:
-                            print("Section specific date start....")
+                        
                             date_ =  df[(match_.start() >= df['Start']) & (df['section_entity'].isin(
                                 ['SECTION']))].iloc[-1]['post_process_date/time']
                         except IndexError as e:
@@ -660,7 +660,7 @@ class ExcerptExtraction:
                     # last sanity check for date
                     if not (date_ and self.guard_rail_date(date_, self.min_max_date, min_year)):
                         date_ = ''
-                    print("Section specific date end....")
+                   
 
                     # if excerpts and prev_end and (prev_end <= match_.start() <= prev_end+50) and (prev_matching_group == match_.group()):
                     #     print(
