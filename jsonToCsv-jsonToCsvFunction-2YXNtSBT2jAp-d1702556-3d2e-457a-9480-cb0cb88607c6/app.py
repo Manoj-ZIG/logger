@@ -5,8 +5,8 @@ import boto3
 from urllib.parse import unquote_plus
 from python_to_java_json_conversion import convert_format
 from constants.aws_config import aws_access_key_id,aws_secret_access_key
-from helpers.custom_logger import enable_custom_logging
-enable_custom_logging()
+from helpers.custom_logger import S3Logger
+logger = S3Logger()
 
 
 

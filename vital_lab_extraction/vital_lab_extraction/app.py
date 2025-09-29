@@ -22,9 +22,10 @@ from get_lab_extraction import get_lab_metadata
 from get_bucket_api import get_bucket_api
 import fitz
 import sys
-from helpers.custom_logger import enable_custom_logging
+from helpers.custom_logger import S3Logger
 
-enable_custom_logging()
+logger = S3Logger()
+
 def lambda_handler(event, context):
     logger = logging.getLogger(__name__)
     logging.basicConfig(level=logging.INFO,

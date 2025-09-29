@@ -122,6 +122,8 @@ class DupicateCheck:
                 return False, None, None
         except self.s3r.meta.client.exceptions.NoSuchKey:
             return False, None, None
+            
+    
         except Exception as e:
             print(f"An error occurred while checking if the file was processed: {e}")
             print(f"duplication check failed:- {self.doc_name}")

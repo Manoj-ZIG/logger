@@ -261,5 +261,5 @@ class UniqueClaimIdentifierCheck:
                 # copy_object(self.s3c, bucket_name, key, bucket_name, dest_key)
                 # delete_object(self.s3c,  bucket_name, key)
         if is_document_sent_for_manual_review == 1:
-            print(f"file went to manual review because of PHI mismatch:- {self.document_name_cleaned}")
+            print(f"manual review for PHI mismatch:- {self.document_name_cleaned}")
         return dest_key ,is_unique_claim_identifier_present_in_document_name,is_unique_claim_identifier_received,is_unique_claim_identifier_matched_with_document, is_document_sent_for_manual_review, validation_query_df

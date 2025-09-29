@@ -2,9 +2,9 @@ import json
 import urllib.parse
 import boto3
 from constants.aws_config import aws_access_key_id,aws_secret_access_key
-from helpers.custom_logger import enable_custom_logging
+from helpers.custom_logger import S3Logger
 
-enable_custom_logging()
+logger = S3Logger()
 def lambda_handler(event, context):
     # Get the object from the event and show its content type
     bucket = event['Records'][0]['s3']['bucket']['name']

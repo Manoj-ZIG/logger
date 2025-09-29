@@ -1,22 +1,15 @@
 import builtins
-import csv
 import os
-from datetime import datetime
 import re
-import boto3
+from datetime import datetime
 from io import BytesIO
-import pandas as pd
-import pyarrow as pa
-import pyarrow.parquet as pq
-try:
-    from constant.aws_config import aws_access_key_id,aws_secret_access_key
-except:
-    from ..constant.aws_config import aws_access_key_id,aws_secret_access_key
+import boto3
 
 
 
 
-category={
+
+CATEGORY_MAP={
 'rawDataPostprocess processing':'rawDataPostprocess',
 'json to csv conversion':'Json to CSV conversion',
 'merging tables and parsing':'Merging and Parsing',
@@ -25,71 +18,93 @@ category={
 'data files':'Final data files'
 }
 
-def custom_print(*args, **kwargs):
-    timestamp = datetime.now().isoformat(timespec='milliseconds')
-    message = " ".join(str(arg) for arg in args)
-    builtins._original_print(message, **kwargs)
 
-    if ":-" in message:
-        pattern = r'(AJX[\w\-]{7}|H00[\w\-]{9}|V00[\w\-]{9}|200[\w\-]{4})'
-        ARL = re.findall(pattern, message, flags=re.IGNORECASE)
-        ARL = ARL[0] if ARL else ''
-        ARL = ARL.upper()
-        if ARL.startswith(("AJX")):
-            client = "devoted"
-        elif ARL.startswith(("H00", "V00", "22")):
-            client = "helix"
-        else:
-            client = ""
-        
+class S3Logger:
+    def __init__(self, category_map=CATEGORY_MAP, s3_folder="execution_trace_logs"):
+        self._original_print = builtins.print
+        self.category_map = category_map
+        self.s3_folder = s3_folder
+        self.s3_bucket = os.environ.get('PARAMETERS_BUCKET_NAME', '')
+        self.s3_client = self._init_s3_client()
+        self.enable()
 
+    def _init_s3_client(self):
+        try:
+            client = boto3.client('s3', region_name='us-east-1')
+            client.list_buckets()
+            self._original_print("S3 client initialized successfully using IAM role.")
+            return client
+        except Exception as e:
+            self._original_print(f"Failed to initialize S3 client with IAM role: {str(e)}")
+            try:
+                from constant.aws_config import aws_access_key_id, aws_secret_access_key
+            except:
+                from ..constant.aws_config import aws_access_key_id, aws_secret_access_key
+            return boto3.client('s3',
+                                aws_access_key_id=aws_access_key_id,
+                                aws_secret_access_key=aws_secret_access_key)
 
+    def enable(self):
+        builtins._original_print = builtins.print
+        builtins.print = self._custom_print
+
+    def disable(self):
+        builtins.print = self._original_print
+
+    def _custom_print(self, *args, **kwargs):
+        timestamp = datetime.now().isoformat(timespec='milliseconds')
+        message = " ".join(str(arg) for arg in args)
+        self._original_print(message, **kwargs)
+
+        if ":-" not in message:
+            return
+
+        ARL = self._extract_arl(message)
+        client = self._determine_client(ARL)
         file_name_part = message.split(':-')[-1].strip()
         Message = message.split(':-')[0].strip()
+        category_ = self._match_category(message)
 
-        category_ = ""
-        for key in category:
+        if not category_ or not client:
+            return
+
+        content = self._prepare_content(timestamp, ARL, file_name_part, category_, Message)
+        self._upload_to_s3(client, file_name_part, category_, content)
+
+    def _extract_arl(self, message):
+        pattern = r'(AJX[\w\-]{7}|H00[\w\-]{9}|V00[\w\-]{9}|200[\w\-]{4})'
+        match = re.findall(pattern, message, flags=re.IGNORECASE)
+        return match[0].upper() if match else ''
+
+    def _determine_client(self, arl):
+        if arl.startswith("AJX"):
+            return "devoted"
+        elif arl.startswith(("H00", "V00", "22")):
+            return "helix"
+        return ""
+
+    def _match_category(self, message):
+        for key in self.category_map:
             if key.lower() in message.lower():
-                category_ = category[key]
-                break
+                return self.category_map[key]
+        return ""
 
-        if category_:
-            # Prepare pipe-delimited content
-            headers = "timestamp|lambda|arl|file|category|message"
-            values = f"{timestamp}|rawDataPostProcess|{ARL}|{file_name_part}|{category_}|{Message}"
-            content = f"{headers}\n{values}"
+    def _prepare_content(self, timestamp, arl, file_name, category, message):
+        headers = "timestamp|lambda|arl|file|category|message"
+        values = f"{timestamp}|rawDataPostProcess|{arl}|{file_name}|{category}|{message}"
+        return f"{headers}\n{values}"
 
-            # Create a TXT file in memory
-            buffer = BytesIO()
-            buffer.write(content.encode('utf-8'))
-            buffer.seek(0)
+    def _upload_to_s3(self, client, file_name, category, content):
+        buffer = BytesIO()
+        buffer.write(content.encode('utf-8'))
+        buffer.seek(0)
 
-            # Upload to S3
-            date_folder = datetime.now().strftime("%Y%m%d")
-            timestamp_for_file = datetime.now().strftime("%Y%m%d_%H%M%S")
-            s3_key = f"{client}/{S3_FOLDER}/{date_folder}/{file_name_part.replace('.pdf','')}_{category_}_{timestamp_for_file}.txt"
-            try:
-                s3c.put_object(Bucket=S3_BUCKET, Key=s3_key, Body=buffer)
-            except Exception as e:
-                builtins._original_print(f"Failed to upload Parquet to S3: {e}")
+        date_folder = datetime.now().strftime("%Y%m%d")
+        timestamp_for_file = datetime.now().strftime("%Y%m%d_%H%M%S")
+        s3_key = f"{client}/{self.s3_folder}/{date_folder}/{file_name.replace('.pdf','')}_{category}_{timestamp_for_file}.txt"
 
-def enable_custom_logging():
-    builtins._original_print = builtins.print
-    builtins.print = custom_print
-
-def disable_custom_logging():
-    builtins.print = builtins._original_print
-
-S3_BUCKET = os.environ['PARAMETERS_BUCKET_NAME']
-S3_FOLDER = f"execution_trace_logs"
-try:
-    s3c = boto3.client('s3', region_name='us-east-1')
-    s3c.list_buckets()
-    print("S3 client initialized successfully using IAM role in app.py.")
-except Exception as e:
-    print(f"Failed to initialize S3 client with IAM role: {str(e)} in app.py.")
-    if aws_access_key_id and aws_secret_access_key:
-        s3c = boto3.client('s3', 
-                            aws_access_key_id=aws_access_key_id,
-                            aws_secret_access_key=aws_secret_access_key)
-
+        try:
+            self.s3_client.put_object(Bucket=self.s3_bucket, Key=s3_key, Body=buffer)    
+            buffer.close()
+        except Exception as e:
+            self._original_print(f"Failed to upload TXT to S3: {e}")

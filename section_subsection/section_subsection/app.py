@@ -16,7 +16,7 @@ try:
     from constants.aws_config import aws_access_key_id, aws_secret_access_key
     from utility.utils import lifecycle_file_generator, send_payload, get_bucket_api, read_csv_file, get_zai_emr_system_name_version, calculate_missing_section_percentage
     from utility.lifecycle_generator import process
-    from helpers.custom_logger import enable_custom_logging
+    from helpers.custom_logger import S3Logger
     
 
 except ModuleNotFoundError as e:
@@ -28,8 +28,8 @@ except ModuleNotFoundError as e:
     from .utility.utils import lifecycle_file_generator, send_payload, get_bucket_api, read_csv_file, get_zai_emr_system_name_version, calculate_missing_section_percentage
     from .utility.lifecycle_generator import process
 
+logger = S3Logger()
 
-enable_custom_logging()
 def lambda_handler(event, context):
     logger = logging.getLogger(__name__)
     logging.basicConfig(level=logging.INFO,
@@ -43,7 +43,7 @@ def lambda_handler(event, context):
     file_name = textract_file.split('/')[-1]
     document_name = file_name.replace('.csv','.pdf')
     client_name = textract_file.split("/")[0]
-    print(f"started sectionSubsection processing:- {file_name}")
+    print(f"started sectionSubsection processing:- {document_name}")
 
     document_directory = file_name.replace('.csv','').replace('_','-').replace('.','-')
     save_path = f"{client_name}/zai_medical_records_pipeline/medical-records-extract/sectioned-data/{document_directory}"
@@ -133,7 +133,7 @@ def lambda_handler(event, context):
         index_obj.IndexPage(save_path, section_object.df_co_date_order_, df,section_object.df_co)
         mr_json_data = JsonData.get_chart_view_json_data(
             index_obj.df_chart_view, s3_c, bucket_name, save_path, file_name, parameters_bucket_name, grd_truth_const_path, client_name, mr_name, zai_audit_process_params_key)
-        print(f"completed sectionSubsection processing:- {file_name}")
+        print(f"completed sectionSubsection processing:- {document_name}")
         return {
             "statusCode": 200,
             "body": json.dumps({

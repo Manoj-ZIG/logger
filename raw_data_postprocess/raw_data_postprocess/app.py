@@ -43,7 +43,7 @@ try:
     from postprocess.get_postprocess_data_generic import GetPostProcessData as GetPostProcessDataGeneric
     from postprocess.get_postprocess_data_ami import GetPostProcessData as GetPostProcessDataAMI
     from postprocess.get_postprocess_data_sepsis import GetPostProcessData as GetPostProcessDataSEPSIS
-    from helpers.custom_logger import enable_custom_logging
+    from helpers.custom_logger import S3Logger
 
 except ModuleNotFoundError as e:
     from .utility.textract_response import TextractTableResponse
@@ -77,9 +77,10 @@ except ModuleNotFoundError as e:
     from .postprocess.get_postprocess_data_generic import GetPostProcessData as GetPostProcessDataGeneric
     from .postprocess.get_postprocess_data_ami import GetPostProcessData as GetPostProcessDataAMI
     from .postprocess.get_postprocess_data_sepsis import GetPostProcessData as GetPostProcessDataSEPSIS
-    from .helpers.custom_logger import enable_custom_logging
+    from .helpers.custom_logger import S3Logger
 
-enable_custom_logging()
+logger = S3Logger()
+
 sns_topic_arn = "arn:aws:sns:us-east-1:833984991867:revmaxai_mr_data_processing_alarms"
 sns_client = boto3.client("sns", region_name = "us-east-1")
 def send_sns_message(messaage):

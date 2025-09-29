@@ -2,15 +2,16 @@ import json
 import boto3
 import os
 from constants.aws_config import aws_secret_access_key,aws_access_key_id
-from helpers.custom_logger import enable_custom_logging
+from helpers.custom_logger import S3Logger
 import pandas as pd
+
 
 s3 = boto3.client('s3',aws_access_key_id=aws_access_key_id,
                        aws_secret_access_key=aws_secret_access_key,region_name='us-east-1')
 textract = boto3.client('textract',region_name='us-east-1',
                                        aws_access_key_id=aws_access_key_id,
                                        aws_secret_access_key=aws_secret_access_key)
-enable_custom_logging()
+logger = S3Logger()
 def getJobResultForText(jobId):
     pages = []
     
@@ -144,8 +145,5 @@ def lambda_handler(event, context):
             "tag": f"{pdfTextTableExtractionJobTag}"
         }),
     }
-
-
-lambda_handler(event={}
-              ,
-               context='')
+event = {}
+lambda_handler(event=event,context='')

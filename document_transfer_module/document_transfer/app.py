@@ -9,7 +9,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 try:
-    from helpers.custom_logger import enable_custom_logging
+    from helpers.custom_logger import S3Logger
     from helpers.get_cateogery import GetCateogery
     from helpers.duplicate_check import DupicateCheck
     from helpers.arl_check import UniqueClaimIdentifierCheck as ARLCheck
@@ -23,7 +23,7 @@ try:
     from helpers.generate_validation_query import generate_query, get_all_pcn_and_arl
 
 except ModuleNotFoundError as e:
-    from .helpers.custom_logger import enable_custom_logging
+    from .helpers.custom_logger import S3Logger
     from .helpers.get_cateogery import GetCateogery
     from .helpers.duplicate_check import DupicateCheck
     from .helpers.arl_check import UniqueClaimIdentifierCheck as ARLCheck
@@ -37,7 +37,7 @@ except ModuleNotFoundError as e:
     from .helpers.generate_validation_query import generate_query, get_all_pcn_and_arl
 
 
-enable_custom_logging()
+logger = S3Logger()
 
 def lambda_handler(event, context):
     bucket_name = event['Records'][0]['s3']['bucket']['name']   
@@ -212,7 +212,7 @@ def lambda_handler(event, context):
 
 
 keys=[
-
+'AJX94UJJ3Y_MR.pdf'
 
 ]
 for key in keys:
