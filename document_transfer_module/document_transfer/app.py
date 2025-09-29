@@ -212,7 +212,7 @@ def lambda_handler(event, context):
 
 
 keys=[
-'AJX94UJJ3Y_MR.pdf'
+
 
 ]
 for key in keys:
